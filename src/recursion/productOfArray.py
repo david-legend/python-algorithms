@@ -11,6 +11,6 @@ sample1 = [1,2,3]
 sample2 = [1,2,3,4]
 sample3 = [1,2,3,10]
 
-print(productOfArray(sample1)) #6
-print(productOfArray(sample2)) #24
-print(productOfArray(sample3)) #60
+print(productOfArray(sample1)) #ans --> 6
+print(productOfArray(sample2)) #ans --> 24
+print(productOfArray(sample3)) #ans --> 60
