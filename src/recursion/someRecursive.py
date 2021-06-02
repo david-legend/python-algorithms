@@ -1,6 +1,5 @@
 # SomeRecursive --> Write a recursive function which accepts an array and a callback. 
 # The function returns true if a single value in the array returns true when passed to the callback, otherwise it returns false
-# Flatten --> write a recursion function called flatten which accepts an array of arrays and returns a new array with all the values flattened
 
 def isOdd(num):
     if num%2==0:
