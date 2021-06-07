@@ -2,6 +2,9 @@
 # and can hop either 1 step, 2 steps, or 3 steps at a time. 
 # Implement a method to count how many possible ways the child can run up the stairs.
 
+# NOTE:: Regardless of whether or not you use memoization, note that the number of ways 
+# will quickly overflow the bounds of an integer. By the time you get to just n 37, 
+# the result has already overflowed. Using a long will delay, but not completely solve, this issue.
 
 # Recursion with no memoization
 def countWays(n):
