@@ -3,26 +3,38 @@
 #such that the robot cannot step on them. Design an algorithm to find a path for the 
 #robot from the top left to the bottom right.
 
-def uniquePaths(r, c):
-    matrix = [[0 for y in range(c)] for x in range(r)]
+def callGetPath(rows, cols):
+    assert rows and cols > 0
+    grid = [[False for i in range(cols)] for j in range(rows)]
+    path = [];
 
-    for i in range(r):
-        matrix[i][0] = 1
+    if( getPath(grid, len(grid)-1, len(grid[0])-1, path) ):
+        return path
+
+    return None
+   
+
+
+def getPath(grid, row, col, path):
+    if( row < 0 or col < 0 or (grid[row][col] == True)):
+        return False
+
+    print("row: ", row, " col: ", col, "\n")
+    isAtOrigin = (row == 0) and (col == 0)
     
-    for i in range(c):
-        matrix[0][i] = 1
+    if(isAtOrigin or getPath(grid, row, col-1, path)) or getPath(grid, row-1, col, path):
+        point = row,col
+        path.append(point)
 
-    for i in range(1, r):
-        for j in range(1,c):
-            matrix[i][j] = matrix[i-1][j] + matrix[i][j-1] 
+        return True
 
-    print(matrix)
-    return matrix[r-1][c-1];
-    
+    return False
+
+print(callGetPath(3,3)) #[(0, 0), (1, 0), (2, 0), (2, 1), (2, 2)]
+print(callGetPath(2,2)) #[(0, 0), (1, 0), (1, 1)]
+print(callGetPath(4,3)) #[(0, 0), (1, 0), (2, 0), (3, 0), (3, 1), (3, 2)]
 
 
 
-print(uniquePaths(3,7)) #28
-print(uniquePaths(3,2)) #3
-print(uniquePaths(7,3)) #28
-print(uniquePaths(3,3)) #6
+
+# TODO:: Add robot in a grid with memoization
