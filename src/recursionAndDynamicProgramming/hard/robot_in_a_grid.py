@@ -35,32 +35,32 @@ print(callGetPath(4,3)) #[(0, 0), (1, 0), (2, 0), (3, 0), (3, 1), (3, 2)]
 
 
 
-# Solution With Memoization
+# Solution With Dynamic Programming
 
-def callGetPathMemo(rows, cols):
+def callGetPathDp(rows, cols):
     assert rows and cols > 0
     grid = [[False for i in range(cols)] for j in range(rows)]
     path = [];
     failedPoints =  set()
 
-    if(getPathMemo(grid, len(grid)-1, len(grid[0])-1, path, failedPoints)):
+    if(getPathDp(grid, len(grid)-1, len(grid[0])-1, path, failedPoints)):
         return path
 
     return None
 
 
-def getPathMemo(grid, row, col, path, failedPoints):
+def getPathDp(grid, row, col, path, failedPoints):
     if( row < 0 or col < 0 or (grid[row][col] == True)):
         return False
 
     p = row, col
-
+    print(p)
     if p in failedPoints:
         return False
 
     isAtOrigin = (row == 0) and (col == 0)
     
-    if(isAtOrigin or getPathMemo(grid, row, col-1, path, failedPoints)) or getPathMemo(grid, row-1, col, path, failedPoints):
+    if(isAtOrigin or getPathDp(grid, row, col-1, path, failedPoints)) or getPathDp(grid, row-1, col, path, failedPoints):
         point = row,col
         path.append(point)
 
@@ -71,6 +71,7 @@ def getPathMemo(grid, row, col, path, failedPoints):
 
 
 
-print("\n\nRunning with Memoization \n\n")
-print(callGetPathMemo(4,4)) #[(0, 0), (1, 0), (2, 0), (3, 0), (3, 1), (3, 2), (3, 3)]
-print(callGetPathMemo(3,8)) #[(0, 0), (1, 0), (2, 0), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7)]
+print("\n\nRunning with Dynamic Programming \n\n")
+print(callGetPathDp(3,3)) #[(0, 0), (1, 0), (2, 0), (3, 0), (3, 1), (3, 2), (3, 3)]
+# print(callGetPathDp(4,4)) #[(0, 0), (1, 0), (2, 0), (3, 0), (3, 1), (3, 2), (3, 3)]
+# print(callGetPathDp(3,8)) #[(0, 0), (1, 0), (2, 0), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (2, 6), (2, 7)]
