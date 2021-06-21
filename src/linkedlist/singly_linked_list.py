@@ -16,35 +16,47 @@ class SinglyLinkedList:
             yield node
             node = node.next
 
-    #Insertion into a linkedList
-    def insert(self, value, location):
+    def printSLList(self):
+        node = self.head
+        while(node):
+            print(node)
+            node = node.next
+
+    #insert at beginning of node
+    def push(self, value):
         newNode = Node(value)
-        if self.head is None:
+        newNode.next = self.head
+        self.head = newNode
+
+    def insertAfter(self, prevNode, value):
+        newNode = Node(value)
+        if prevNode is None:
+            print("The given previous node must be in LinkedList.")
+            return
+        newNode.next = prevNode.next
+        prevNode.next = newNode
+
+    def append(self, value):
+        newNode = Node(value)
+
+        if(self.head is None):
             self.head = newNode
-            self.tail = newNode
-        else:
-            if location == 0:
-                newNode.next = self.head
-                self.head = newNode
-            elif location == -1:
-                newNode.next = None
-                self.tail.next = newNode
-                self.tail = newNode
-            else:
-                tempNode = self.head
-                index = 0
-                while index < location-1:
-                    tempNode = tempNode.next
-                    index+1
-                nextNode = tempNode.next
-                tempNode.next = nextNode
-                newNode.next = nextNode
+            return
+
+        nextNode = self.head
+        while nextNode.next:
+            nextNode = nextNode.next
+
+        nextNode.next = newNode
+
 
 
 
 singlyLinkedList = SinglyLinkedList()
-singlyLinkedList.insert(4, 0)
-singlyLinkedList.insert(5, 1)
-singlyLinkedList.insert(6, 2)
+singlyLinkedList.push(4)
+singlyLinkedList.push(5)
+singlyLinkedList.append(75)
+singlyLinkedList.push(6)
+singlyLinkedList.push(9)
 
 print([node.value for node in singlyLinkedList])
