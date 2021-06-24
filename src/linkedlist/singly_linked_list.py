@@ -101,8 +101,12 @@ class SinglyLinkedList:
             self.head = current.getNext()
         else:
             previous.setNext(current.getNext())
-
-
+    
+    def deleteLinkedList(self):
+        if self.head == None:
+            print("Singly Linked List does not exist")
+        else:
+            self.head = None
 
 singlyLinkedList = SinglyLinkedList()
 
@@ -123,5 +127,9 @@ print("SIZE IS: ", singlyLinkedList.size())
 # Search & delete operations
 print("SEARCHING: ",singlyLinkedList.search(99).value)
 singlyLinkedList.delete(2)
+
+print([node.value for node in singlyLinkedList])
+
+singlyLinkedList.deleteLinkedList()
 
 print([node.value for node in singlyLinkedList])
