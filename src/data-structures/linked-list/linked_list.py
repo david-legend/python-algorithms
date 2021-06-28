@@ -17,7 +17,6 @@ class LinkedList:
     def __init__(self):
         super().__init__()
         self.head = None
-        self.tail = None
 
     def __iter__(self):
         node = self.head
