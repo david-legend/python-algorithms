@@ -33,7 +33,7 @@ Below is a list of interview questions. Will keep on adding as I encounter them
 ### Questions by Topic
 
 * **Recursion & Dynamic Programming**
-  * `E` [Capitalize First](src/interview_questions/recursionAndDynamicProgramming/easy/capitalizeFirst) - Given an array of words write a recursive function to capitalize the first letter of every word in the array.
+  * `E` [Capitalize First](src/interview_questions/recursionAndDynamicProgramming/easy/capitalizeFirst.py) - Given an array of words write a recursive function to capitalize the first letter of every word in the array.
   * `E` [Collect Strings](src/interview_questions/recursionAndDynamicProgramming/easy/collectStrings) - Write a function that accepts objects and returns an array of all the values in the object that have a typeof string.
   * `E` [Decimal to Binary](src/interview_questions/recursionAndDynamicProgramming/easy/decToBinary) - Write a recursive function that converts a decimal number to binary.
   * `E` [Factorial](src/interview_questions/recursionAndDynamicProgramming/easy/factorial) - Write a recursive function that computes the factorial of a given number
