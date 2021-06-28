@@ -1,17 +1,18 @@
 # Python Algorithms and Data Structures
 
-This repository contains implementations of popular data structures and interview questions in Python.
+This repository contains implementations of popular data structures and interview questions implemented in Python.
 
 Each data structure has its own separate README
 with related explanations and links for further reading (including ones
 to YouTube videos).
 
 
-The explanations of the data structures are from <a href="https://github.com/trekhleb/javascript-algorithms"> Oleksii Trekhleb Project</a>
+The explanations of the data structures are from <a href="https://github.com/trekhleb/javascript-algorithms"> Oleksii Trekhleb's Project</a>
 
 *This project is meant to help you on your job interview journey. I will be updating it as I embark on my own journey*
 
 <br>
+
 ## Data Structures
 
 A data structure is a particular way of organizing and storing data in a computer so that it can
@@ -47,8 +48,15 @@ Below is a list of interview questions. Will keep on adding as I encounter them
   * `E` [Reverse](src/interview_questions/recursionAndDynamicProgramming/easy/reverse) -  Write a recursive function that accepts a string and returns a new string in reverse
   * `E` [Some Recursive](src/interview_questions/recursionAndDynamicProgramming/easy/someRecursive) - Write a recursive function which accepts an array and a callback. The function returns true if a single value in the array returns true when passed to the callback, otherwise it returns false
   * `E` [Stringify Numbers](src/interview_questions/recursionAndDynamicProgramming/easy/stringifyNumbers) - Write a function that takes in an object and finds all the values which are numbers and converts them to strings. 
-# them to strings. 
   * `E` [Sum of digits](src/interview_questions/recursionAndDynamicProgramming/easy/sumOfDigits) - Write a function that sums up a number recursively
+  * `H` [Magic Index](src/interview_questions/recursionAndDynamicProgramming/hard/magicIndex) - A magic index in an array A[ 1.•.n-1] is defined to be an index such that A[ i] = i. 
+  Given a sorted array of distinct integers, write a method to find a magic index, if one exists, in array A.
+  * `H` [PowerSet](src/interview_questions/recursionAndDynamicProgramming/hard/powerset) - Write a method to return all subsets of a set.
+  * `H` [Recursive Multiply](src/interview_questions/recursionAndDynamicProgramming/hard/recursiveMultiply) - Write a recursive function to multiply two positive integers without using the * operator (or / operator). 
+  * `H` [Robot In A Grid](src/interview_questions/recursionAndDynamicProgramming/hard/robot_in_a_grid) - Imagine a robot sitting on the upper left corner of grid with r rows and c columns. The robot can only move in two directions, right and down, but certain cells are "off limits" such that the robot cannot step on them. Design an algorithm to find a path for the robot from the top left to the bottom right.
+  * `H` [Triple Step](src/interview_questions/recursionAndDynamicProgramming/hard/tripleStep) - A child is running up a staircase with n steps and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possible ways the child can run up the stairs.
+  * `H` [Unique Paths](src/interview_questions/recursionAndDynamicProgramming/hard/uniquePaths) - The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+  How many possible unique paths are there?
 
 * **Arrays**
   * `E` [Two Number Sum](src/interview_questions/arrays/easy/twoNumberSum) - Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum.
@@ -60,9 +68,7 @@ Below is a list of interview questions. Will keep on adding as I encounter them
 
 Here is a list of popular interview questions given asked by Big Companies
 
-
-* **Google**
-
+**Google**
 
 ## Useful Information
 
