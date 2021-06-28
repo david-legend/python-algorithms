@@ -34,32 +34,32 @@ Below is a list of interview questions. Will keep on adding as I encounter them
 
 * **Recursion & Dynamic Programming**
   * `E` [Capitalize First](src/interview_questions/recursionAndDynamicProgramming/easy/capitalizeFirst.py) - Given an array of words write a recursive function to capitalize the first letter of every word in the array.
-  * `E` [Collect Strings](src/interview_questions/recursionAndDynamicProgramming/easy/collectStrings) - Write a function that accepts objects and returns an array of all the values in the object that have a typeof string.
-  * `E` [Decimal to Binary](src/interview_questions/recursionAndDynamicProgramming/easy/decToBinary) - Write a recursive function that converts a decimal number to binary.
-  * `E` [Factorial](src/interview_questions/recursionAndDynamicProgramming/easy/factorial) - Write a recursive function that computes the factorial of a given number
-  * `E` [Fibonacci](src/interview_questions/recursionAndDynamicProgramming/easy/fibonacci) - Given a  value 'n' Write a recursive function to compute the fibonacci number at position 'n' 
-  * `E` [Flatten](src/interview_questions/recursionAndDynamicProgramming/easy/flatten) - write a recursion function called flatten which accepts an array of arrays and returns a new array with all the values flattened.
-  * `E` [Greatest Common Divisor](src/interview_questions/recursionAndDynamicProgramming/easy/greatestCommonDivisor) - Write a recursive function that computes the greatest common divisor of number.
-  * `E` [isPalindrome](src/interview_questions/recursionAndDynamicProgramming/easy/isPalindrome) - Write a recursive function if the string passed to is a palindrome, otherwise return false.
-  * `E` [nestedEvenSum](src/interview_questions/recursionAndDynamicProgramming/easy/nestedEvenSum) - Write a recursive function to return the sum of all even numbers in an object which may contain nested objects.
-  * `E` [Power of Number](src/interview_questions/recursionAndDynamicProgramming/easy/powerOfNumber) - Write a recursive function that computes the power of a number
-  * `E` [Product of Array](src/interview_questions/recursionAndDynamicProgramming/easy/productOfArray) - Write a recursive function that takes an array of numbers and returns a product of all the elements
-  * `E` [Recursive Range](src/interview_questions/recursionAndDynamicProgramming/easy/recursiveRange) - Write a recursive function that accepts a number and adds all the number from 0 to the number passed
-  * `E` [Reverse](src/interview_questions/recursionAndDynamicProgramming/easy/reverse) -  Write a recursive function that accepts a string and returns a new string in reverse
-  * `E` [Some Recursive](src/interview_questions/recursionAndDynamicProgramming/easy/someRecursive) - Write a recursive function which accepts an array and a callback. The function returns true if a single value in the array returns true when passed to the callback, otherwise it returns false
-  * `E` [Stringify Numbers](src/interview_questions/recursionAndDynamicProgramming/easy/stringifyNumbers) - Write a function that takes in an object and finds all the values which are numbers and converts them to strings. 
-  * `E` [Sum of digits](src/interview_questions/recursionAndDynamicProgramming/easy/sumOfDigits) - Write a function that sums up a number recursively
-  * `H` [Magic Index](src/interview_questions/recursionAndDynamicProgramming/hard/magicIndex) - A magic index in an array A[ 1.•.n-1] is defined to be an index such that A[ i] = i. 
+  * `E` [Collect Strings](src/interview_questions/recursionAndDynamicProgramming/easy/collectStrings.py) - Write a function that accepts objects and returns an array of all the values in the object that have a typeof string.
+  * `E` [Decimal to Binary](src/interview_questions/recursionAndDynamicProgramming/easy/decToBinary.py) - Write a recursive function that converts a decimal number to binary.
+  * `E` [Factorial](src/interview_questions/recursionAndDynamicProgramming/easy/factorial.py) - Write a recursive function that computes the factorial of a given number
+  * `E` [Fibonacci](src/interview_questions/recursionAndDynamicProgramming/easy/fibonacci.py) - Given a  value 'n' Write a recursive function to compute the fibonacci number at position 'n' 
+  * `E` [Flatten](src/interview_questions/recursionAndDynamicProgramming/easy/flatten.py) - write a recursion function called flatten which accepts an array of arrays and returns a new array with all the values flattened.
+  * `E` [Greatest Common Divisor](src/interview_questions/recursionAndDynamicProgramming/easy/greatestCommonDivisor.py) - Write a recursive function that computes the greatest common divisor of number.
+  * `E` [isPalindrome](src/interview_questions/recursionAndDynamicProgramming/easy/isPalindrome.py) - Write a recursive function if the string passed to is a palindrome, otherwise return false.
+  * `E` [nestedEvenSum](src/interview_questions/recursionAndDynamicProgramming/easy/nestedEvenSum.py) - Write a recursive function to return the sum of all even numbers in an object which may contain nested objects.
+  * `E` [Power of Number](src/interview_questions/recursionAndDynamicProgramming/easy/powerOfNumber.py) - Write a recursive function that computes the power of a number
+  * `E` [Product of Array](src/interview_questions/recursionAndDynamicProgramming/easy/productOfArray.py) - Write a recursive function that takes an array of numbers and returns a product of all the elements
+  * `E` [Recursive Range](src/interview_questions/recursionAndDynamicProgramming/easy/recursiveRange.py) - Write a recursive function that accepts a number and adds all the number from 0 to the number passed
+  * `E` [Reverse](src/interview_questions/recursionAndDynamicProgramming/easy/reverse.py) -  Write a recursive function that accepts a string and returns a new string in reverse
+  * `E` [Some Recursive](src/interview_questions/recursionAndDynamicProgramming/easy/someRecursive.py) - Write a recursive function which accepts an array and a callback. The function returns true if a single value in the array returns true when passed to the callback, otherwise it returns false
+  * `E` [Stringify Numbers](src/interview_questions/recursionAndDynamicProgramming/easy/stringifyNumbers.py) - Write a function that takes in an object and finds all the values which are numbers and converts them to strings. 
+  * `E` [Sum of digits](src/interview_questions/recursionAndDynamicProgramming/easy/sumOfDigits.py) - Write a function that sums up a number recursively
+  * `H` [Magic Index](src/interview_questions/recursionAndDynamicProgramming/hard/magicIndex.py) - A magic index in an array A[ 1.•.n-1] is defined to be an index such that A[ i] = i. 
   Given a sorted array of distinct integers, write a method to find a magic index, if one exists, in array A.
-  * `H` [PowerSet](src/interview_questions/recursionAndDynamicProgramming/hard/powerset) - Write a method to return all subsets of a set.
-  * `H` [Recursive Multiply](src/interview_questions/recursionAndDynamicProgramming/hard/recursiveMultiply) - Write a recursive function to multiply two positive integers without using the * operator (or / operator). 
-  * `H` [Robot In A Grid](src/interview_questions/recursionAndDynamicProgramming/hard/robot_in_a_grid) - Imagine a robot sitting on the upper left corner of grid with r rows and c columns. The robot can only move in two directions, right and down, but certain cells are "off limits" such that the robot cannot step on them. Design an algorithm to find a path for the robot from the top left to the bottom right.
-  * `H` [Triple Step](src/interview_questions/recursionAndDynamicProgramming/hard/tripleStep) - A child is running up a staircase with n steps and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possible ways the child can run up the stairs.
-  * `H` [Unique Paths](src/interview_questions/recursionAndDynamicProgramming/hard/uniquePaths) - The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+  * `H` [PowerSet](src/interview_questions/recursionAndDynamicProgramming/hard/powerset.py) - Write a method to return all subsets of a set.
+  * `H` [Recursive Multiply](src/interview_questions/recursionAndDynamicProgramming/hard/recursiveMultiply.py) - Write a recursive function to multiply two positive integers without using the * operator (or / operator). 
+  * `H` [Robot In A Grid](src/interview_questions/recursionAndDynamicProgramming/hard/robot_in_a_grid.py) - Imagine a robot sitting on the upper left corner of grid with r rows and c columns. The robot can only move in two directions, right and down, but certain cells are "off limits" such that the robot cannot step on them. Design an algorithm to find a path for the robot from the top left to the bottom right.
+  * `H` [Triple Step](src/interview_questions/recursionAndDynamicProgramming/hard/tripleStep.py) - A child is running up a staircase with n steps and can hop either 1 step, 2 steps, or 3 steps at a time. Implement a method to count how many possible ways the child can run up the stairs.
+  * `H` [Unique Paths](src/interview_questions/recursionAndDynamicProgramming/hard/uniquePaths.py) - The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
   How many possible unique paths are there?
 
 * **Arrays**
-  * `E` [Two Number Sum](src/interview_questions/arrays/easy/twoNumberSum) - Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum.
+  * `E` [Two Number Sum](src/interview_questions/arrays/easy/twoNumberSum.py) - Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum.
   If any two numbers in the input array sum up to the target sum, the function should return them in an array
 
 
