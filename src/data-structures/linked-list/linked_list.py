@@ -13,7 +13,7 @@ class Node:
     def setNext(self, node):
         self.next = node
 
-class SinglyLinkedList:
+class LinkedList:
     def __init__(self):
         super().__init__()
         self.head = None
@@ -108,28 +108,28 @@ class SinglyLinkedList:
         else:
             self.head = None
 
-singlyLinkedList = SinglyLinkedList()
+linkedList = linkedList()
 
 # Insertions
 newVal = Node(23)
-singlyLinkedList.push(Node(1))
-singlyLinkedList.push(newVal)
-singlyLinkedList.append(2)
-singlyLinkedList.append(47)
-singlyLinkedList.insertAfter(newVal, 99)
+linkedList.push(Node(1))
+linkedList.push(newVal)
+linkedList.append(2)
+linkedList.append(47)
+linkedList.insertAfter(newVal, 99)
 
 # Print List
-singlyLinkedList.printSLList()
+linkedList.printSLList()
 
 # Print Size of linkedList
-print("SIZE IS: ", singlyLinkedList.size())
+print("SIZE IS: ", linkedList.size())
 
 # Search & delete operations
-print("SEARCHING: ",singlyLinkedList.search(99).value)
-singlyLinkedList.delete(2)
+print("SEARCHING: ",linkedList.search(99).value)
+linkedList.delete(2)
 
-print([node.value for node in singlyLinkedList])
+print([node.value for node in linkedList])
 
-singlyLinkedList.deleteLinkedList()
+linkedList.deleteLinkedList()
 
-print([node.value for node in singlyLinkedList])
+print([node.value for node in linkedList])
