@@ -13,7 +13,7 @@ class Node:
     def setNext(self, node):
         self.next = node
 
-#TODO:: Search, Delete, InsertAfter 
+#TODO:: InsertAfter 
 class CircularLinkedList:
     def __init__(self):
         super().__init__()
@@ -77,6 +77,16 @@ class CircularLinkedList:
             current.next = node
             node.next = self.head
 
+    # Insert After using a value runs O(n), by using a node, it could run O(1)
+    def insertAfter(self, valueToBeInsertedAFter, valueToBeInserted):
+        pos = self.search(valueToBeInsertedAFter)
+        if(pos == None):
+           print("Value to be Inserted AFter does not exist")
+        else:
+            newNode = Node(valueToBeInserted)
+            newNode.next = pos.next
+            pos.next = newNode
+
     def size(self):
         current = self.head
         count = 0
@@ -90,12 +100,88 @@ class CircularLinkedList:
         
         return count
 
+    def search(self, value):
+        current = self.head
+        if current == None:
+            return None
+
+        while current:
+            if(current.value == value):
+                return current
+            elif current.next == self.head:
+                break
+            else:
+                current = current.next
+
+        return None
+
+    def delete(self, value):
+        current = self.head
+        prevNode = self.head
+        found = False
+
+        if current == None:
+            print("LinkedList is already empty")
+
+        while current:
+            if current.value == value:
+                found = True
+                break
+            elif current.next == self.head:
+                break
+            else:
+                prevNode = current
+                current = current.next
+
+        if(found):
+            if current == self.head:
+                self.head = None
+            else: 
+                prevNode.next = current.next
+        else:
+            print("Couldn't find the value: ", value)
+
+    def deleteLinkedList(self):
+        if self.head == None:
+            print("LinkedList is already empty")
+        else:
+            self.head = None
+
 
 linkedList = CircularLinkedList()
+
+# Push values to the begining of a linkedlist
 linkedList.push(3)
 linkedList.push(2)
 linkedList.push(1)
+
+# Append values to the emd of a linkedlist
 linkedList.append(4)
 
+# Insert value after another value --> insert 19 after 3
+linkedList.insertAfter(2, 19)
+
+
+# Iterate and print the values in the linkedList
 linkedList.printCLList()
+
+# Print linkedList as an array
+print([node.value for node in linkedList])
+
+print("VALUE:: ", linkedList.search(1).value)
+print("VALUE:: ", linkedList.search(2).value)
+print("VALUE:: ", linkedList.search(3).value)
+print("VALUE:: ", linkedList.search(4).value)
+print("VALUE:: ", linkedList.search(5))
+
+
+# Delete nodes from linkedlist
+linkedList.delete(2)
+linkedList.delete(3)
+
+
+print([node.value for node in linkedList])
+
+# Delete entire linkedlist
+linkedList.deleteLinkedList()
 print([node.value for node in linkedList])
