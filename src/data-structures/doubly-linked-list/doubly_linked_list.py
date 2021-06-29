@@ -165,11 +165,19 @@ doublyLinkedList.insertAfter(newNode, 9)
 doublyLinkedList.append(11)
 doublyLinkedList.append(13)
 
-print([node.value for node in doublyLinkedList])
+print("After Insertion: ", [node.value for node in doublyLinkedList])
+
+doublyLinkedList.delete(9)
+doublyLinkedList.delete(7)
+
+print("After Deletion: ", [node.value for node in doublyLinkedList])
 
 # Search for value in DoublyLinkedList
 print("Searching For 13, Found: ", doublyLinkedList.search(13).value)
 print("Searching For 99, Found: ", doublyLinkedList.search(99))
 
 
-print("SIZE OF LINKEDLIST IS: ", doublyLinkedList.search())
+print("SIZE OF LINKEDLIST IS: ", doublyLinkedList.size())
+
+doublyLinkedList.deleteDLL()
+print("After Deleting Doubly LinkedList: ", [node.value for node in doublyLinkedList])
