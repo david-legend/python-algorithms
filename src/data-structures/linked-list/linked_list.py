@@ -103,7 +103,7 @@ class LinkedList:
     
     def deleteLinkedList(self):
         if self.head == None:
-            print("Singly Linked List does not exist")
+            print("Singly Linked List is already empty")
         else:
             self.head = None
 
