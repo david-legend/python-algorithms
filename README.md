@@ -23,7 +23,8 @@ the data.
 `B` - Beginner, `A` - Advanced
 
 * `B` [Linked List](src/data-structures/linked-list)
-* `B` [Circular Linked List](src/data-structures/circular-linked-list)
+* `B` [Circular Linked List](src/data-structures/circular-linked-list/circularLinkedList.py)
+* `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 
 ## Interview Questions
 
