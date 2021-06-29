@@ -172,4 +172,4 @@ print("Searching For 13, Found: ", doublyLinkedList.search(13).value)
 print("Searching For 99, Found: ", doublyLinkedList.search(99))
 
 
-print("SIZE OF LINKEDLIST IS: ", doublyLinkedList.size())
+print("SIZE OF LINKEDLIST IS: ", doublyLinkedList.search())

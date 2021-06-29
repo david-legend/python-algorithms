@@ -25,6 +25,7 @@ the data.
 * `B` [Linked List](src/data-structures/linked-list)
 * `B` [Circular Linked List](src/data-structures/circular-linked-list/circular_linked_list.py)
 * `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
+* `B` [Circular Doubly Linked List](src/data-structures/circular-doubly-linked-list/circular_doubly_linked_list.py)
 
 ## Interview Questions
 
