@@ -167,6 +167,7 @@ doublyLinkedList.append(13)
 
 print("After Insertion: ", [node.value for node in doublyLinkedList])
 
+
 doublyLinkedList.delete(9)
 doublyLinkedList.delete(7)
 

@@ -38,75 +38,74 @@ class CircularDoublyLinkedList:
                 break
             node = node.getNext()
 
-    def push(self, value):
-        newNode = Node(value)
-        temp = self.head
-
-        newNode.next = self.head
-
-        if self.head is not None:
-            prev = self.head
-            while temp:
-                if temp == self.head:
-                    temp.prev = newNode
-                else:
-                    temp.prev = prev
-
-                if temp.next == self.head:
-                    break
-
-                prev = temp
-                temp = temp.getNext()
-
-            temp.next = newNode 
-        else:
-            newNode.next = newNode
-        
-        self.head = newNode
 
     def insertAfter(self, valueTobeInsertedAfter, value):
+        newNode = Node(value) 
+
+        temp = self.head 
+        #Break from loop when you find a value equal to newNode
+        while (temp.value != valueTobeInsertedAfter):
+            temp = temp.next
+
+        nextNode = temp.next
+
+        # insert new_node between temp and next. 
+        temp.next = newNode 
+        newNode.prev = temp 
+        newNode.next = nextNode
+        nextNode.prev = newNode
+
+    #insert at the beginning of list
+    def push(self, value):
         if self.head == None:
-            print("LinkedList is empty")
-            return False
-
-        newNode = Node(value)
-        node = self.search(valueTobeInsertedAfter)
-
-        if(node is not None):
-            nextNode = node.getNext()
-            node.next = newNode
-            newNode.next = nextNode
-            newNode.prev = node
-            if nextNode != self.head:
-                nextNode.prev = newNode
-            return True
-
-        return False
-
-    def append(self, value):
-        newNode = Node(value)
-        if self.head == None:
-            self.head = Node(value)
-            newNode.next = newNode
+            newNode = Node(value)
+            newNode.next = newNode.prev = newNode
+            self.head = newNode
             return
 
+        # Get last Node 
+        lastNode = (self.head).prev 
 
-        currentNode = self.head
-        prev = self.head
+        newNode = Node(value)
 
-        while currentNode:
-            if currentNode != self.head:
-                currentNode.prev = prev
-                
-            if currentNode.next == self.head:
-                break
-            
-            prev = currentNode
-            currentNode = currentNode.getNext()
+        # setting up previous and next of new node 
+        newNode.next = self.head 
+        newNode.prev = lastNode 
 
-        currentNode.next = newNode
-        newNode.next = self.head
-        newNode.prev = currentNode
+        # Update next and previous pointers of start and last.
+        # They all point to the newNode 
+        lastNode.next = (self.head).prev = newNode 
+
+        # Update start pointer 
+        self.head = newNode 
+
+
+    def append(self, value):
+        # If the list is empty, create a 
+        # single node circular and doubly list 
+        if (self.head == None):
+            newNode = Node(value) 
+            newNode.next = newNode 
+            newNode.prev = newNode
+            self.head = newNode 
+            return
+
+        # If list is not empty 
+        # Find last node 
+        last = (self.head).prev 
+
+        # Create Node dynamically 
+        newNode = Node(value) 
+
+        # Start is going to be next of new_node 
+        newNode.next = self.head 
+        # Make new node previous of start 
+        (self.head).prev = newNode 
+        # Make last preivous of new node 
+        newNode.prev = last 
+        # Make new node next of old last 
+        last.next = newNode
+
 
     def search(self, value):
         if self.head is None:
@@ -187,7 +186,6 @@ class CircularDoublyLinkedList:
 circularDoublyLL = CircularDoublyLinkedList()
 
 # Pushing Value to the beginning of a CircularDoublyLinkedList
-
 circularDoublyLL.push(7)
 circularDoublyLL.push(5)
 circularDoublyLL.push(3)
@@ -212,7 +210,8 @@ print("Search for 2, found: ", circularDoublyLL.search(2).value)
 
 
 print("Size of linkedList is: ", circularDoublyLL.size())
-# checking if nodes are pointing to the right nodes
+
+#checking if nodes are pointing to the right nodes
 # for node in circularDoublyLL:
 #     if node.prev is not None:
 #         print("PREVS:", node.prev.value, " <-- ", node.value)
