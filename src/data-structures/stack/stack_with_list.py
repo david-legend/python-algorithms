@@ -5,7 +5,11 @@ class Stack:
         super().__init__()
         self.list = []
 
-    
+    def __str__(self):
+        values = self.list.reverse()
+        values = [str(x) for x in self.list]
+        return '\n'.join(values)
+        
     def push(self, value):
         self.list.append(value)
 
