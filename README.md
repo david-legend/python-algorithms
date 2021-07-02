@@ -64,7 +64,7 @@ Below is a list of interview questions. Will keep on adding as I encounter them
   How many possible unique paths are there?
 
 * **Arrays**
-  * `E` [Two Number Sum](src/interview_questions/arrays/easy/twoNumberSum.py) - Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum.
+  * `E` [Two Number Sum](src/interview_questions/arrays/easy/twoNumberSum/twoNumberSum.py) - Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum.
   If any two numbers in the input array sum up to the target sum, the function should return them in an array
 
 
