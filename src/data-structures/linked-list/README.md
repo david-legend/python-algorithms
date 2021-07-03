@@ -151,6 +151,10 @@ end ReverseTraversal
 
 O(n)
 
+### Time and Space Complexity Comparisons between Array & Linked List
+
+
+![Comparison Linked List & Array](./../../../assets/linkedList_array_comparisons.png)
 ## References
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Linked_list)

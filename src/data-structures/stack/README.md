@@ -19,6 +19,19 @@ Simple representation of a stack runtime with push and pop operations.
 
 ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
 
+
+
+## Time and Space Complexities for different Implementations of a Stack
+
+### Stack Implemented with list
+
+![Stack With List](./../../../assets/stack_list.png)
+
+### Stack Implemented with list
+
+![Stack With List](./../../../assets/stack_linkedlist.png)
+
+
 ## References
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
