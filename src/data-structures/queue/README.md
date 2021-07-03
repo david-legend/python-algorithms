@@ -18,7 +18,18 @@ sequential collection.
 
 Representation of a FIFO (first in, first out) queue
 
+
+
 ![Queue](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
+
+
+## Time Complexities for different implementations of a Queue
+
+![Queue With list](./../../../assets/queue_with_list.png)
+![Queue With linkedlist](./../../../assets/queue_linkedlist.png)
+![Circular Queue](./../../../assets/circular_queue.png)
+![Queue Comparisons](./../../../assets/queue_comparisons.png)
+
 
 ## References
 
