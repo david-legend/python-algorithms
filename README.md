@@ -29,7 +29,8 @@ the data.
 * `B` [Queue](src/data-structures/queue)
 * `B` [Stack](src/data-structures/stack)
 * `A` [Tree](src/data-structures/tree)
-  * `A` [Binary Search Tree](src/data-structures/tree/binary-tree)
+  * `A` [Binary Tree](src/data-structures/tree/binary-tree)
+  * `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
 
 ## Interview Questions
 

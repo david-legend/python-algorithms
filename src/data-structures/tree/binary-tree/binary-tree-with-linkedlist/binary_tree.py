@@ -11,7 +11,7 @@ class TreeNode:
 
 # Traversing a tree using preOrderTraversal
 # Run time complexity O(n) & 
-# Space Time Complexity O(n) --> because we are using recursion, function calls are kept on the stack
+# Space Complexity O(n) --> because we are using recursion, function calls are kept on the stack
 def preOrderTraversal(rootNode):
     if not rootNode:
         return
@@ -23,7 +23,7 @@ def preOrderTraversal(rootNode):
 
 # Traversing a tree using inOrderTraversal
 # Run time complexity O(n) & 
-# Space Time Complexity O(n) --> because we are using recursion, function calls are kept on the stack
+# Space Complexity O(n) --> because we are using recursion, function calls are kept on the stack
 def inOrderTraversal(rootNode):
     if not rootNode:
         return
@@ -33,7 +33,7 @@ def inOrderTraversal(rootNode):
 
 # Traversing a tree using postOrderTraversal
 # Run time complexity O(n) & 
-# Space Time Complexity O(n) --> because we are using recursion, function calls are kept on the stack
+# Space Complexity O(n) --> because we are using recursion, function calls are kept on the stack
 def postOrderTraversal(rootNode):
     if not rootNode:
         return
@@ -42,7 +42,7 @@ def postOrderTraversal(rootNode):
     print(rootNode.data)
 
 # Traversing a tree using levelOrderTraversal
-# Run time complexity O(n) & Space Time Complexity O(n)
+# Run time complexity O(n) & Space Complexity O(n)
 def levelOrderTraversal(rootNode):
     if not rootNode:
         return
@@ -61,7 +61,7 @@ def levelOrderTraversal(rootNode):
                 queue.enqueue(root.value.rightChild)
 
 # Searching a binary tree using levelOrderTraversal
-# Run time complexity O(n) & Space Time Complexity O(n)
+# Run time complexity O(n) & Space Complexity O(n)
 def searchBinaryTree(rootNode, value):
     if not rootNode:
         return
@@ -158,7 +158,7 @@ def deleteDeepestNode(rootNode, deepestNode):
         return False
 
 # Deleting a node in binary tree
-# Run time complexity O(n) & Space Time Complexity O(n)
+# Run time complexity O(n) & Space Complexity O(n)
 def deleteNode(rootNode, value):
     if not rootNode:
         return
@@ -184,7 +184,7 @@ def deleteNode(rootNode, value):
         return False
 
 # Deleting entire binary tree
-# Run time complexity O(1) & Space Time Complexity O(1)
+# Run time complexity O(1) & Space Complexity O(1)
 def deleteBinaryTree(rootNode):
     rootNode.data = None
     rootNode.leftChild = None
