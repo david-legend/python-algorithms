@@ -81,7 +81,7 @@ def searchNode(rootNode, nodeValue):
     if rootNode.data == nodeValue:
         print("Value Found", rootNode.data)
         return rootNode.data
-    elif nodeValue <= rootNode.data:
+    elif nodeValue < rootNode.data:
         if rootNode.data == nodeValue:
             print("Value Found")
             return rootNode.data
