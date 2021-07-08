@@ -31,6 +31,7 @@ the data.
 * `A` [Tree](src/data-structures/tree)
   * `A` [Binary Tree](src/data-structures/tree/binary-tree)
   * `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
+  * `A` [AVL Tree](src/data-structures/tree/avl-tree)
 
 ## Interview Questions
 
