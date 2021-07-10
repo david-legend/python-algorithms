@@ -29,6 +29,7 @@ the data.
 * `B` [Queue](src/data-structures/queue)
 * `B` [Stack](src/data-structures/stack)
 * `A` [Tree](src/data-structures/tree)
+* `A` [Heap](src/data-structures/heap)
   * `A` [Binary Tree](src/data-structures/tree/binary-tree)
   * `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
   * `A` [AVL Tree](src/data-structures/tree/avl-tree)
