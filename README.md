@@ -73,9 +73,9 @@ Below is a list of interview questions. Will keep on adding as I encounter them
   If any two numbers in the input array sum up to the target sum, the function should return them in an array
 
 * **Stacks**
-  * `M` [Min Max Stack](src/interview_questions/stacks/medium/min-max-stack/min_max_stack.py) - Write a MinMaxStack class for a Min Max Stack. The class should support pushing, popping, peeking and Getting both the minimum and the maximum values in the stack at any given point in time. All class methods, when considered independently, should run in constant time and with constant space.
+  * `M` [Min Max Stack](src/interview_questions/stacks/medium/min-max-stack) - Write a MinMaxStack class for a Min Max Stack. The class should support pushing, popping, peeking and Getting both the minimum and the maximum values in the stack at any given point in time. All class methods, when considered independently, should run in constant time and with constant space.
 
-  
+
 ### Interview Questions By Company
 
 Here is a list of popular interview questions given asked by Big Companies
