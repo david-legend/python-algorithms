@@ -75,6 +75,7 @@ Below is a list of interview questions. Will keep on adding as I encounter them
 * **Stacks**
   * `M` [Min Max Stack](src/interview_questions/stacks/medium/min-max-stack) - Write a MinMaxStack class for a Min Max Stack. The class should support pushing, popping, peeking and Getting both the minimum and the maximum values in the stack at any given point in time. All class methods, when considered independently, should run in constant time and with constant space.
 
+  * `M` [Balanced Brackets](src/interview_questions/stacks/medium/balanced-brackets) - Write a function that takes in a string made up of brackets ((, [, (, ), ], and }) and other optional characters. The function should return a boolean representing whether the string is balanced with regards to brackets.
 
 ### Interview Questions By Company
 
