@@ -25,6 +25,7 @@ Note that the shortened version of the path must be equivalent to the original p
 
 `path="/foo/../test/../test/../foo//bar/./baz"`
 
+
 ### Sample Output
 
 `"/foo/bar/baz" // This path is equivalent to the input path.`

@@ -13,8 +13,8 @@ array = [0, 0, 5, 0, 0, 3, e 0], the next greater element after 3 is 5, since th
 
 ### Sample Input
 
-`array = [2, 5, -3, -4, 6, 7, 2]`
+array = [2, 5, -3, -4, 6, 7, 2]
 
 ### Sample Output
 
-`[5, 6, 6, 6, 7, -1, 5]`
+[5, 6, 6, 6, 7, -1, 5]

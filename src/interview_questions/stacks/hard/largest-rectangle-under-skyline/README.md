@@ -12,7 +12,7 @@ Note that if no rectangles can be created, your function should return
 
 ### Sample Input
 
-`buildings =  [1, 3, 3, 2, 4, 1, 5, 3, 2]`
+buildings =  [1, 3, 3, 2, 4, 1, 5, 3, 2]
 
 ### Sample Output
 

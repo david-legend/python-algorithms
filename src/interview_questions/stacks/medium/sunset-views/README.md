@@ -1,4 +1,4 @@
-# Sunset Views ○ ✩
+# Sunset Views ✩
 
 Given an array of buildings and a direction that all of the buildings face, return an array of the indices of the buildings that can see the sunset.
 

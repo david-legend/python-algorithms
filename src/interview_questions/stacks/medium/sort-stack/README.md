@@ -14,8 +14,8 @@ You're not allowed to perform any other operations on the input array, including
 
 ### Sample Input
 
-`stack = [-5, 2, -2, 4, 3, 1]`
+stack = [-5, 2, -2, 4, 3, 1]
 
 ### Sample Output
 
-`[-5, -2, 1, 2, 3, 4]`
+[-5, -2, 1, 2, 3, 4]
