@@ -20,14 +20,14 @@ direction = "EAST"
 
 <br>
 
- Below is a visual representation of the sample input.
-                     
-    _                
-   | |_ _            
-  _| | | |_   _      
- | | | | | | | |_    
- | | | | | |_| | |   
- |_|_|_|_|_|_|_|_|   
+Below is a visual representation of the sample input.
+                    
+   _                
+  | |_ _            
+ _| | | |_   _      
+| | | | | | | |_    
+| | | | | |_| | |   
+|_|_|_|_|_|_|_|_|   
 
 <br>
 
@@ -40,5 +40,5 @@ direction = "WEST"
 
 [0, 1]
 
-// The buildings are the same as in the first sample 
-// input, but their direction is reversed. 
+The buildings are the same as in the first sample 
+input, but their direction is reversed. 
