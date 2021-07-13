@@ -17,14 +17,14 @@ Important note: the indices in the ouput array should be sorted in ascending ord
 ### Sample Output #1
 
 `[1, 3, 6, 7]`
-`// Below is a visual representation of the sample input.`
-`//                     `
-`//    _                `
-`//   | |_ _            `
-`//  _| | | |_   _      `
-`// | | | | | | | |_    `
-`// | | | | | |_| | |   `
-`// |_|_|_|_|_|_|_|_|   `
+// Below is a visual representation of the sample input.
+//                     
+//    _                
+//   | |_ _            
+//  _| | | |_   _      
+// | | | | | | | |_    
+// | | | | | |_| | |   
+// |_|_|_|_|_|_|_|_|   
 
 <br>
 

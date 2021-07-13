@@ -18,11 +18,11 @@ Note that if no rectangles can be created, your function should return
 
 `9`
 
-`// Below is a visual representation of the sample input.`
-`//                       `
-`//              _        `
-`//          _  | |       `
-`//    _ _  | | | |_      `
-`//   | | |_| | | | |_    `
-`//  _| | | | |_| | | |   `
-`// |_|_|_|_|_|_|_|_|_|   `
+// Below is a visual representation of the sample input.
+//                      
+//              _       
+//          _  | |      
+//    _ _  | | | |_     
+//   | | |_| | | | |_   
+//  _| | | | |_| | | |  
+// |_|_|_|_|_|_|_|_|_|  
