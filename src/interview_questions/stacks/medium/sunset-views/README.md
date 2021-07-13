@@ -11,23 +11,23 @@ Important note: the indices in the ouput array should be sorted in ascending ord
 
 ### Sample Input #1
 
-`buildings = [3, 5, 4, 4, 3, 1, 3, 2]`
-`direction = "EAST"`
+buildings = [3, 5, 4, 4, 3, 1, 3, 2]
+direction = "EAST"
 
 ### Sample Output #1
 
-`[1, 3, 6, 7]`
+[1, 3, 6, 7]
 
 <br>
 
-// Below is a visual representation of the sample input.
-//                     
-//    _                
-//   | |_ _            
-//  _| | | |_   _      
-// | | | | | | | |_    
-// | | | | | |_| | |   
-// |_|_|_|_|_|_|_|_|   
+ Below is a visual representation of the sample input.
+                     
+    _                
+   | |_ _            
+  _| | | |_   _      
+ | | | | | | | |_    
+ | | | | | |_| | |   
+ |_|_|_|_|_|_|_|_|   
 
 <br>
 
@@ -38,6 +38,7 @@ direction = "WEST"
 
 ### Sample Output #2
 
-`[0, 1]`
+[0, 1]
+
 // The buildings are the same as in the first sample 
 // input, but their direction is reversed. 
