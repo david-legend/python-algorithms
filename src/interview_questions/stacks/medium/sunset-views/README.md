@@ -21,13 +21,15 @@ direction = "EAST"
 <br>
 
 Below is a visual representation of the sample input.
-                    
+
+<pre>                  
    _                
   | |_ _            
  _| | | |_   _      
 | | | | | | | |_    
 | | | | | |_| | |   
 |_|_|_|_|_|_|_|_|   
+</pre> 
 
 <br>
 
