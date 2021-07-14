@@ -77,6 +77,8 @@ Below is a list of interview questions. Will keep on adding as I encounter them
 
   * `M` [Balanced Brackets](src/interview_questions/stacks/medium/balanced-brackets) - Write a function that takes in a string made up of brackets ((, [, (, ), ], and }) and other optional characters. The function should return a boolean representing whether the string is balanced with regards to brackets.
 
+  * `M` [Sunset View](src/interview_questions/stacks/medium/sunset-views) - Given an array of buildings and a direction that all of the buildings face, return an array of the indices of the buildings that can see the sunset.
+
 ### Interview Questions By Company
 
 Here is a list of popular interview questions given asked by Big Companies
