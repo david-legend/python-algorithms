@@ -79,6 +79,8 @@ Below is a list of interview questions. Will keep on adding as I encounter them
 
   * `M` [Sunset View](src/interview_questions/stacks/medium/sunset-views) - Given an array of buildings and a direction that all of the buildings face, return an array of the indices of the buildings that can see the sunset.
 
+  * `M` [Sort Stack](src/interview_questions/stacks/medium/sort-stack) - Write a function that takes in an array of integers representing a stack, recursively sorts the stack in place  and returns it
+
 ### Interview Questions By Company
 
 Here is a list of popular interview questions given asked by Big Companies
