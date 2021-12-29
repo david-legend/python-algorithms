@@ -13,22 +13,15 @@ class Queue:
         self.items.append(value)
 
     def dequeue(self):
-        if self.isEmpty():
-            return None
-        else:
+        if not self.isEmpty():
             return self.items.pop(0)
 
     def peek(self):
-        if self.isEmpty():
-            return None
-        else:
+        if not self.isEmpty():
             return self.items[0]
 
     def isEmpty(self):
-        if self.items == []:
-            return True
-        else:
-            return False
+        return self.items == []
 
     def delete(self):
         self.items = []

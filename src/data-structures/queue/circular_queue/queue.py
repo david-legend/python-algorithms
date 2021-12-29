@@ -3,7 +3,7 @@ class Queue:
         super().__init__()
         self.items = maxSize * [None]
         self.maxSize = maxSize
-        self.top = -1
+        self.end = -1
         self.start = -1
 
     def __str__(self):
@@ -11,23 +11,20 @@ class Queue:
         return ' '.join(values)
 
     def enqueue(self, value):
-        if self.isFull():
-            return "The Queue is Full"
-        else:
+        if not self.isFull():
             # First check if queue is full, if it is full
-            # Point top to the first element
-            if (self.top + 1) == self.maxSize:
-                self.top = 0
+            # Point end to the first element
+            if (self.end + 1) == self.maxSize:
+                self.end = 0
             else:
-                # Increase top by 1 and use it as index for setting new value
-                self.top += 1
+                # Increase end by 1 and use it as index for setting new value
+                self.end += 1
                 # Check if it is the first element being enqueued 
                 # If it is, set start to 0
                 if self.start == -1:
                     self.start = 0
-
-                # Use top as index for setting the new value
-                self.items[self.top] = value
+                # Use end as index for setting the new value
+                self.items[self.end] = value
 
     def dequeue(self):
         if self.isEmpty():
@@ -37,10 +34,10 @@ class Queue:
             start = self.start
 
             # If there is only one item in the queue 
-            # Set start and top to -1 after dequeuing
-            if start == self.top:
+            # Set start and end to -1 after dequeuing
+            if start == self.end:
                 self.start = -1
-                self.top = -1
+                self.end = -1
             # if item being dequeued is the last item 
             # then set start to point to 0
             elif self.start + 1 == self.maxSize:
@@ -55,22 +52,24 @@ class Queue:
             # Return dequeued Item
             return firstItem
 
-    def peek(self):
-        if self.isEmpty():
-            return "Queue is Empty"
-        else:
+    def front(self):
+        if not self.isEmpty():
             return self.items[self.start]
 
+    def rear(self):
+        if not self.isEmpty():
+            return self.items[self.end]
+        
     def isFull(self):
-        if (self.top + 1) == self.start:
+        if (self.end + 1) == self.start:
             return True
-        elif self.start == 0 and (self.top + 1) == self.maxSize:
+        elif self.start == 0 and (self.end + 1) == self.maxSize:
             return True
         else:
             return False
 
     def isEmpty(self):
-        if self.top == -1:
+        if self.end == -1:
             return True
         else:
             return False
@@ -78,7 +77,7 @@ class Queue:
     def delete(self):
         self.items = self.maxSize * [None]
         self.start = -1
-        self.top = -1
+        self.end = -1
 
 
 queue = Queue(4)
@@ -97,9 +96,9 @@ print("\nIs full ? ", queue.isFull())
 print("Is Empty ? ", queue.isEmpty())
 
 print("Dequeue: ", queue.dequeue())
-print("Peek: ", queue.peek())
+print("front: ", queue.front())
 print("Dequeue: ", queue.dequeue())
-print("Peek: ", queue.peek())
+print("front: ", queue.front())
 
 print("After Dequeuing Twice: ", queue)
 
