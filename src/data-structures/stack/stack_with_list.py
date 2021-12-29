@@ -14,23 +14,16 @@ class Stack:
         self.list.append(value)
 
     def pop(self):
-        if self.isEmpty():
-            print("Stack is empty. There's nothing to pop")
-            return
-        else:
+        if not self.isEmpty():
             return self.list.pop()
 
     def peek(self):
-        lastIndex = len(self.list) - 1
-        if self.list != [] and lastIndex >= 0:
-            return self.list[lastIndex]
+        if not self.isEmpty():
+            return self.list[-1]
 
 
     def isEmpty(self):
-        if self.list == []:
-            return True
-
-        return False
+        return self.list == []
 
     def delete(self):
         self.list = None
