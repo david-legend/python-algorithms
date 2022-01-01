@@ -138,7 +138,7 @@ class LinkedList:
     # the goal is to reverse 
     # a linkedlist like: A->B->C->D->NONE 
     # into D->C->B->A->None
-    def reverse(self):
+    def reverse_iterative(self):
         prev = None
         curr = self.head
         while curr:
@@ -166,7 +166,20 @@ class LinkedList:
         # head = D->C->B->A->None
         self.head = prev
             
+    def reverse_recursive(self):
         
+        def _reverse_recursive(curr, prev):
+            if not curr:
+                return prev
+            
+            next = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next
+            
+            return _reverse_recursive(curr, prev)
+        
+        self.head = _reverse_recursive(curr=self.head, prev=None)  
             
     def deleteLinkedList(self):
         self.head = None
