@@ -133,12 +133,43 @@ class LinkedList:
             self.head = curr_1
             
         curr_1.next, curr_2.next = curr_2.next, curr_1.next
+     
+     
+    # the goal is to reverse 
+    # a linkedlist like: A->B->C->D->NONE 
+    # into D->C->B->A->None
+    def reverse(self):
+        prev = None
+        curr = self.head
+        while curr:
+            # iter1: next = B->C->D->None
+            # iter2: next = C->D->None 
+            # iter3: next = D->None 
+            # iter4: next = None 
+            next = curr.next
+            # iter1: curr.next = A->None
+            # iter2: curr.next = B->A->None 
+            # iter3: curr.next = C->B->A->None
+            # iter4: curr.next = D->C->B->A->None
+            curr.next = prev
+            # iter1: prev = A->None
+            # iter2: prev = B->A->None 
+            # iter3: prev = C->B->A->None
+            # iter4: prev = D->C->B->A->None
+            prev = curr
+            # iter1: curr = B->C->D->None
+            # iter2: curr = C->D->None 
+            # iter3: curr = D->None 
+            # iter4: curr = None 
+            curr = next
         
+        # head = D->C->B->A->None
+        self.head = prev
+            
+        
+            
     def deleteLinkedList(self):
-        if self.head == None:
-            print("Singly Linked List is already empty")
-        else:
-            self.head = None
+        self.head = None
 
 linkedList = LinkedList()
 
