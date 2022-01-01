@@ -114,32 +114,40 @@ class CircularLinkedList:
 
         return None
 
-    def delete(self, value):
-        current = self.head
-        prevNode = self.head
-        found = False
-
-        if current == None:
-            print("LinkedList is already empty")
-
-        while current:
-            if current.value == value:
-                found = True
-                break
-            elif current.next == self.head:
-                break
+    def delete(self, key):
+        if self.head:
+            #if the value to be deleted is the head
+            if self.head.data == key:
+                curr = self.head
+                #loop to the last node
+                while curr.next != self.head:
+                    curr = curr.next
+                
+                #if the only node in the list is the head
+                #set the head to None    
+                if self.head.next == self.head:
+                    self.head = None
+                else:
+                    #if the list has more nodes
+                    #set the new head to the next node after the previous head
+                    self.head = self.head.next
+                    #then set the last node to point to the new head
+                    curr.next = self.head
+            #else if the value to be deleted is not the head
             else:
-                prevNode = current
-                current = current.next
-
-        if(found):
-            if current == self.head:
-                self.head = None
-            else: 
-                prevNode.next = current.next
-        else:
-            print("Couldn't find the value: ", value)
-
+                curr = self.head
+                prev = None
+                #iterate over the nodes
+                while curr.next != self.head:
+                    prev = curr
+                    curr = curr.next
+                    
+                    #if a node is found that matches the data to be deleted
+                    if curr.data == key:
+                        #set prev node to point to the node after the current node 
+                        prev.next = curr.next
+                        break
+                    
     def deleteLinkedList(self):
         if self.head == None:
             print("LinkedList is already empty")
@@ -165,22 +173,24 @@ linkedList.insertAfter(2, 19)
 linkedList.printCLList()
 
 # Print linkedList as an array
-print([node.value for node in linkedList])
+# print([node.value for node in linkedList])
 
-print("VALUE:: ", linkedList.search(1).value)
-print("VALUE:: ", linkedList.search(2).value)
-print("VALUE:: ", linkedList.search(3).value)
-print("VALUE:: ", linkedList.search(4).value)
-print("VALUE:: ", linkedList.search(5))
+# print("VALUE:: ", linkedList.search(1).value)
+# print("VALUE:: ", linkedList.search(2).value)
+# print("VALUE:: ", linkedList.search(3).value)
+# print("VALUE:: ", linkedList.search(4).value)
+# print("VALUE:: ", linkedList.search(5))
 
 
 # Delete nodes from linkedlist
-linkedList.delete(2)
-linkedList.delete(3)
+linkedList.delete(1)
+
+linkedList.printCLList()
+# linkedList.delete(3)
 
 
-print([node.value for node in linkedList])
+# print([node.value for node in linkedList])
 
-# Delete entire linkedlist
-linkedList.deleteLinkedList()
-print([node.value for node in linkedList])
+# # Delete entire linkedlist
+# linkedList.deleteLinkedList()
+# print([node.value for node in linkedList])
