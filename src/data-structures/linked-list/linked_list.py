@@ -100,14 +100,47 @@ class LinkedList:
             self.head = current.getNext()
         else:
             previous.setNext(current.getNext())
-    
+            
+    def swap_nodes(self, key_1, key_2):
+        if key_1 == key_2:
+            return
+        
+        prev_1 = None
+        curr_1 = self.head
+        
+        while curr_1 and curr_1.value != key_1:
+            prev_1 = curr_1
+            curr_1 = curr_1.next
+            
+        prev_2 = None
+        curr_2 = self.head
+
+        while curr_2 and curr_2.value != key_2:
+            prev_2 = curr_2
+            curr_2 = curr_2.next
+            
+        if not curr_1 or not curr_2:
+            return
+        
+        if prev_1:
+            prev_1.next = curr_2
+        else:
+            self.head = curr_2
+            
+        if prev_2:
+            prev_2.next = curr_1
+        else:
+            self.head = curr_1
+            
+        curr_1.next, curr_2.next = curr_2.next, curr_1.next
+        
     def deleteLinkedList(self):
         if self.head == None:
             print("Singly Linked List is already empty")
         else:
             self.head = None
 
-linkedList = linkedList()
+linkedList = LinkedList()
 
 # Insertions
 newVal = Node(23)
@@ -132,3 +165,39 @@ print([node.value for node in linkedList])
 linkedList.deleteLinkedList()
 
 print([node.value for node in linkedList])
+
+
+# test swapping nodes 
+
+llist = LinkedList()
+
+llist.append("A")
+llist.append("B")
+llist.append("C")
+llist.append("D")
+
+
+print("Original List")
+llist.printSLList()
+print("\n\n")
+
+
+llist.swap_nodes("B", "C")
+print("Swapping nodes B and C that are not head nodes")
+llist.printSLList()
+print("\n\n")
+
+llist.swap_nodes("A", "B")
+print("Swapping nodes A and B where key_1 is head node")
+llist.printSLList()
+print("\n\n")
+
+llist.swap_nodes("D", "B")
+print("Swapping nodes D and B where key_2 is head node")
+llist.printSLList()
+print("\n\n")
+
+llist.swap_nodes("C", "C")
+print("Swapping nodes C and C where both keys are same")
+llist.printSLList()
+print("\n\n")
