@@ -102,28 +102,27 @@ def getMinValueNode(node):
     return current
 
 def deleteNode(rootNode, nodeValue):
-    if not rootNode:
-        return None
-    elif rootNode.data < nodeValue:
+    if rootNode is None:
+        return rootNode
+    if nodeValue < rootNode.data:
         rootNode.leftChild = deleteNode(rootNode.leftChild, nodeValue)
-    elif rootNode.data > nodeValue:
+    elif nodeValue > rootNode.data:
         rootNode.rightChild = deleteNode(rootNode.rightChild, nodeValue)
     else:
         if rootNode.leftChild is None:
             temp = rootNode.rightChild
             rootNode = None
             return temp
-
+        
         if rootNode.rightChild is None:
             temp = rootNode.leftChild
             rootNode = None
             return temp
-
+        
         temp = getMinValueNode(rootNode.rightChild)
-        rootNode.data = temp.data
+        rootNode.data = temp.data 
         rootNode.rightChild = deleteNode(rootNode.rightChild, temp.data)
-
-    return rootNode.data
+    return rootNode
 
 # Deleting entire binary search tree
 # Run time complexity O(1) & Space Complexity O(1)
