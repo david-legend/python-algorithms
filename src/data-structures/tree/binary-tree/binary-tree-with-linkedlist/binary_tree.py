@@ -1,234 +1,282 @@
-from queue import *
-class TreeNode:
-    # Creation of tree
-    # Runtime complexity O(1) Space Complexity O(1)
-    def __init__(self, data):
-        super().__init__()
-        self.data = data
-        self.leftChild = None
-        self.rightChild = None
-
-
-# Traversing a tree using preOrderTraversal
-# Run time complexity O(n) & 
-# Space Complexity O(n) --> because we are using recursion, function calls are kept on the stack
-def preOrderTraversal(rootNode):
-    if not rootNode:
-        return
-    
-    print(rootNode.data)
-    preOrderTraversal(rootNode.leftChild)
-    preOrderTraversal(rootNode.rightChild)
-
-
-# Traversing a tree using inOrderTraversal
-# Run time complexity O(n) & 
-# Space Complexity O(n) --> because we are using recursion, function calls are kept on the stack
-def inOrderTraversal(rootNode):
-    if not rootNode:
-        return
-    inOrderTraversal(rootNode.leftChild)
-    print(rootNode.data)
-    inOrderTraversal(rootNode.rightChild)
-
-# Traversing a tree using postOrderTraversal
-# Run time complexity O(n) & 
-# Space Complexity O(n) --> because we are using recursion, function calls are kept on the stack
-def postOrderTraversal(rootNode):
-    if not rootNode:
-        return
-    postOrderTraversal(rootNode.leftChild)
-    postOrderTraversal(rootNode.rightChild)
-    print(rootNode.data)
-
-# Traversing a tree using levelOrderTraversal
-# Run time complexity O(n) & Space Complexity O(n)
-def levelOrderTraversal(rootNode):
-    if not rootNode:
-        return
-    else:
-        queue = Queue()
-        queue.enqueue(rootNode)
-
-        while not(queue.isEmpty()):
-            root = queue.dequeue()
-            print(root.value.data)
-
-            if (root.value.leftChild is not None):
-                queue.enqueue(root.value.leftChild)
-
-            if (root.value.rightChild is not None):
-                queue.enqueue(root.value.rightChild)
-
-# Searching a binary tree using levelOrderTraversal
-# Run time complexity O(n) & Space Complexity O(n)
-def searchBinaryTree(rootNode, value):
-    if not rootNode:
-        return
-    else:
-        queue = Queue()
-        queue.enqueue(rootNode)
+class Queue:
+    def __init__(self):
+        self.items = []
         
-        while not(queue.isEmpty()):
-            root = queue.dequeue()
+    def is_empty(self):
+        return self.items == []
 
-            if (root.value.data == value):
-                return root.value.data
-
-            if root.value.leftChild is not None:
-                queue.enqueue(root.value.leftChild)
-
-            if root.value.rightChild is not None:
-                queue.enqueue(root.value.rightChild)
-
-        return None
-
-def insertNode(rootNode, newNode):
-    if not rootNode:
-        rootNode = newNode
-        return rootNode
-    else:
+    def enqueue(self, data):
+        if self.items is not None:
+            self.items.append(data)
+            
+    def dequeue(self):
+        if not self.is_empty():
+            return self.items.pop(0)
+        
+    def front(self):
+        if not self.is_empty():
+            return self.items[0]
+    
+    def rear(self):
+        if not self.is_empty():
+            return self.items[-1]
+        
+    def size(self):
+        if self.items is not None:
+            return len(self.items)
+        
+class Stack:
+    def __init__(self):
+        self.items = []
+        
+    def is_empty(self):
+        return self.items == []
+    
+    def push(self, data):
+        if self.items is not None:
+            self.items.append(data)
+            
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]
+        
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
+        
+    def size(self):
+        if self.items is not None:
+            return len(self.items)
+        
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+        
+        
+class BinaryTree:
+    def __init__(self):
+        self.root = None
+    
+    def insert(self, data):
+        new_node = Node(data)
+        if not self.root:
+            self.root = new_node
+        else:    
+            queue = Queue()
+            queue.enqueue(self.root)
+            
+            while queue.size() > 0:
+                curr_node = queue.dequeue()
+                
+                if curr_node.left:
+                    queue.enqueue(curr_node.left)
+                else:
+                    curr_node.left = new_node
+                    return curr_node.left
+                
+                if curr_node.right:
+                    queue.enqueue(curr_node.right)
+                else:
+                    curr_node.right = new_node
+                    return curr_node
+    def delete_node(self, data):
+        if not self.root:
+            return
+        
         queue = Queue()
-        queue.enqueue(rootNode)
-
-        while not(queue.isEmpty()):
-            root = queue.dequeue()
-
-            if(root.value.leftChild is not None):
-                queue.enqueue(root.value.leftChild)
-            else:
-                root.value.leftChild = newNode
-                return root.value.leftChild
-
-            if(root.value.rightChild is not None):
-                queue.enqueue(root.value.rightChild)
-            else:
-                root.value.rightChild = newNode
-                return root.value.rightChild
-
-
-def getDeepestNode(rootNode):
-    if not rootNode:
-        return
-    else:
-        queue = Queue()
-        queue.enqueue(rootNode)
-
-        while not(queue.isEmpty()):
-            root = queue.dequeue()
-
-            if(root.value.leftChild is not None):
-                queue.enqueue(root.value.leftChild)
-
-            if(root.value.rightChild is not None):
-                queue.enqueue(root.value.rightChild)   
-        deepestNode = root.value
-        return deepestNode
-
-
-def deleteDeepestNode(rootNode, deepestNode):
-    if not rootNode:
-        return
-    else:
-        queue = Queue()
-        queue.enqueue(rootNode)
-
-        while not(queue.isEmpty()):
-            root = queue.dequeue()
-
-            if root is deepestNode:
-                root.value = None
+        queue.enqueue(self.root)
+        
+        while queue.size() > 0:
+            curr_node = queue.dequeue()
+            
+            if curr_node.data == data:
+                deepest_node = self.get_deepest_node()
+                if curr_node is deepest_node:
+                    self.root = None
+                else:
+                    curr_node.data = deepest_node.data
+                    self.delete_deepest_node(deepest_node)
                 return True
-
-            if(root.value.leftChild is not None):
-                if root.value.leftChild is deepestNode:
-                    root.value.leftChild = None
+                
+            if curr_node.left:
+                queue.enqueue(curr_node.left)
+                
+            if curr_node.right:
+                queue.enqueue(curr_node.right)
+                    
+    def get_deepest_node(self):
+        if not self.root:
+            return
+        queue = Queue()
+        queue.enqueue(self.root)
+        
+        while queue.size() > 0:
+            curr_node = queue.dequeue()
+            
+            if curr_node.left:
+                queue.enqueue(curr_node.left)
+                
+            if curr_node.right:
+                queue.enqueue(curr_node.right)
+        
+        return curr_node
+    
+    def delete_deepest_node(self, deepest_node):
+        if not self.root:
+            return
+        
+        queue = Queue()
+        queue.enqueue(self.root)
+        
+        while queue.size() > 0:
+            curr_node = queue.dequeue()
+            
+            if curr_node is deepest_node:
+                curr_node = None
+                return True
+                
+            if curr_node.left:
+                if curr_node.left is deepest_node:
+                    curr_node.left = None
                     return True
                 else:
-                    queue.enqueue(root.value.leftChild)
+                    queue.enqueue(curr_node.left)
+            
+                
+            if curr_node.right:
+                if curr_node.right is deepest_node:
+                    curr_node.right = None
+                    return True
+                else:
+                    queue.enqueue(curr_node.right)
            
-
-            if(root.value.rightChild is not None):
-                if root.value.rightChild is deepestNode:
-                    root.value.rightChild = None
-                    return True
-                else:
-                    queue.enqueue(root.value.rightChild)
                 
         return False
-
-# Deleting a node in binary tree
-# Run time complexity O(n) & Space Complexity O(n)
-def deleteNode(rootNode, value):
-    if not rootNode:
-        return
-    else:
-        queue = Queue()
-        queue.enqueue(rootNode)
-
-        while not(queue.isEmpty()):
-            root = queue.dequeue()
-
-            if root.value.data == value:
-                deepestNode = getDeepestNode(rootNode)
-                root.value.data = deepestNode.data
-                deleteDeepestNode(rootNode, deepestNode)
-                return True
-
-            if root.value.leftChild is not None:
-                    queue.enqueue(root.value.leftChild)
-
-            if root.value.rightChild is not None:
-                    queue.enqueue(root.value.rightChild)
+    
+    def pre_order_traversal(self, node):
+        if not node:
+            return
         
-        return False
+        print(node.data)
+        self.pre_order_traversal(node.left)
+        self.pre_order_traversal(node.right)
+    
+    def inorder_traversal(self, node):
+        if not node:
+            return
+        
+        self.inorder_traversal(node.left) 
+        print(node.data)   
+        self.inorder_traversal(node.right) 
+        
+    def post_order_traversal(self, node):
+        if not node:
+            return
+        
+        self.post_order_traversal(node.left)
+        self.post_order_traversal(node.right)
+        print(node.data)
+     
+    def level_order_traversal(self, node):
+        if not node:
+            return
+        
+        queue = Queue()
+        queue.enqueue(node)
+        
+        while queue.size() > 0:
+            print(queue.front().data)
+            curr_node = queue.dequeue()
+            
+            if curr_node.left:
+                queue.enqueue(curr_node.left)
+            if curr_node.right:
+                queue.enqueue(curr_node.right)
+        
+    def reverse_level_order_traversal(self, node):
+        if not node:
+            return
+        
+        stack = Stack()
+        queue = Queue()
+        queue.enqueue(node)
+        
+        while queue.size() > 0:
+            curr_node = queue.dequeue()
+            stack.push(curr_node.data)
+            
+            if curr_node.right:
+                queue.enqueue(curr_node.right)
+            
+            if curr_node.left:
+                queue.enqueue(curr_node.left)
+                
+        while stack.size() > 0:
+            print(stack.pop())
+     
+    def height(self, node):
+        if not node:
+            return -1
+        
+        left_height = self.height(node.left)
+        right_height = self.height(node.right)
+        
+        return 1 + max(left_height, right_height)
+                        
+    def size_recursive(self, node):
+        if not node:
+            return 0
+        
+        left_count = self.size_recursive(node.left)       
+        right_count = self.size_recursive(node.right) 
+        
+        return 1 + left_count + right_count    
+    
+    def size_iter(self):
+        if self.root is None:
+            return 0
+        
+        size = 0
+        stack = Stack()
+        stack.push(self.root)
+        
+        size += 1
+        
+        while stack.size() > 0:
+            curr_node = stack.pop()
+            
+            if curr_node.left:
+                size += 1
+                stack.push(curr_node.left)
+                
+            if curr_node.right:
+                size += 1
+                stack.push(curr_node.right)
+        
+        return size       
+         
+tree = BinaryTree()
+tree.insert(1)
+tree.insert(2)
+tree.insert(3)
+tree.insert(4)
+tree.insert(5)
+tree.insert(6)
+tree.delete_node(2)
+tree.delete_node(3)
+tree.delete_node(5)
+# tree.delete_node(1)
+# tree.delete_node(4)
+# tree.delete_node(6)
 
-# Deleting entire binary tree
-# Run time complexity O(1) & Space Complexity O(1)
-def deleteBinaryTree(rootNode):
-    rootNode.data = None
-    rootNode.leftChild = None
-    rootNode.rightChild = None
-    return True
 
-
-root = TreeNode("Drinks")
-insertNode(root, TreeNode("Hot"))
-insertNode(root, TreeNode("Cold"))
-insertNode(root, TreeNode("Tea"))
-insertNode(root, TreeNode("Coffee"))
-insertNode(root, TreeNode("Beer"))
-insertNode(root, TreeNode("Soda"))
-
-
-print("--- PreOrder Traversal ---")
-preOrderTraversal(root)
-print("--- End PreOrder Traversal --- \n\n")
-
-print("--- InOrder Traversal ---")
-inOrderTraversal(root)
-print("--- End of InOrder Traversal --- \n\n")
-
-print("--- PostOrder Traversal ---")
-postOrderTraversal(root)
-print("--- End of PostOrder Traversal --- \n\n")
-
-print("--- LevelOrder Traversal ---")
-levelOrderTraversal(root)
-print("--- End of LevelOrder Traversal --- \n\n")
-
-print("Searching for Coffee, Found --> ", searchBinaryTree(root, "Coffee"))
-print("Searching for Scotch, Found --> ", searchBinaryTree(root, "Scotch"), "\n\n")
-
-
-print("--- Deleting Node with Value 'Cold' ---")
-print("Delete Successful? ", deleteNode(root, "Cold"))
-print("--- Printing Values after deletion ---")
-levelOrderTraversal(root)
-print("-------- \n\n")
-
-print("--- Deleting Entire BinaryTree ---")
-print("Deletion Successful? ", deleteBinaryTree(root))
-print("--- Printing Values after deletion ---")
-levelOrderTraversal(root)
-print("--------\n\n")
+# tree.pre_order_traversal(tree.root)
+# tree.inorder_traversal(tree.root)
+# tree.post_order_traversal(tree.root)
+tree.level_order_traversal(tree.root)
+# tree.reverse_level_order_traversal(tree.root)
+# print(tree.height(tree.root))
+# print(tree.size_recursive(tree.root))
+# print(tree.size_iter())
