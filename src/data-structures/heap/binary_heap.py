@@ -53,7 +53,7 @@ class Heap:
             if self.items[index] < self.items[parentIndex]:
                 self.swap(index, parentIndex)
         else:
-            if self.items[index] >self.items[parentIndex]:
+            if self.items[index] > self.items[parentIndex]:
                 self.swap(index, parentIndex)
 
         self.heapifyInsert(parentIndex) 
@@ -98,6 +98,7 @@ class Heap:
                     swapChild = rightIndex
                 if self.items[index] < self.items[swapChild]:
                     self.swap(index, swapChild)
+        self.heapifyExtract(swapChild)
 
 
     def extractNode(self):
