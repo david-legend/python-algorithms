@@ -1,4 +1,4 @@
-# Average Of Subarrays ✩
+# Average Of Subarrays (easy) ✩
 
 Given an array, find the average of all subarrays of ‘K’ contiguous elements in it.
 

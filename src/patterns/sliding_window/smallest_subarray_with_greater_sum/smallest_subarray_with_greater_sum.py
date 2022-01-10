@@ -2,7 +2,7 @@ import math
 
 # SOLUTION 1 (BRUTE FORCE)
 #Time complexity O(N^2)
-#Space complexity O(1)
+#Space complexity O(N)
 def smallest_subarray_with_greater_sum(arr, s):
     k =  1
     def _find_smallest_subarray(arr, s, k):
@@ -34,21 +34,21 @@ def smallest_subarray_with_greater_sum(arr, s):
 #Time complexity O(N)
 #Space complexity O(1)
 def smallest_subarray_with_given_sum(arr, s):
-    min_length  = math.inf
+    min_len = math.inf
     sum, start = 0.0, 0
-    
-    for i in range(len(arr)):
-        sum += arr[i]
+    for window_end in range(len(arr)):
+        sum += arr[window_end]
         
         while sum >= s:
-            min_length = min(min_length, i - start + 1)
+            min_len = min(min_len, window_end - start + 1)
             sum -= arr[start]
             start += 1
     
-    if min_length == math.inf:
+    if min_len == math.inf:
         return 0
     
-    return min_length
+    return min_len
+        
 
 
 result1 = smallest_subarray_with_given_sum([2, 1, 5, 2, 3, 2], 7) #answer --> 2
