@@ -1,4 +1,5 @@
 #find single shortest path using BFS
+#This doesn't work for weighted graphs (see dijkstras_algorithm_sssp.py)
 
 class Graph(object):
     def __init__(self, data=None):
