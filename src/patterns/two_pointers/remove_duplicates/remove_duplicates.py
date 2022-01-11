@@ -1,3 +1,5 @@
+#Time complexity for this algorithm is O(N)
+#Space complexity is O(1)
 def remove_duplicates(arr):
     remove_dups = 1
     i = 1
@@ -10,6 +12,7 @@ def remove_duplicates(arr):
         i += 1
     
     return arr
+
 
 
 print(remove_duplicates([2, 3, 3, 3, 6, 9, 9]))
