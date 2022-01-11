@@ -1,3 +1,7 @@
+# Time complexity of the algorithm is O(N+N), 
+# which is asymptotically equivalent to O(N)
+
+# space complexity is O(K), where K is the number of baskets
 def fruits_into_baskets(fruits):
     baskets = 2
     max_length = 0

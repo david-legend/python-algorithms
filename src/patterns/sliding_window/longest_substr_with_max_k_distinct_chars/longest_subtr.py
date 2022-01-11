@@ -1,3 +1,8 @@
+# Time complexity of the algorithm is O(N+N), 
+# which is asymptotically equivalent to O(N)
+
+# space complexity is O(K)
+
 def longest_substring_with_k_distinct(str, k):
     max_len = 0
     start = 0
