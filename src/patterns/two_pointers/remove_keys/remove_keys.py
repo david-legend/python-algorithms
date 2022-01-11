@@ -13,3 +13,4 @@ def remove_keys(arr, key):
 
 print(remove_keys([3, 2, 3, 6, 3, 10, 9, 3], 3)) #Output: 4
 print(remove_keys([2, 11, 2, 2, 1], 2)) #Output: 2
+
