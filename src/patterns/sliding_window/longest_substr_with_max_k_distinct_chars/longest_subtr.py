@@ -10,7 +10,7 @@ def longest_substring_with_k_distinct(str, k):
         
         distinct_chars[curr_char] += 1
         
-        if len(distinct_chars) > k:
+        while len(distinct_chars) > k:
             left_char = str[start]
             distinct_chars[left_char] -= 1
             if distinct_chars[left_char] == 0:
