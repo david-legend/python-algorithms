@@ -1,3 +1,11 @@
+#Time complexity will be O(N).
+
+#Space complexity O(1) 
+#As we expect only the lower case letters in the input string, 
+#we can conclude that the space complexity will be O(26) 
+#to store each letter’s frequency in the HashMap, 
+#which is asymptotically equal to O(1).
+
 def length_of_longest_substring(str, k):
     max_length, window_start = 0, 0
     max_repeat_letter_count = 0
