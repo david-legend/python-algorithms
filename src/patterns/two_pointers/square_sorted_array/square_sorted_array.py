@@ -1,5 +1,7 @@
-#Time complexity O(N)
-#Space complexity O(N)
+# Time complexity O(N)
+
+# Space complexity O(N)
+# this space will be used for the output array
 def square_and_sort_array(arr):
     length = len(arr)
     squares = [0 for x in range(length)]
