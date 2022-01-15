@@ -1,3 +1,16 @@
+# Time complexity for the algorithms is O(N^2)
+
+# Sorting the array will take O(N * logN). 
+# The searchPair() function will take O(N). 
+# As we are calling searchPair() for every number in the input array, 
+# this means that overall searchTriplets() will take O(N * logN + N^2), 
+# which is asymptotically equivalent to O(N^2).
+
+# Space Complexity O(N)
+
+# Ignoring the space required for the output array, 
+# the space complexity of the above algorithm 
+# will be O(N) which is required for sorting
 def triplet_with_smaller_sum(arr, target):
     arr.sort()
     count = 0
