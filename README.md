@@ -34,6 +34,19 @@ the data.
   * `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
   * `A` [AVL Tree](src/data-structures/tree/avl-tree)
 
+
+## Patterns For Coding Interviews
+
+This section categorizes coding interview problems into a set of 16 patterns. 
+Under each pattern there will be a specific category of problems to solve. 
+The goal is to develop an understanding of the underlying pattern, so that, we can apply that pattern to solve other problems.
+
+
+* [Sliding Window](src/patterns/sliding_window)
+* [Two Pointers](src/patterns/two_pointers)
+
+
+
 ## Interview Questions
 
 Below is a list of interview questions. Will keep on adding as I encounter them
