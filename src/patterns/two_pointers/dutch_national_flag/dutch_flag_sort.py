@@ -1,3 +1,10 @@
+# Time complexity
+# The time complexity of the algorithm is O(N) 
+# since we are iterating the input array only once.
+
+# Space complexity
+# The algorithm runs in constant space O(1).
+
 def dutch_flag_sort(arr):
     low, high = 0, len(arr) - 1
     i = 0
