@@ -1,5 +1,11 @@
 import math
 
+# Time complexity
+# The algorithm below has a time complexity of O(N)
+# where ‘N’ is the number of nodes in the LinkedList.
+
+# Space complexity
+# The algorithm runs in constant space O(1).
 class Node:
     def __init__(self, value, next=None):
         self.value = value
