@@ -44,6 +44,7 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 
 * [Sliding Window](src/patterns/sliding_window)
 * [Two Pointers](src/patterns/two_pointers)
+* [Fast & Slow Pointers](src/patterns/fast_and_slow_pointers)
 
 
 
