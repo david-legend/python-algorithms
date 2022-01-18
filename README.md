@@ -42,9 +42,10 @@ Under each pattern there will be a specific category of problems to solve.
 The goal is to develop an understanding of the underlying pattern, so that, we can apply that pattern to solve other problems.
 
 
-* [Sliding Window](src/patterns/sliding_window)
-* [Two Pointers](src/patterns/two_pointers)
-* [Fast & Slow Pointers](src/patterns/fast_and_slow_pointers)
+* [Sliding Window](src/patterns/1_sliding_window)
+* [Two Pointers](src/patterns/2_two_pointers)
+* [Fast & Slow Pointers](src/patterns/3_fast_and_slow_pointers)
+* [Merge Intervals](src/patterns/4_merge_intervals)
 
 
 
