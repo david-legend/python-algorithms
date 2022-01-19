@@ -29,3 +29,17 @@ Explanation: We will need one room for [2,3] and [3,5], and another room for [2,
 
 Here is a visual representation of Example 4:
 ![Merge Intervals example 1 explanation](./../../../../assets/min_meeting_rooms.png)
+
+
+
+# Similar Problems
+
+Problem 1: Given a list of intervals, find the point where the 
+maximum number of intervals overlap.
+
+Problem 2: Given a list of intervals representing the arrival and 
+departure times of trains to a train station, our goal is to find 
+the minimum number of platforms required for the train station so 
+that no train has to wait.
+
+Both of these problems can be solved using the solution provided.
