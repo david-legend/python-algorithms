@@ -1,5 +1,19 @@
 from heapq import *
 
+# Time complexity O(NlogN)
+# The time complexity of the above algorithm is O(N*logN), 
+# where ‘N’ is the total number of jobs. 
+# This is due to the sorting that we did in the beginning. 
+# Also, while iterating the jobs, we might need to poll/offer jobs to the priority queue. 
+# Each of these operations can take O(logN). 
+# Overall our algorithm will take O(NlogN).
+
+# Space complexity O(N)
+# The space complexity of the above algorithm will be O(N), 
+# which is required for sorting. Also, in the worst case, 
+# we have to insert all the jobs into the priority queue (when all jobs overlap) 
+# which will also take O(N) space. 
+# The overall space complexity of our algorithm is O(N).
 class job:
     def __init__(self, start, end, cpu_load):
         self.start = start
