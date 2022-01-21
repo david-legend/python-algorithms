@@ -46,6 +46,8 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 * [Two Pointers](src/patterns/2_two_pointers)
 * [Fast & Slow Pointers](src/patterns/3_fast_and_slow_pointers)
 * [Merge Intervals](src/patterns/4_merge_intervals)
+* [Cyclic Sort](src/patterns/5_cyclic_sort)
+* [In-Place Reversal of Linkedlist](src/patterns/6_in_place_reversal_of_linkedlist)
 
 
 
