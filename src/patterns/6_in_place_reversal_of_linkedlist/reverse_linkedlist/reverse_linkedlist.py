@@ -1,7 +1,13 @@
 from __future__ import print_function
 import re
 
+# Time complexity
+# The time complexity of our algorithm will be O(N) 
+# where ‘N’ is the total number of nodes in the LinkedList.
 
+# Space complexity
+# We only used constant space, therefore, 
+# the space complexity of our algorithm is O(1).
 class Node:
   def __init__(self, value, next=None):
     self.value = value
