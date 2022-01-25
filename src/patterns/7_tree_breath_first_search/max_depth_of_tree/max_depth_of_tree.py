@@ -18,23 +18,20 @@ class TreeNode:
 # (this could happen only at the lowest level), 
 # therefore we will need O(N) space to store them in the queue.
 
-def find_minimum_depth(root):
+def find_maxiimum_depth(root):
     if root is None:
         return 0
     
     queue = deque()
     queue.append(root)
-    minimum_tree_depth = 0
+    maximum_tree_depth = 0
     
     while queue:
-        minimum_tree_depth += 1
+        maximum_tree_depth += 1
         level_size = len(queue)
         
         for _ in range(level_size):
             curr_node = queue.popleft()
-            
-            if not curr_node.left and not curr_node.right:
-                return minimum_tree_depth
             
             if curr_node.left:
                 queue.append(curr_node.left)
@@ -42,14 +39,14 @@ def find_minimum_depth(root):
             if curr_node.right:
                 queue.append(curr_node.right)
 
-    return minimum_tree_depth
+    return maximum_tree_depth
 
 root = TreeNode(12)
 root.left = TreeNode(7)
 root.right = TreeNode(1)
 root.right.left = TreeNode(10)
 root.right.right = TreeNode(5)
-print("Tree Minimum Depth: " + str(find_minimum_depth(root)))
+print("Tree maximum Depth: " + str(find_maxiimum_depth(root)))
 root.left.left = TreeNode(9)
 root.right.left.left = TreeNode(11)
-print("Tree Minimum Depth: " + str(find_minimum_depth(root)))
+print("Tree maximum Depth: " + str(find_maxiimum_depth(root)))
