@@ -20,9 +20,9 @@ class TreeNode:
 # therefore we will need O(N) space to store them in the queue.
 
 def traverse(root):
-    result = []
+    result = deque()
     if not root:
-        return []
+        return result
     
     queue = deque()
     queue.append(root)
@@ -38,10 +38,10 @@ def traverse(root):
                 queue.append(curr_node.left)
             if curr_node.right:
                 queue.append(curr_node.right)
+        result.appendleft(current_level)
         
-        result.append(current_level)
-            
     return result
+
 
 root = TreeNode(12)
 root.left = TreeNode(7)
@@ -49,5 +49,4 @@ root.right = TreeNode(1)
 root.left.left = TreeNode(9)
 root.right.left = TreeNode(10)
 root.right.right = TreeNode(5)
-print("Level order traversal: " + str(traverse(root)))
-
+print("Reverse level order traversal: " + str(traverse(root)))
