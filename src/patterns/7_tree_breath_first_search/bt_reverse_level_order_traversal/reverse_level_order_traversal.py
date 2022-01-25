@@ -21,7 +21,7 @@ class TreeNode:
 
 def traverse(root):
     result = deque()
-    if not root:
+    if root is None:
         return result
     
     queue = deque()

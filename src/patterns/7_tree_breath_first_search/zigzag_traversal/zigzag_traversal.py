@@ -1,5 +1,5 @@
 from collections import deque
-from locale import currency
+
 
 class TreeNode:
     def __init__(self, val):
@@ -22,26 +22,35 @@ class TreeNode:
 def traverse(root):
     result = []
     if root is None:
-        return []
-    
+        return result
+
     queue = deque()
     queue.append(root)
+    leftToRight = True
     
     while queue:
         level_size = len(queue)
-        current_level = []
+        current_level = deque()
         for _ in range(level_size):
-            curr_node = queue.popleft()
-            current_level.append(curr_node.val)
+            current_node = queue.popleft()
             
-            if curr_node.left:
-                queue.append(curr_node.left)
-            if curr_node.right:
-                queue.append(curr_node.right)
+            if leftToRight:
+                current_level.append(current_node.val)
+            else:
+                current_level.appendleft(current_node.val)
+            
+            if current_node.left:
+                queue.append(current_node.left)
+            if current_node.right:
+                queue.append(current_node.right)
+           
+                    
+        result.append(list(current_level))
+        leftToRight = not leftToRight
         
-        result.append(current_level)
-            
     return result
+
+
 
 root = TreeNode(12)
 root.left = TreeNode(7)
@@ -49,5 +58,7 @@ root.right = TreeNode(1)
 root.left.left = TreeNode(9)
 root.right.left = TreeNode(10)
 root.right.right = TreeNode(5)
-print("Level order traversal: " + str(traverse(root)))
+root.right.left.left = TreeNode(20)
+root.right.left.right = TreeNode(17)
+print("Zigzag traversal: " + str(traverse(root)))
 
