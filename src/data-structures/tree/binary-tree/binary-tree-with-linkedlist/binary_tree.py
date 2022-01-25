@@ -81,6 +81,7 @@ class BinaryTree:
                 else:
                     curr_node.right = new_node
                     return curr_node
+                
     def delete_node(self, data):
         if not self.root:
             return
