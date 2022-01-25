@@ -1,14 +1,47 @@
+from collections import deque
 class TreeNode:
     def __init__(self, val):
         self.val = val
         self.left, self.right = None, None
 
 
+# Time complexity
+# The time complexity of the above algorithm is O(N), 
+# where ‘N’ is the total number of nodes in the tree. 
+# This is due to the fact that we traverse each node once.
+
+# Space complexity
+# The space complexity of the above algorithm will be O(N) 
+# as we need to return a list containing the level order traversal. 
+# We will also need O(N) space for the queue. 
+# Since we can have a maximum of N/2 nodes at any level 
+# (this could happen only at the lowest level), 
+# therefore we will need O(N) space to store them in the queue.
+
 def find_minimum_depth(root):
-    return -1
+    if root is None:
+        return 0
+    
+    queue = deque()
+    queue.append(root)
+    minimum_tree_depth = 0
+    
+    while queue:
+        minimum_tree_depth += 1
+        level_size = len(queue)
+        
+        for _ in range(level_size):
+            curr_node = queue.popleft()
+            
+            if not curr_node.left and not curr_node.right:
+                return minimum_tree_depth
+            if curr_node.left:
+                queue.append(curr_node.left)
 
+            if curr_node.right:
+                queue.append(curr_node.right)
 
-
+    return minimum_tree_depth
 
 root = TreeNode(12)
 root.left = TreeNode(7)
