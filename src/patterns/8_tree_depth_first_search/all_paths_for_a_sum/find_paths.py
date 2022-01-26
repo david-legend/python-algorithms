@@ -53,11 +53,11 @@ def get_paths(root, sum, current_path, all_paths):
     # if the current node is a leaf and its value is equal to required_sum, save the current path
     if root.val == sum and root.left is None and root.right is None:
         all_paths.append(list(current_path))   
-    
-    # traverse the left sub-tree
-    get_paths(root.left, sum - root.val, current_path, all_paths)
-    # traverse the right sub-tree
-    get_paths(root.right, sum - root.val, current_path, all_paths)
+    else:
+        # traverse the left sub-tree
+        get_paths(root.left, sum - root.val, current_path, all_paths)
+        # traverse the right sub-tree
+        get_paths(root.right, sum - root.val, current_path, all_paths)
     
     # remove the current node from the path to backtrack,
     # we need to remove the current node while we are going up the recursive call stack.
