@@ -20,12 +20,31 @@ class TreeNode:
                         nextLevelRoot = current.left
                     elif current.right:
                         nextLevelRoot = current.right
-            current = current.next
+                current = current.next
             print()
 
 
 def connect_level_order_siblings(root):
-    return
+    if root is None:
+        return
+
+    queue = deque()
+    queue.append(root)
+    while queue:
+        previousNode = None
+        levelSize = len(queue)
+        # connect all nodes of this level
+        for _ in range(levelSize):
+            currentNode = queue.popleft()
+            if previousNode:
+                previousNode.next = currentNode
+            previousNode = currentNode
+
+            # insert the children of current node in the queue
+            if currentNode.left:
+                queue.append(currentNode.left)
+            if currentNode.right:
+                queue.append(currentNode.right)
 
 
 root = TreeNode(12)
