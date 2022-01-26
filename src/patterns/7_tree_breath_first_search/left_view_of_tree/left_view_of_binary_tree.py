@@ -20,7 +20,7 @@ class TreeNode:
 # (this could happen only at the lowest level), 
 # therefore we will need O(N) space to store them in the queue.
 
-def tree_right_view(root):
+def tree_left_view(root):
     result = []
     if root is None:
         return result
@@ -34,7 +34,7 @@ def tree_right_view(root):
         for i in range(level_size):
             curr_node = queue.popleft()
             
-            if i == level_size - 1:
+            if i == 0:
                 result.append(curr_node)
                 
             if curr_node.left:
@@ -54,7 +54,7 @@ root.right.left = TreeNode(10)
 root.right.right = TreeNode(5)
 root.left.left.left = TreeNode(3)
 
-result = tree_right_view(root)
+result = tree_left_view(root)
 print("Tree right view: ")
 for node in result:
     print(str(node.val) + " ", end='')
