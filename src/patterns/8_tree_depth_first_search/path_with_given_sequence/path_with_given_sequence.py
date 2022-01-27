@@ -6,8 +6,22 @@ class TreeNode:
 
 
 def find_path(root, sequence):
-    # TODO: Write your code here
-    return False  
+    if root is None:
+        return len(sequence) == 0
+    return check_sequence(root, sequence, 0)  
+
+def check_sequence(root, sequence, idx):
+    if root is None:
+        return False
+    
+    sequence_len = len(sequence)
+    if idx >= sequence_len or root.val != sequence[idx]:
+        return False
+    
+    if root.left is None and root.right is None:
+        return True
+    
+    return check_sequence(root.left, sequence, idx+1) or check_sequence(root.right, sequence, idx+1)
 
 
 root = TreeNode(1)
