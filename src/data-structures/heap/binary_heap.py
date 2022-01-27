@@ -121,23 +121,30 @@ class Heap:
     def deleteEntireBP(self):
         self.items = None
 
-maxHeap = Heap(10, Heap.MAX)
+maxHeap = Heap(10, Heap.MIN)
 
-maxHeap.insertNode(18)
-maxHeap.insertNode(11)
-maxHeap.insertNode(19)
-maxHeap.insertNode(12)
-maxHeap.insertNode(20)
-maxHeap.insertNode(14)
-maxHeap.insertNode(48)
-
+maxHeap.insertNode(5)
+maxHeap.insertNode(1)
+# print("Extracted: ", maxHeap.extractNode())
 print("--- Level Order Traversal After Insert---")
 maxHeap.levelOrderTraversal()
 print("\n\n")
 
-print("--- Extracting Node from heap ---")
-print("Extracted: ", maxHeap.extractNode())
-print("\n")
-print("--- Level Order Traversal After Extracting Node---")
-maxHeap.levelOrderTraversal()
-print("\n\n")
+# maxHeap.insertNode(18)
+# maxHeap.insertNode(11)
+# maxHeap.insertNode(19)
+# maxHeap.insertNode(12)
+# maxHeap.insertNode(20)
+# maxHeap.insertNode(14)
+# maxHeap.insertNode(48)
+
+# print("--- Level Order Traversal After Insert---")
+# maxHeap.levelOrderTraversal()
+# print("\n\n")
+
+# print("--- Extracting Node from heap ---")
+# print("Extracted: ", maxHeap.extractNode())
+# print("\n")
+# print("--- Level Order Traversal After Extracting Node---")
+# maxHeap.levelOrderTraversal()
+# print("\n\n")
