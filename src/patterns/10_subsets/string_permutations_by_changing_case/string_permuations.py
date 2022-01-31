@@ -1,35 +1,29 @@
 from collections import deque
 
+# Time complexity
+# Since we can have 2^N2 permutations at the most and while processing each 
+# permutation we convert it into a character array, the overall time complexity 
+# of the algorithm will be O(N*2^N).
+
+# Space complexity
+# All the additional space used by our algorithm is for the output list. 
+# Since we can have a total of O(2^N) permutations, 
+# the space complexity of our algorithm is O(N*2^N).
+
 def find_letter_case_string_permutations(str):
     permutations = []
-    alphabets_in_word = []
-    for char in str:
-        if char.isalpha():
-            alphabets_in_word.append(char)
-    
-    subsets = []  
-    subsets.append([])
-    for char in alphabets_in_word:
-        n = len(subsets)
-        
-        for i in range(n):
-            curr_subset = list(subsets[i])
-            curr_subset.append(char)
-            subsets.append(curr_subset)
-    
-    for subset in subsets:
-        if len(subset) == 0:
-            permutations.append(str)
-        else:
-            new_permutation = str
-            for char in subset:
-                index = new_permutation.find(char)
-                new_str = list(new_permutation)
-                new_str[index] = char.upper()
-                new_permutation = "".join(new_str)
-                                          
-            permutations.append(new_permutation)
-        
+    permutations.append(str)
+    # process every character of the string one by one
+    for i in range(len(str)):
+        if str[i].isalpha():  # only process characters, skip digits
+        # we will take all existing permutations and change the letter case appropriately
+            n = len(permutations)
+            for j in range(n):
+                chars = list(permutations[j])
+                # if the current character is in upper case, change it to lower case or vice versa
+                chars[i] = chars[i].swapcase()
+                permutations.append("".join(chars))
+                 
     return permutations
 
 
