@@ -48,6 +48,10 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 * [Merge Intervals](src/patterns/4_merge_intervals)
 * [Cyclic Sort](src/patterns/5_cyclic_sort)
 * [In-Place Reversal of Linkedlist](src/patterns/6_in_place_reversal_of_linkedlist)
+* [Breath First Search](src/patterns/7_tree_breath_first_search)
+* [Depth First Search](src/patterns/8_tree_depth_first_search)
+* [Two Heaps](src/patterns/9_two_heaps)
+* [Subsets](src/patterns/10_subsets)
 
 
 
