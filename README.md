@@ -52,6 +52,7 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 * [Depth First Search](src/patterns/8_tree_depth_first_search)
 * [Two Heaps](src/patterns/9_two_heaps)
 * [Subsets](src/patterns/10_subsets)
+* [Modified Binary Search](src/patterns/11_modified_binary_search)
 
 
 
