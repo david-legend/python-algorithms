@@ -1,3 +1,10 @@
+# Time complexity
+# Since, we are reducing the search range by half at every step, 
+# this means that the time complexity of our algorithm will be O(logN) 
+# where ‘N’ is the total elements in the given array.
+
+# Space complexity
+# The algorithm runs in constant space O(1).
 def find_max_in_bitonic_array(arr):
     start, end = 0, len(arr) - 1
     
