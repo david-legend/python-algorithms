@@ -25,7 +25,23 @@ def search_ceiling_of_a_number(arr, key):
         
     return start
 
+def getCeilingNaive(array, key):
+    for num in array:
+        if key == num:
+            return array.index(num)
+        elif key > num:
+            continue
+        else:
+            return array.index(num)
 
+
+print(getCeilingNaive([4, 6, 10], 6))
+print(getCeilingNaive([1, 3, 8, 10, 15], 12))
+print(getCeilingNaive([4, 6, 10], 17))
+print(getCeilingNaive([4, 6, 10], -1))
+print(getCeilingNaive([4, 6, 10], 5))
+
+print("\n\n")
 
 print(search_ceiling_of_a_number([4, 6, 10], 6))
 print(search_ceiling_of_a_number([1, 3, 8, 10, 15], 12))
