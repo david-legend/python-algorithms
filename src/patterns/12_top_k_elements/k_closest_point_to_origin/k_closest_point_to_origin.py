@@ -18,7 +18,14 @@ class Point:
     def print_point(self):
         print("[" + str(self.x) + ", " + str(self.y) + "] ", end='')
   
-        
+ 
+# Time complexity is (N*logK) 
+# The time complexity of this algorithm is (N*logK) 
+# as we iterating all points and pushing them into the heap.
+
+# Space complexity O(K)
+# The space complexity will be O(K) because we need to store ‘K’ point in the heap.    
+   
 def find_closest_points(points, k):
     max_heap = []
     
