@@ -10,7 +10,7 @@ Write a function to return the index of the ‘key’. If the ‘key’ is not p
 Input: [1, 3, 8, 4, 3], key=4
 Output: 3
 
-### Example 3
+### Example 2
 Input: [3, 8, 3, 1], key=8
 Output: 1
 

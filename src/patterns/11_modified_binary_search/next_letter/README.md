@@ -14,7 +14,7 @@ Input: ['a', 'c', 'f', 'h'], key = 'f'
 Output: 'h'
 Explanation: The smallest letter greater than 'f' is 'h' in the given array.
 
-### Example 3
+### Example 2
 Input: ['a', 'c', 'f', 'h'], key = 'b'
 Output: 'c'
 Explanation: The smallest letter greater than 'b' is 'c'.

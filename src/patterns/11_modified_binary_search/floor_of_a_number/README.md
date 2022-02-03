@@ -10,7 +10,7 @@ Input: [4, 6, 10], key = 6
 Output: 1
 Explanation: The smallest number greater than or equal to '6' is '6' having index '1'.
 
-### Example 3
+### Example 2
 Input: [1, 3, 8, 10, 15], key = 12
 Output: 3
 Explanation: The smallest number greater than or equal to '12' is '15' having index '4'.

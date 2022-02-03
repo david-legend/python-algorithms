@@ -10,7 +10,7 @@ Input: [4, 6, 10], key = 7
 Output: 6
 Explanation: The difference between the key '7' and '6' is minimum than any other number in the array 
 
-### Example 3
+### Example 2
 Input: [4, 6, 10], key = 4
 Output: 4
 

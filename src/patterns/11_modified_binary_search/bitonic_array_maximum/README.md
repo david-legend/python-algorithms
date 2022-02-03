@@ -9,7 +9,7 @@ Input: [1, 3, 8, 12, 4, 2]
 Output: 12
 Explanation: The maximum number in the input bitonic array is '12'.
 
-### Example 3
+### Example 2
 Input: [3, 8, 3, 1]
 Output: 8
 

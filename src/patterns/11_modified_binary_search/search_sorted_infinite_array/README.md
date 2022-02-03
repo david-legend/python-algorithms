@@ -15,7 +15,7 @@ Input: [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30], key = 16
 Output: 6
 Explanation: The key is present at index '6' in the array.
 
-### Example 3
+### Example 2
 Input: [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30], key = 11
 Output: -1
 Explanation: The key is not present in the array.

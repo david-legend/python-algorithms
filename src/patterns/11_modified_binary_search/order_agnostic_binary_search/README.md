@@ -10,7 +10,7 @@ Write a function to return the index of the ‘key’ if it is present in the ar
 Input: [4, 6, 10], key = 10
 Output: 2
 
-### Example 3
+### Example 2
 Input: [1, 2, 3, 4, 5, 6, 7], key = 5
 Output: 4
 
