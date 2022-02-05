@@ -55,6 +55,7 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 * [Modified Binary Search](src/patterns/11_modified_binary_search)
 * [Top K Elements](src/patterns/12_top_k_elements)
 * [K Way Merge](src/patterns/13_k_way_merge)
+* [Topological Sort](src/patterns/14_topological_sort)
 
 
 
