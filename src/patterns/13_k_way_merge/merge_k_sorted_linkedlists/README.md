@@ -1,4 +1,4 @@
-# Merge K Sorted Lists (medium) ✩
+# Merge K Sorted LinkedLists (medium) ✩
 
 Given an array of ‘K’ sorted LinkedLists, merge them into one sorted list.
 

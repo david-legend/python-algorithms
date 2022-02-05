@@ -61,7 +61,7 @@ def main():
     l3.next.next = ListNode(4)
 
     result = merge_lists([l1, l2, l3])
-    print("Here are the elements form the merged list: ", end='')
+    print("Here are the elements from the merged list: ", end='')
     while result != None:
         print(str(result.value) + " ", end='')
         result = result.next
