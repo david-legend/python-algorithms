@@ -1,6 +1,14 @@
 from heapq import *
 
 
+# The time complexity of the above algorithm is O(logN + K*logK). 
+# We need O(logN) for Binary Search and O(K*logK) to insert the 
+# numbers in the Min Heap, as well as to sort the output array.
+
+# Space complexity
+# The space complexity will be O(K), 
+# as we need to put a maximum of 2K numbers in the heap.
+
 def find_closest_elements(arr, K, X):
     index = binary_search(arr, X)
     left, right = index - K, index + K
