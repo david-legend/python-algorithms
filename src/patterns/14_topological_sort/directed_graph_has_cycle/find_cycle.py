@@ -12,6 +12,8 @@ from collections import deque
 
 def topological_sort(vertices, edges):
     sorted_order = []
+    if vertices <= 0:
+        return []
     # initialize graph
     in_degrees = {i : 0 for i in range(vertices)}
     graph = {i: [] for i in range(vertices)}
