@@ -1,4 +1,4 @@
-# Best Time To Buy and Sell STock
+# Best Time To Buy and Sell Stock (Easy)
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
 

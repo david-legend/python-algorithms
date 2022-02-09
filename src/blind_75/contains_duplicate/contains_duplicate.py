@@ -1,6 +1,5 @@
 def contains_duplicate(nums):
     num_freq = {}
-    
     for num in nums:
         num_freq[num] = num_freq.get(num, 0) + 1
         
@@ -12,7 +11,6 @@ def contains_duplicate(nums):
 
 def contains_duplicate_2(nums):
     hashset = set()
-    
     for num in nums:
         if num in hashset:
             return True
