@@ -58,11 +58,14 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 * [Topological Sort](src/patterns/14_topological_sort)
 
 
-## Blind 75
+## Blind 75 Questions
 
 * [Two Sum](src/blind_75/two_sum)
-* [Best Time To Buy And Sell Stock](src/blind_75/buy_and_sell_stock)
-* [Contains Duplicate](src/blind_75/contains_duplicate)
+* [Best Time To Buy And Sell Stock](src/blind_75/arrays/buy_and_sell_stock)
+* [Contains Duplicate](src/blind_75/arrays/contains_duplicate)
+* [Product of Array Except Self](src/blind_75/arrays/product_of_array_except_self)
+* [Maximum Subarray](src/blind_75/arrays/maximum_subarray)
+
 
 ## Interview Questions
 
