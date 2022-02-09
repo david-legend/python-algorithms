@@ -62,6 +62,7 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 
 * [Two Sum](src/blind_75/two_sum)
 * [Best Time To Buy And Sell Stock](src/blind_75/buy_and_sell_stock)
+* [Contains Duplicate](src/blind_75/contains_duplicate)
 
 ## Interview Questions
 
