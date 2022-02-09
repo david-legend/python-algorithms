@@ -58,6 +58,10 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 * [Topological Sort](src/patterns/14_topological_sort)
 
 
+## Blind 75
+
+* [Two Sum](src/blind_75/two_sum)
+* [Best Time To Buy And Sell Stock](src/blind_75/buy_and_sell_stock)
 
 ## Interview Questions
 
