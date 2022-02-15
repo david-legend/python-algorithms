@@ -1,3 +1,6 @@
+# Time Complexity O(N^2)
+# Space Complexity O(1)
+
 def insertion_sort(array):
     for i in range(1, len(array)):
         j = i
