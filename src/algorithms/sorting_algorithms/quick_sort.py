@@ -24,14 +24,8 @@ def quick_sort_helper(array, start_idx, end_idx):
             right_idx -= 1
             
     swap(pivot_idx, right_idx, array)
-    is_left_subarray_smaller =  right_idx - 1 - start_idx < end_idx - (right_idx + 1)
-    
-    if is_left_subarray_smaller:
-        quick_sort_helper(array, start_idx, right_idx - 1)
-        quick_sort_helper(array, right_idx + 1, end_idx)
-    else:
-        quick_sort_helper(array, right_idx + 1, end_idx)
-        quick_sort_helper(array, start_idx, right_idx - 1)
+    quick_sort_helper(array, start_idx, right_idx - 1)
+    quick_sort_helper(array, right_idx + 1, end_idx)
         
 
 def swap(i, j, array):
