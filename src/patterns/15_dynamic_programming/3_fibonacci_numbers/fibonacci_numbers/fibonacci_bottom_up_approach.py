@@ -19,12 +19,12 @@ def calculate_fib(n):
     
     return n1
     
-print("Top Down Memoization Approach")
+print("Bottom Up Dynamic Programming")
 print("5th Fibonacci is ---> " + str(calculate_fibonacci(5)))
 print("6th Fibonacci is ---> " + str(calculate_fibonacci(6)))
 print("7th Fibonacci is ---> " + str(calculate_fibonacci(7)))
 
-print("\n\nTop Down Approach with Memory Optimization")
+print("\n\Bottom Up Dynamic Programming with Memory Optimization")
 print("5th Fibonacci is ---> " + str(calculate_fib(5)))
 print("6th Fibonacci is ---> " + str(calculate_fib(6)))
 print("7th Fibonacci is ---> " + str(calculate_fib(7)))
