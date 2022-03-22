@@ -11,7 +11,7 @@ def search_floor_of_a_number(arr, key):
     start, end = 0, n 
     
     if key < arr[start]:
-        return - 1
+        return -1
     elif key >= arr[end]:
         return end
     

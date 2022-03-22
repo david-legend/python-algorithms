@@ -40,7 +40,7 @@ def connect_all_siblings(root):
     while queue:
         curr_node = queue.popleft()
         
-        if  prev_node:
+        if prev_node:
             prev_node.next = curr_node
         prev_node = curr_node 
         

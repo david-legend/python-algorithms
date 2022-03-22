@@ -37,16 +37,13 @@ def rotate(head, rotations):
     rotations %= list_length
     skip_length = rotations
     last_node_of_rotated_list = head
-    for i in range(skip_length - 1):
+    for _ in range(skip_length - 1):
         last_node_of_rotated_list = last_node_of_rotated_list.next
     
     head = last_node_of_rotated_list.next
     last_node_of_rotated_list.next = None
     
     return head
-
-    
-
 
 head = Node(1)
 head.next = Node(2)
@@ -57,7 +54,7 @@ head.next.next.next.next.next = Node(6)
 
 print("Nodes of original LinkedList are: ", end='')
 head.print_list()
-result = rotate(head, 3)
+result = rotate(head, 2)
 print("Nodes of rotated LinkedList are: ", end='')
 result.print_list()
 
