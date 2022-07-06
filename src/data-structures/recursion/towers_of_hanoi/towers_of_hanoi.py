@@ -19,5 +19,5 @@ def compute_towers_of_hanoi(num_of_rings):
 
     return result
 
+print(compute_towers_of_hanoi(3))
 
-print(compute_towers_of_hanoi(4))
