@@ -1,4 +1,6 @@
 # Recursive Solution 
+# Time O(n * 2^n)
+# Space O(n)
 def generate_power_set(input_set):
 
     def directed_power_set(to_be_selected, selected_so_far):
