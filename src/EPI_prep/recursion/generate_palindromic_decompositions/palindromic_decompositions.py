@@ -1,3 +1,5 @@
+# Time O(2^n)
+# Space O(n) when n is the length of the string
 def palindromic_decompostions(input):
     def directed_palindromic_decompostions(i):
         if i >= len(input):
