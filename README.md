@@ -73,8 +73,8 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 EPI is an invaluable book  textbook presents a comprehensive introduction to modern competitive programming.
 Below are solutions & questions found under various topics in the book.
 
-* [LinkedList](src/EPI_prep/linkedlist)
 * [Recursion](src/EPI_prep/recursion)
+* [LinkedList](src/EPI_prep/binary_trees)
 
 
 ## Useful Information
