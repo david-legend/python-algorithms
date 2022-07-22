@@ -25,7 +25,7 @@ def lca(tree, node_1, node_2):
         
         return Status(num_target_nodes, node if num_target_nodes == 2 else None)
 
-    return lca_helper(tree).ancestor.val
+    return lca_helper(tree).ancestor
 
 node_1 = Node(1)
 node_2 = Node(2)
