@@ -1,0 +1,33 @@
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.left = self.right = None
+
+def inorder_traversal(tree):
+    s, result = [], []
+
+    while tree or s:
+        if tree:
+            s.append(tree)
+            tree = tree.left
+        else:
+            tree = s.pop()
+            result.append(tree.val)
+            tree = tree.right
+    
+    return result
+
+
+node_1 = Node(1)
+node_2 = Node(2)
+node_3 = Node(3)
+node_4 = Node(4)
+node_5 = Node(5)
+node_6 = Node(6)
+node_7 = Node(7)
+
+node_1.left, node_1.right = node_2, node_3
+node_2.left, node_2.right = node_4, node_5
+node_3.left, node_3.right = node_6, node_7
+
+print(inorder_traversal(node_1))

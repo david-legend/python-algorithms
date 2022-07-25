@@ -3,21 +3,21 @@ class Node:
         self.val = val
         self.left = self.right = None
 
-def inorder_traversal(node):
-    if node is None:
-        return
-
-    print(node.val)
-    inorder_traversal(node.left)
-    inorder_traversal(node.right)
-
 def preorder_traversal(node):
     if node is None:
         return
 
-    preorder_traversal(node.left)
     print(node.val)
+    preorder_traversal(node.left)
     preorder_traversal(node.right)
+
+def inorder_traversal(node):
+    if node is None:
+        return
+
+    inorder_traversal(node.left)
+    print(node.val)
+    inorder_traversal(node.right)
 
 
 def postorder_traversal(node):
@@ -41,11 +41,11 @@ node_B.left, node_B.right = node_D, node_E
 node_C.left, node_C.right = node_F, node_G
 
 
-print("\nInorder Traversal\n")
-inorder_traversal(node_A) # A, B, D, E, C, F, G
+print("\nnPreorder Traversal\n")
+preorder_traversal(node_A) # A, B, D, E, C, F, G
 
-print("\nPreorder Traversal\n")
-preorder_traversal(node_A) # D, B, E, A, F, C, G
+print("\Inorder Traversal\n")
+inorder_traversal(node_A) # D, B, E, A, F, C, G
 
 print("\nPostorder Traversal\n")
 postorder_traversal(node_A) # D, E, B, F, G, C, A
