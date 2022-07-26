@@ -11,6 +11,9 @@ def preorder_traversal(node):
     preorder_traversal(node.left)
     preorder_traversal(node.right)
 
+
+
+
 def inorder_traversal(node):
     if node is None:
         return
