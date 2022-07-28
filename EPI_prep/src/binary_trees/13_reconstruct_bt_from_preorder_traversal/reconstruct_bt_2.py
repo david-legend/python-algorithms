@@ -5,6 +5,8 @@ class TreeNode:
         self.right = right
 
 
+# Time O(n) | Space O(n)
+
 def reconstruct(data):
     i = 0
     def construct():

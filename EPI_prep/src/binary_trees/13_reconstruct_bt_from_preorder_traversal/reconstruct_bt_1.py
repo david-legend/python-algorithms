@@ -4,6 +4,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
+# Time O(n) | Space O(n)
 
 def reconstruct(data):
     def reconstruct_helper(preorder_iter):
