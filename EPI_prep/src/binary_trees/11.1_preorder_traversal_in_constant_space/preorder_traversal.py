@@ -24,7 +24,7 @@ class Node:
 # curr = [1,      2,   4,   2,   5,   2,   1,    3,   6,   3,   7,   3,      1      None ]
 # next = [2,      4,   2    5,   2,   1,   3,    6,   3,   7,   3,   1,     None]
 
-# result= [4, 2, 5, 1, 6, 3, 7]
+# result= [1, 2, 4, 5, 3, 6, 7]
 
 
 def preorder_traversal(tree):

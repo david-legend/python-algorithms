@@ -24,11 +24,29 @@ class Node:
 # curr = [1,      2,   4,   2,   5,   2,   1,    3,   6,   3,   7,   3,      1      None ]
 # next = [2,      4,   2    5,   2,   1,   3,    6,   3,   7,   3,   1,     None]
 
-# result= [4, 2, 5, 1, 6, 3, 7]
+# result= [4, 5, 2, 6, 7, 3, 1]
 
 
 def post_order_traversal(tree):
-    pass
+    result, prev = [], None
+
+    while tree:
+        if prev is tree.parent:
+            if tree.left:
+                next = tree.left
+            else:
+                next = tree.right or tree.parent
+                result.append(tree.val)
+                
+        elif prev is tree.left:
+            next =  tree.right or tree.parent
+        else:
+            result.append(tree.val)
+            next = tree.parent
+        
+        prev, tree = tree, next
+    
+    return result
 
 
 node_1 = Node(1)
@@ -47,4 +65,4 @@ node_2.parent, node_3.parent = node_1, node_1
 node_4.parent, node_5.parent = node_2, node_2
 node_6.parent, node_7.parent = node_3, node_3
 
-print(post_order_traversal(node_1))
+print(post_order_traversal(node_1)) #[4, 5, 2, 6, 7, 3, 1]

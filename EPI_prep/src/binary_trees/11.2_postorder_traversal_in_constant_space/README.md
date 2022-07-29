@@ -1,3 +1,3 @@
-# Implement An Inorder Traversal With O(1) Space
+# Implement An Postorder Traversal With O(1) Space
 
- * Write a nonrecursive program for computing the inorder traversal sequence for a binary tree. Assume nodes have parent fields.
+ * Write a nonrecursive program for computing the postorder traversal sequence for a binary tree. Assume nodes have parent fields.

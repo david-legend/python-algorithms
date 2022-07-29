@@ -1,7 +1,6 @@
 # TODOS::
 # Solve 15 (compute exterior)
 # Solve 12 (reconstruct BT)
-# Look  at 11.1 and 11.2
 
 
 # Fix ReadMes and Links All Over Project & Push
@@ -56,6 +55,18 @@ In this section we will solve common binary tree questions that will help you un
 * [Sum root to leaf](5_sum_root_to_leaf/sum_root_to_leaf.py)
 * [Root to leaf path with specified sum](6_root_leaf_path_with_specified_sum/has_path_sum.py)
     * [Root to leaf path sum (All Paths) ](6.1_root_to_leaf_sum_all_paths/all_paths.py)
+* [Inorder Traversal Without Recursion](7_inorder_traversal_without_recursion/inorder_traversal.py)
+* [Preorder Traversal Without Recursion](8_preorder_traversal_without_recursion/preorder_traversal.py)
+* [Kth Node in Inorder Traversal](9_kth_node_in_inorder_traversal/kth_node.py)
+* [Compute Successor](10_compute_sucessor/compute_sucessor.py)
+* [Inorder Traversal in Constant Space](11_inorder_traversal_in_constant_space/inorder_traversal.py)
+    * [Preorder Traversal in Constant Space](11.1_preorder_traversal_in_constant_space/preorder_traversal.py)
+    * [Postorder Traversal in Constant Space](11.2_postorder_traversal_in_constant_space/postorder_traversal.py)
+* [Reconstruct Binary Tree](12_reconstruct_binary_tree/reconstruct_bt.py)
+* [Reconstruct Binary Tree](13_reconstruct_bt_from_preorder_traversal/reconstruct_bt_1.py)
+    * [Reconstruct Binary Tree 2](13_reconstruct_bt_from_preorder_traversal/reconstruct_bt_2.py)
+* [Form a LinkedList From Leaves Of Binary Tree](14_form_a_linkedlist_from_leaves_of_bt/create_list_of_leaves.py)
+    * [Form a LinkedList From Leaves Of Binary Tree 2](14_form_a_linkedlist_from_leaves_of_bt/create_2.py)
 * [Compute Exterior of Binary Tree](15_compute_exterior_of_binary_tree/exterior_bt.py)
 * [Compute Right Sibling Tree](16_compute_right_sibling_tree/compute_right_sibling_tree.py)
     
