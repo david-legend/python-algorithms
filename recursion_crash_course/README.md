@@ -52,3 +52,9 @@ In this section we will solve common recursion questions that will help you unde
     * [Insert Into Binary Search Tree](src/3_divide_and_conquer/6_insert_into_binary_search_tree.py)
     * [Get Leaf Nodes](src/3_divide_and_conquer/7_get_leaf_nodes.py)
     * [Depth First Search](src/3_divide_and_conquer/8_depth_first_search.py)
+
+
+
+### References
+
+[▶ Recursion in Programming - Full Course](https://www.youtube.com/watch?v=IJDJ0kBx2LM)

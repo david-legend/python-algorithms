@@ -11,13 +11,13 @@ Input: 23
 Output: true (23 is a happy number)  
 Explanations: Here are the steps to find out that 23 is a happy number:
 
-![Happy number example 1 explanation](./../../../../assets/happy_number_eg1.png)
+![Happy number example 1 explanation](./../../../assets/happy_number_eg1.png)
 
 #### Example 2
 Input: 12   
 Output: false (12 is not a happy number)  
 Explanations: Here are the steps to find out that 12 is not a happy number:
 
-![Happy number example 1 explanation](./../../../../assets/happy_number_eg2.png)
+![Happy number example 1 explanation](./../../../assets/happy_number_eg2.png)
 
 

@@ -8,5 +8,5 @@ The class should have the following two methods:
 
 If the count of numbers inserted in the class is even, the median will be the average of the middle two numbers.
 
-![Find the Median of a Number Stream Example 1](./../../../../assets/median_of_stream.png)
+![Find the Median of a Number Stream Example 1](./../../../assets/median_of_stream.png)
 

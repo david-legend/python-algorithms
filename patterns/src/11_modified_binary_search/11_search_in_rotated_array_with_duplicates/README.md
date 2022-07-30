@@ -11,5 +11,5 @@ Input: [3, 7, 3, 3, 3], key = 7
 Output: 1
 Explanation: '7' is present in the array at index '1'.
 
-![Search in Rotated Array Example 1](./../../../../assets/search_rotated_array_with_dups.png)
+![Search in Rotated Array Example 1](./../../../assets/search_rotated_array_with_dups.png)
 

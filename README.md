@@ -11,6 +11,8 @@ The explanations of the data structures are from <a href="https://github.com/tre
 
 *This project is meant to help you on your job interview journey. I will be updating it as I embark on my own journey*
 
+
+<br>
 <br>
 
 ## Data Structures
@@ -22,18 +24,21 @@ the data.
 
 `B` - Beginner, `A` - Advanced
 
-* `B` [Linked List](src/data-structures/linked-list)
-* `B` [Circular Linked List](src/data-structures/circular-linked-list/circular_linked_list.py)
-* `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
-* `B` [Circular Doubly Linked List](src/data-structures/circular-doubly-linked-list/circular_doubly_linked_list.py)
-* `B` [Queue](src/data-structures/queue)
-* `B` [Stack](src/data-structures/stack)
-* `A` [Heap](src/data-structures/heap)
-* `A` [Tree](src/data-structures/tree)
-  * `A` [Binary Tree](src/data-structures/tree/binary-tree)
-  * `A` [Binary Search Tree](src/data-structures/tree/binary-search-tree)
-  * `A` [AVL Tree](src/data-structures/tree/avl-tree)
+* `B` [Linked List](data-structures/src/linked-list)
+* `B` [Circular Linked List](data-structures/src/circular-linked-list/circular_linked_list.py)
+* `B` [Doubly Linked List](data-structures/src/doubly-linked-list)
+* `B` [Circular Doubly Linked List](data-structures/src/circular-doubly-linked-list/circular_doubly_linked_list.py)
+* `B` [Queue](data-structures/src/queue)
+* `B` [Stack](data-structures/src/stack)
+* `A` [Heap](data-structures/src/heap)
+* `A` [Tree](data-structures/src/tree)
+  * `A` [Binary Tree](data-structures/src/tree/binary-tree)
+  * `A` [Binary Search Tree](data-structures/src/tree/binary-search-tree)
+  * `A` [AVL Tree](data-structures/src/tree/avl-tree)
 
+
+<br>
+<br>
 
 ## Patterns For Coding Interviews
 
@@ -42,46 +47,86 @@ Under each pattern there will be a specific category of problems to solve.
 The goal is to develop an understanding of the underlying pattern, so that, we can apply that pattern to solve other problems.
 
 
-* [Sliding Window](src/patterns/1_sliding_window)
-* [Two Pointers](src/patterns/2_two_pointers)
-* [Fast & Slow Pointers](src/patterns/3_fast_and_slow_pointers)
-* [Merge Intervals](src/patterns/4_merge_intervals)
-* [Cyclic Sort](src/patterns/5_cyclic_sort)
-* [In-Place Reversal of Linkedlist](src/patterns/6_in_place_reversal_of_linkedlist)
-* [Breath First Search](src/patterns/7_tree_breath_first_search)
-* [Depth First Search](src/patterns/8_tree_depth_first_search)
-* [Two Heaps](src/patterns/9_two_heaps)
-* [Subsets](src/patterns/10_subsets)
-* [Modified Binary Search](src/patterns/11_modified_binary_search)
-* [Top K Elements](src/patterns/12_top_k_elements)
-* [K Way Merge](src/patterns/13_k_way_merge)
-* [Topological Sort](src/patterns/14_topological_sort)
-* [Dynamic Programming Patterns](src/patterns/15_dynamic_programming)
+* [Sliding Window](patterns/src/1_sliding_window)
+* [Two Pointers](patterns/src/2_two_pointers)
+* [Fast & Slow Pointers](patterns/src/3_fast_and_slow_pointers)
+* [Merge Intervals](patterns/src/4_merge_intervals)
+* [Cyclic Sort](patterns/src/5_cyclic_sort)
+* [In-Place Reversal of Linkedlist](patterns/src/6_in_place_reversal_of_linkedlist)
+* [Breath First Search](patterns/src/7_tree_breath_first_search)
+* [Depth First Search](patterns/src/8_tree_depth_first_search)
+* [Two Heaps](patterns/src/9_two_heaps)
+* [Subsets](patterns/src/10_subsets)
+* [Modified Binary Search](patterns/src/11_modified_binary_search)
+* [Top K Elements](patterns/src/12_top_k_elements)
+* [K Way Merge](patterns/src/13_k_way_merge)
+* [Topological Sort](patterns/src/14_topological_sort)
+* [Dynamic Programming Patterns](patterns/src/15_dynamic_programming)
 
+
+<br>
+<br>
 
 ## Blind 75 Questions
 
-* [Two Sum](src/blind_75/two_sum)
-* [Best Time To Buy And Sell Stock](src/blind_75/arrays/buy_and_sell_stock)
-* [Contains Duplicate](src/blind_75/arrays/contains_duplicate)
-* [Product of Array Except Self](src/blind_75/arrays/product_of_array_except_self)
-* [Maximum Subarray](src/blind_75/arrays/maximum_subarray)
+* [Two Sum](blind_75/src/two_sum)
+* [Best Time To Buy And Sell Stock](blind_75/src/arrays/buy_and_sell_stock)
+* [Contains Duplicate](blind_75/src/arrays/contains_duplicate)
+* [Product of Array Except Self](blind_75/src/arrays/product_of_array_except_self)
+* [Maximum Subarray](blind_75/src/arrays/maximum_subarray)
 
+
+
+<br>
+<br>
 
 ## Elements Of Programming Interviews Prep
 
 EPI is an invaluable book  textbook presents a comprehensive introduction to modern competitive programming.
 Below are solutions & questions found under various topics in the book.
 
-* [Recursion](src/EPI_prep/recursion)
-* [LinkedList](src/EPI_prep/binary_trees)
+* [Recursion](EPI_prep/src/recursion)
+* [Binary Trees](EPI_prep/src/binary_trees)
+* [Binary Search Trees](EPI_prep/src/binary_search_trees)
 
+
+
+<br>
+<br>
+
+## Algorithms
+
+A list of popular algorithms asked during Interviews
+
+* [Graph Algorithms](algorithms/src/graph_algorithms)
+* [Greedy Algorithms](algorithms/src/greedy_algorithms)
+* [Sorting Algorithms](algorithms/src/sorting_algorithms)
+* [General Algorithms](algorithms/src/general_algorithms)
+
+
+<br>
+<br>
+
+## Recursion Crash Course
+
+A simple crash course to get you up and started with recursion
+
+* [Recursion With Strings](recursion_crash_course/src/1_recursion_with_strings)
+* [Recursion With Numbers](recursion_crash_course/src/2_recursion_with_numbers)
+* [Divide & Conquer](recursion_crash_course/src/3_divide_and_conquer)
+
+
+
+<br>
+<br>
 
 ## Useful Information
 
 ### References
 
 [▶ Data Structures and Algorithms on YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+
+<br>
 
 ### Big O Notation
 
@@ -91,6 +136,9 @@ On the chart below you may find most common orders of growth of algorithms speci
 ![Big O graphs](./assets/big-o-graph.png)
 
 Source: [Big O Cheat Sheet](http://bigocheatsheet.com/).
+
+<br>
+<br>
 
 Below is the list of some of the most used Big O notations and their performance comparisons against different sizes of the input data.
 
@@ -103,6 +151,10 @@ Below is the list of some of the most used Big O notations and their performance
 | **O(N^2)**     | 100                          | 10000                         | 1000000                         |
 | **O(2^N)**     | 1024                         | 1.26e+29                      | 1.07e+301                       |
 | **O(N!)**      | 3628800                      | 9.3e+157                      | 4.02e+2567                      |
+
+
+<br>
+<br>
 
 ### Data Structure Operations Complexity
 
@@ -118,6 +170,10 @@ Below is the list of some of the most used Big O notations and their performance
 | **Red-Black Tree**      | log(n)    | log(n)    | log(n)    | log(n)    |           |
 | **AVL Tree**            | log(n)    | log(n)    | log(n)    | log(n)    |           |
 | **Bloom Filter**        | -         | 1         | 1         | -         | False positives are possible while searching |
+
+
+<br>
+<br>
 
 ### Array Sorting Algorithms Complexity
 

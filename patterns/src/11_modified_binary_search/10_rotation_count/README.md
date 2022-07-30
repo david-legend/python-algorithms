@@ -10,14 +10,14 @@ Input: [10, 15, 1, 3, 8]
 Output: 2
 Explanation: The array has been rotated 2 times.
 
-![Rotation Count Example 1](./../../../../assets/rotation_count_1.png)
+![Rotation Count Example 1](./../../../assets/rotation_count_1.png)
 
 ### Example 2
 Input: [4, 5, 7, 9, 10, -1, 2]
 Output: 5
 Explanation: The array has been rotated 5 times.
 
-![Rotation Count Example 2](./../../../../assets/rotation_count_2.png)
+![Rotation Count Example 2](./../../../assets/rotation_count_2.png)
 
 ### Example 3
 Input: [1, 3, 8, 10]

@@ -11,7 +11,7 @@ Output: [[1,5], [7,9]]
 Explanation: Since the first two intervals [1,4] and [2,5] overlap, we merged them into 
 one [1,5].
 
-![Merge Intervals example 1 explanation](./../../../../assets/merge_intervals.png)
+![Merge Intervals example 1 explanation](./../../../assets/merge_intervals.png)
 
 #### Example 2
 Intervals: [[6,7], [2,4], [5,9]]

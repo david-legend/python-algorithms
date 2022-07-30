@@ -25,11 +25,11 @@ Simple representation of a stack runtime with push and pop operations.
 
 ### Stack Implemented with list
 
-![Stack With List](./../../../assets/stack_list.png)
+![Stack With List](./../../assets/stack_list.png)
 
 ### Stack Implemented with list
 
-![Stack With List](./../../../assets/stack_linkedlist.png)
+![Stack With List](./../../assets/stack_linkedlist.png)
 
 
 ## References
