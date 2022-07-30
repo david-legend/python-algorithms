@@ -1,6 +1,10 @@
 # Recursion
 
-Formally, a binary tree is either empty, or a roof node / together with a left binary tree and a right binary tree. The subtrees themselves are binary trees. The left binary tree is sometimes referred to as the left subtree of the root, and the right binary tree is referred to as the right subtree of the root.
+Recursion is an approach to problem solving where the solution depends partially on solutions to smaller instances of related problems.
+
+A recursive function consists of base cases and calls to the same function with different arguments. 
+Two key ingredients to a successful use of recursion are identifying the base cases, which are to be solved directly, 
+and ensuring progress, that is the recursion converges to the solution.
 
 
 ## Questions

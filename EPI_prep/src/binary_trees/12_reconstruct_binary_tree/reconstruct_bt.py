@@ -18,21 +18,26 @@ def reconstruct(preorder, inorder):
     # inorder[inorder_start:inorder_end].
     def binary_tree_from_preorder_inorder_helper(preorder_start, preorder_end,
                                                  inorder_start, inorder_end):
+                                                 
         if preorder_end <= preorder_start or inorder_end <= inorder_start:
             return None
 
         root_inorder_idx = node_to_inorder_idx[preorder[preorder_start]]
         left_subtree_size = root_inorder_idx - inorder_start
-        return TreeNode(
-            preorder[preorder_start],
-            # Recursively builds the left subtree.
-            binary_tree_from_preorder_inorder_helper(
+
+        node_val = preorder[preorder_start]
+
+         # Recursively builds the left subtree.
+        left_subtree =  binary_tree_from_preorder_inorder_helper(
                 preorder_start + 1, preorder_start + 1 + left_subtree_size,
-                inorder_start, root_inorder_idx),
-            # Recursively builds the right subtree.
-            binary_tree_from_preorder_inorder_helper(
+                inorder_start, root_inorder_idx)
+
+        # Recursively builds the right subtree.
+        right_subtree = binary_tree_from_preorder_inorder_helper(
                 preorder_start + 1 + left_subtree_size, preorder_end,
-                root_inorder_idx + 1, inorder_end))
+                root_inorder_idx + 1, inorder_end)
+
+        return TreeNode(node_val, left_subtree, right_subtree)
 
     return binary_tree_from_preorder_inorder_helper(preorder_start=0,
                                                     preorder_end=len(preorder),
