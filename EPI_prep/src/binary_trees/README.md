@@ -1,16 +1,6 @@
-# TODOS::
-# Solve 15 (compute exterior)
-# Solve 12 (reconstruct BT)
-
-
-# Fix ReadMes and Links All Over Project & Push
-    - Binary Tree ReadMe
-    - Recursion ReadMe
-
-
 # Binary Trees
 
-Formally, a binary tree is either empty, or a roof node / together with a left binary tree and a right binary tree. The subtrees themselves are binary trees. The left binary tree is sometimes referred to as the left subtree of the root, and the right binary tree is referred to as the right subtree of the root.
+Formally, a binary tree is either empty, or a root node / together with a left binary tree and a right binary tree. The subtrees themselves are binary trees. The left binary tree is sometimes referred to as the left subtree of the root, and the right binary tree is referred to as the right subtree of the root.
 
 <br> 
 
