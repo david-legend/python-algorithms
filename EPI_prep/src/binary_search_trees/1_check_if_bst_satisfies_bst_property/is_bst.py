@@ -1,4 +1,8 @@
 
+ 
+# Best Case: Time O(n) | Space O(h)
+# 
+# Worst Case: Time O(n) | Space O(n)
 class TreeNode:
     def __init__(self, val=None, left=None, right=None):
         self.val = val
@@ -12,7 +16,7 @@ def is_valid(tree, low_range, high_range):
     if not tree:
         return True
     
-    if not (low_range <= tree.val <= high_range):
+    if not (low_range <= tree.val <= high_range): 
         return False
     
     return is_valid(tree.left, low_range, tree.val) and is_valid(tree.right, tree.val, high_range)

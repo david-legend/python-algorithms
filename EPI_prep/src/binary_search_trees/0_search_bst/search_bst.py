@@ -5,7 +5,7 @@ class TreeNode:
         self.right = right
 
 def search_bst(tree, key):
-    if tree :
+    if tree:
         if tree.val == key:
             return tree
         elif key <= tree.val:
