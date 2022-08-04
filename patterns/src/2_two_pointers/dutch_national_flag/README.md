@@ -8,7 +8,7 @@ red, white and blue; and since our input array also consists of
 three different numbers that is why it is called Dutch National Flag problem.
 
 ### Example 1
-nput: [1, 0, 2, 1, 0]
+Input: [1, 0, 2, 1, 0]
 Output: [0, 0, 1, 1, 2]
 
 
