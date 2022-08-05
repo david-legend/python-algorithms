@@ -32,5 +32,6 @@ In this section we will solve common binary search tree questions that will help
 * [Find The K Largest Elements In A BST](3_k_largest_in_bst/k_largest_1.py)
     * [Find The K Largest Elements In A BST - Solution 2](3_k_largest_in_bst/k_largest_2.py)
     * [Find The K Largest Elements In A BST - Solution 3](3_k_largest_in_bst/k_largest_3.py)
+* [Compute The LCA In A BST](3_k_largest_in_bst/k_largest_1.py)
 
     
