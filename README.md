@@ -7,13 +7,14 @@ with related explanations and links for further reading (including ones
 to YouTube videos).
 
 
-The explanations of the data structures are from <a href="https://github.com/trekhleb/javascript-algorithms"> Oleksii Trekhleb's Project</a>
 
-*This project is meant to help you on your job interview journey. I will be updating it as I embark on my own journey*
+
+*This project is my attempt to document the materials I have studied on my journey to understand data structures and also prepare for interviews.*
 
 
 <br>
 <br>
+
 
 ## Data Structures
 
@@ -21,6 +22,8 @@ A data structure is a particular way of organizing and storing data in a compute
 be accessed and modified efficiently. More precisely, a data structure is a collection of data
 values, the relationships among them, and the functions or operations that can be applied to
 the data.
+
+The explanations of the data structures below are from <a href="https://github.com/trekhleb/javascript-algorithms"> Oleksii Trekhleb's Project</a>
 
 `B` - Beginner, `A` - Advanced
 
