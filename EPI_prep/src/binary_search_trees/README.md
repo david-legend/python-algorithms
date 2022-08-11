@@ -40,3 +40,4 @@ In this section we will solve common binary search tree questions that will help
 - [Build A Minimum Height BST From A Sorted Array](8_build_minimum_height_bst/min_height_bst.py)
   - [Build A Minimum Height BST From A Sorted Array - Solution 2l](8_build_minimum_height_bst/min_height_bst_2.py)
 - [Test If Three BST Nodes Are Totally Ordered](9_ordered_bst_nodes/is_bst_ordered.py)
+- [The Range Lookup Problem](10_range_look_up_problem/range_lookup.py)
