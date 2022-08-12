@@ -4,7 +4,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-
+# Time O(m + h) where m is the number of keys in the interval and h is the height of the tree
+# Space O (h)
 def range_lookup(tree, interval):
     start, end = interval[0], interval[1]
     result = []
