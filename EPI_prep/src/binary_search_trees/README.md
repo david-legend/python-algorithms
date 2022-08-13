@@ -34,9 +34,10 @@ In this section we will solve common binary search tree questions that will help
 - [Compute The LCA In A BST](3_k_largest_in_bst/k_largest_1.py)
 - [Reconstruct A BST From Preorder Traversal Data](5_reconstruct_bst_from_preorder_traversal_data/reconstruct_bst.py)
 - [Find The Closest Entries In Three Sorted Arrays](6_closest_entries_in_3_sorted_arrays/close_entries.py)
-<!-- * [Reconstruct A BST From Postorder Traversal Data](5.1_reconstruct_bst_from_post_order_traversal_data/reconstruct_bst.py)
-- [Reconstruct A BST From Inorder Traversal Data](5.2_reconstruct_bst_from_inorder_traversal_data/reconstruct_bst.py) -->
-<!-- - [Enumerate Numbers Of The Form a + b sqrt2](7_enumerate_numbers_of_the_form_a+b_sqrt2/enumerate_numbers.py) -->
+  - [Reconstruct A BST From Postorder Traversal Data](5.1_reconstruct_bst_from_post_order_traversal_data/reconstruct_bst.py) 
+- [Reconstruct A BST From Inorder Traversal Data](5.2_reconstruct_bst_from_inorder_traversal_data/reconstruct_bst.py) 
+- [Enumerate Numbers Of The Form a + b sqrt2](7_enumerate_numbers_of_the_form_a+b_sqrt2/enumerate_numbers_1.py)
+  - [Enumerate Numbers Of The Form a + b sqrt2 - Solution 2](7_enumerate_numbers_of_the_form_a+b_sqrt2/enumerate_numbers.py)
 - [Build A Minimum Height BST From A Sorted Array](8_build_minimum_height_bst/min_height_bst.py)
   - [Build A Minimum Height BST From A Sorted Array - Solution 2l](8_build_minimum_height_bst/min_height_bst_2.py)
 - [Test If Three BST Nodes Are Totally Ordered](9_ordered_bst_nodes/is_bst_ordered.py)
