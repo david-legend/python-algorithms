@@ -33,4 +33,4 @@ def preorder_traversal(node):
     preorder_traversal(node.right)
 
 node = reconstruct_bst([43, 23, 37, 29, 31, 41, 47, 53])
-print(preorder_traversal(node)) 
+print(preorder_traversal(node)) #[43, 23, 37, 29, 31, 41, 47, 53]
