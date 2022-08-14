@@ -32,6 +32,11 @@ from heapq import *
 # Next, extract 28, and add it to the output which is (0,0,3, 5,6,6,7,28); 
 # now, all elements are processed and the output stores the sorted elements.
 
+
+# Time O(nlogk) | Space O(k)
+# let k be the number of input sequences and n the number of elements in the sequences
+# there ane no more than k elements in the min-heap. Both extract-min and insert take O(logk) time.
+# space complexity is O(k) beyond the space needed to write the final result.
 def merge_sorted_arrays(sorted_arrays):
     sorted_arrays_iter = [iter(array) for array in sorted_arrays]
     min_heap = []
