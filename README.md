@@ -91,6 +91,7 @@ Below are solutions & questions found under various topics in the book.
 * [Recursion](EPI_prep/src/recursion)
 * [Binary Trees](EPI_prep/src/binary_trees)
 * [Binary Search Trees](EPI_prep/src/binary_search_trees)
+* [Heaps](EPI_prep/src/heaps)
 
 
 
