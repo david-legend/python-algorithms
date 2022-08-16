@@ -81,4 +81,5 @@ In this section we will solve common heap questions that will help you understan
 - [Sort An Almost Sorted Array](3_sort_almost_sorted_array/sort_approximately_sorted_array.py)
 - [Compute the K closest Stars](4_compute_k_closest_stars/k_closest_stars.py)
 - [Compute Median From A Stream](5_compute_median_from_a_stream/compute_median.py)
-- [K Largest Elements In A Max Heap](6_k_largest_elements/k_largest_elements.py)
+- [K Largest Elements In A Max Heap](6_k_largest_elements_in_a_heap/k_largest_elements.py)
+    - [K Largest Elements In A Max Heap - Solution 2](6_k_largest_elements_in_a_heap/k_largest_elements_1.py)
