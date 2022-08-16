@@ -70,18 +70,6 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 <br>
 <br>
 
-## Blind 75 Questions
-
-* [Two Sum](blind_75/src/two_sum)
-* [Best Time To Buy And Sell Stock](blind_75/src/arrays/buy_and_sell_stock)
-* [Contains Duplicate](blind_75/src/arrays/contains_duplicate)
-* [Product of Array Except Self](blind_75/src/arrays/product_of_array_except_self)
-* [Maximum Subarray](blind_75/src/arrays/maximum_subarray)
-
-
-
-<br>
-<br>
 
 ## Elements Of Programming Interviews Prep
 
@@ -123,6 +111,20 @@ A simple crash course to get you up and started with recursion
 
 <br>
 <br>
+
+## Blind 75 Questions
+
+* [Two Sum](blind_75/src/two_sum)
+* [Best Time To Buy And Sell Stock](blind_75/src/arrays/buy_and_sell_stock)
+* [Contains Duplicate](blind_75/src/arrays/contains_duplicate)
+* [Product of Array Except Self](blind_75/src/arrays/product_of_array_except_self)
+* [Maximum Subarray](blind_75/src/arrays/maximum_subarray)
+
+
+
+<br>
+<br>
+
 
 ## Useful Information
 

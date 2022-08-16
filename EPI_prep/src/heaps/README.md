@@ -77,4 +77,8 @@ Heap functionality in Python is provided by the heapq module. The operations and
 In this section we will solve common heap questions that will help you understand the data structure very well. This will in turn give you the ability to solve other heap questions.
 
 - [Merge Sorted Arrays](1_merge_sorted_arrays/merge_sorted_arrays.py)
-- [Sort An Increasing Decreasing Array ](2_sort_increasing_decreasing_array/sort_k_inc_dec_array.py)
+- [Sort An Increasing Decreasing Array](2_sort_increasing_decreasing_array/sort_k_inc_dec_array.py)
+- [Sort An Almost Sorted Array](3_sort_almost_sorted_array/sort_approximately_sorted_array.py)
+- [Compute the K closest Stars](4_compute_k_closest_stars/k_closest_stars.py)
+- [Compute Median From A Stream](5_compute_median_from_a_stream/compute_median.py)
+- [K Largest Elements In A Max Heap](6_k_largest_elements/k_largest_elements.py)
