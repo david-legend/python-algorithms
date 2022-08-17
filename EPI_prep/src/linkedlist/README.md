@@ -103,3 +103,5 @@ Implementing a basic list APl-search, insert, delete-for singly linked lists is 
 In this section we will solve common linkedlist questions that will help you understand the data structure very well. This will in turn give you the ability to solve other linkedlist questions
 
 - [Merge Two Sorted Lists](1_merge_two_sorted_lists/merge_two_list.py)
+- [Reverse A Sublist](2_reverse_a_single_sublist/reverse_sublist_1.py)
+  - [Reverse A Sublist - Solution 2](2_reverse_a_single_sublist/reverse_sublist_2.py)
