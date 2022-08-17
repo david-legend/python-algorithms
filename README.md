@@ -73,13 +73,14 @@ The goal is to develop an understanding of the underlying pattern, so that, we c
 
 ## Elements Of Programming Interviews Prep
 
-EPI is an invaluable book  textbook presents a comprehensive introduction to modern competitive programming.
+EPI is an invaluable book  textbook presents a comprehensive introduction to modern competitive programming.  
 Below are solutions & questions found under various topics in the book.
 
 * [Recursion](EPI_prep/src/recursion)
 * [Binary Trees](EPI_prep/src/binary_trees)
 * [Binary Search Trees](EPI_prep/src/binary_search_trees)
 * [Heaps](EPI_prep/src/heaps)
+* [Linkedlist](EPI_prep/src/linkedlist)
 
 
 
