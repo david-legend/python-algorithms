@@ -105,3 +105,6 @@ In this section we will solve common linkedlist questions that will help you und
 - [Merge Two Sorted Lists](1_merge_two_sorted_lists/merge_two_list.py)
 - [Reverse A Sublist](2_reverse_a_single_sublist/reverse_sublist_1.py)
   - [Reverse A Sublist - Solution 2](2_reverse_a_single_sublist/reverse_sublist_2.py)
+- [Test For Cyclicity](3_test_for_cyclicity/has_cycle.py)
+- [Find The Start Of A Cycle In A LInkedList](3.1_start_of_linkedlist_cycle/find_cycle_start_1.py)
+  - [Find The Start Of A Cycle In A LInkedList - Solution 2](3.1_start_of_linkedlist_cycle/find_cycle_start_2.py)

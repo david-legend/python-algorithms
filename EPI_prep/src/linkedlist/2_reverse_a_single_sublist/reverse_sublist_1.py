@@ -4,7 +4,8 @@ class ListNode:
         self.val, self.next = val, next
 
 
-# Time O(n) | Space O(1) 
+# Time O(f) | Space O(1) 
+# where f is the position of the target destination
 def reverse_sublist(A, s, f):
     dummy_head = sublist_head = ListNode(0, A)
     for _ in range(1, s):
