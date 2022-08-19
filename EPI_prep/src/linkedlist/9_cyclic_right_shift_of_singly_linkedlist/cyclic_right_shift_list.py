@@ -4,7 +4,22 @@ class ListNode:
 
 # Time O(n) | Space O(1)
 def cyclic_right_shift_list(L, k):
-    pass
+    tail, list_length = L, 1
+    while tail.next:
+        tail = tail.next
+        list_length += 1
+    
+    # make list circular
+    tail.next = L
+    k =  k % list_length
+    new_tail = L
+    for _ in range(k - 1):
+        new_tail = new_tail.next
+    
+    L, new_tail.next= new_tail.next, None
+    
+    return L
+    
 
 l1_2 = ListNode(2)
 l1_5 = ListNode(5)
@@ -27,7 +42,8 @@ def print_node(node):
 print_node(l1_2)
 
 # Shift List By 2
-print_node(cyclic_right_shift_list(l1_2, 3)) # [9, 11, 2, 5, 7]
+new_list = cyclic_right_shift_list(l1_2, 3)
+print_node(new_list) # [9, 11, 2, 5, 7]
 
 # Shift List By 1
-print_node(cyclic_right_shift_list(l1_2, 1)) # [11, 2, 5, 7, 9]
+print_node(cyclic_right_shift_list(new_list, 1)) # [11, 2, 5, 7, 9]
