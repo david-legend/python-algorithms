@@ -115,3 +115,9 @@ In this section we will solve common linkedlist questions that will help you und
 <!-- - [Test For Overlapping List - Lists May Have Cycles](4_test_for_overlapping_lists/has_overlapping_list.py) -->
 - [Delete Node From Singly Linkedlist](6_delete_node_from_singly_linkedlist/delete_node.py)
 - [Remove Kth Last Element From List](7_remove_kth_last_element_from_list/remove_kth_last_element.py)
+- [Remove Duplicates From Sorted Lists](8_remove_duplicates_from_sorted_list/remove_duplicates.py)
+- [Implement Cyclic Right Shift For Singly LinkedList](9_cyclic_right_shift_of_singly_linkedlist/cyclic_right_shift_list.py)
+- [Even Odd Merge](10_even_odd_merge/even_odd_merge.py)
+- [Test If Singly LinkedList Is Palindromic](11_palindromic_linkedlist/is_palindrome.py)
+- [Implement List Pivoting](12_implement_list_pivoting/list_pivoting.py)
+- [Add Two LinkedLists](13_add_two_linkedlists/add_lists.py)
