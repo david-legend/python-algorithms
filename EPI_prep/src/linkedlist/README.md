@@ -114,3 +114,4 @@ In this section we will solve common linkedlist questions that will help you und
 - [Test For Overlapping List - Lists Are Cycle Free](4_test_for_overlapping_lists/has_overlapping_list.py)
 <!-- - [Test For Overlapping List - Lists May Have Cycles](4_test_for_overlapping_lists/has_overlapping_list.py) -->
 - [Delete Node From Singly Linkedlist](6_delete_node_from_singly_linkedlist/delete_node.py)
+- [Remove Kth Last Element From List](7_remove_kth_last_element_from_list/remove_kth_last_element.py)
