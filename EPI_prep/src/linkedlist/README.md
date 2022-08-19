@@ -103,9 +103,14 @@ Implementing a basic list APl-search, insert, delete-for singly linked lists is 
 In this section we will solve common linkedlist questions that will help you understand the data structure very well. This will in turn give you the ability to solve other linkedlist questions
 
 - [Merge Two Sorted Lists](1_merge_two_sorted_lists/merge_two_list.py)
+<!-- - [Merge Two Sorted Doubly LinkedList](1.1_merge_two_sorted_doubly_linkedlist/merge_list.py) -->
 - [Reverse A Sublist](2_reverse_a_single_sublist/reverse_sublist_1.py)
   - [Reverse A Sublist - Solution 2](2_reverse_a_single_sublist/reverse_sublist_2.py)
+<!-- - [Reverse A Singly LinkedList](2.1_reverse_singly_linkedlist/reverse_singly_linkedlist.py)
+- [Reverse A Every K Sublist](2.2_reverse_every_k_sublist/reverse_k_sublist.py) -->
 - [Test For Cyclicity](3_test_for_cyclicity/has_cycle.py)
 - [Find The Start Of A Cycle In A LInkedList](3.1_start_of_linkedlist_cycle/find_cycle_start_1.py)
   - [Find The Start Of A Cycle In A LInkedList - Solution 2](3.1_start_of_linkedlist_cycle/find_cycle_start_2.py)
 - [Test For Overlapping List - Lists Are Cycle Free](4_test_for_overlapping_lists/has_overlapping_list.py)
+<!-- - [Test For Overlapping List - Lists May Have Cycles](4_test_for_overlapping_lists/has_overlapping_list.py) -->
+- [Delete Node From Singly Linkedlist](6_delete_node_from_singly_linkedlist/delete_node.py)
