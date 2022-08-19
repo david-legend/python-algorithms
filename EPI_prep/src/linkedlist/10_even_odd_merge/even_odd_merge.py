@@ -4,7 +4,25 @@ class ListNode:
 
 # Time O(n) | Space O(1)
 def even_odd_merge(L):
-    pass
+    if not L:
+        return L
+        
+    even_num_sentinel = even_num_it = ListNode(0)
+    odd_num_sentinel = odd_num_it = ListNode(0)
+    it  = L 
+    while it:
+        if it.val % 2 == 0:
+            even_num_it.next = it
+            even_num_it = even_num_it.next
+        else:
+            odd_num_it.next = it
+            odd_num_it = odd_num_it.next
+
+        it = it.next
+
+    odd_num_it.next = None
+    even_num_it.next = odd_num_sentinel.next
+    return even_num_sentinel.next
 
 head = ListNode(0)
 node_1 = ListNode(1)
