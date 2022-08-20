@@ -77,7 +77,7 @@ EPI is an invaluable book  textbook presents a comprehensive introduction to mod
 Below are solutions & questions found under various topics in the book.
 
 * [Recursion](EPI_prep/src/recursion)
-  * [Greatest Commobn Divisor](EPI_prep/src/recursion/0_greatest_common_divisor/lca.py)
+  * [Greatest Common Divisor](EPI_prep/src/recursion/0_greatest_common_divisor/lca.py)
   * [Towers Of Honor](EPI_prep/src/recursion/1_towers_of_hanoi/towers_of_hanoi.py)
   * [Permutations](EPI_prep/src/recursion/3_permutations/permutations.py)
   * [Power Set](EPI_prep/src/recursion/4_power_set/power_set.py)
