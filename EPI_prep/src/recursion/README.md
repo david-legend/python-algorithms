@@ -11,8 +11,8 @@ and ensuring progress, that is the recursion converges to the solution.
 
 In this section we will solve common recursion questions that will help you understand these alogrithms. This will in turn give you the ability to solve other binary questions
 
-* [Greatest Commobn Divisor](0_greatest_common_divisor/lca.py)
-* [Towers Of Honor](1_towers_of_hanoi/towers_of_hanoi.py)
+* [Greatest Common Divisor](0_greatest_common_divisor/lca.py)
+* [Towers Of Hanoi](1_towers_of_hanoi/towers_of_hanoi.py)
 * [Permutations](3_permutations/permutations.py)
 * [Power Set](4_power_set/power_set.py)
 * [Subset Of Size](5_subset_of_size_k/combinations.py)
