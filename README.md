@@ -77,10 +77,91 @@ EPI is an invaluable book  textbook presents a comprehensive introduction to mod
 Below are solutions & questions found under various topics in the book.
 
 * [Recursion](EPI_prep/src/recursion)
+  * [Greatest Commobn Divisor](EPI_prep/src/recursion/0_greatest_common_divisor/lca.py)
+  * [Towers Of Honor](EPI_prep/src/recursion/1_towers_of_hanoi/towers_of_hanoi.py)
+  * [Permutations](EPI_prep/src/recursion/3_permutations/permutations.py)
+  * [Power Set](EPI_prep/src/recursion/4_power_set/power_set.py)
+  * [Subset Of Size](EPI_prep/src/recursion/5_subset_of_size_k/combinations.py)
+  * [Kth Node in Inorder Traversal](EPI_prep/src/recursion/6_generate_balanced_parentheses/generate_balanced_parentheses.py)
+  * [Generate Palindromic Decompositions](EPI_prep/src/recursion/7_generate_palindromic_decompositions/palindromic_decompositions.py)
+  * [Generate Binary Trees](EPI_prep/src/recursion/8_generate_binary_trees/generate_binary_trees.py)
+  * [Compute Right Sibling Tree](EPI_prep/src/recursion/9_solve_sodoku/solve_sudoku.py)
+
 * [Binary Trees](EPI_prep/src/binary_trees)
+  * [Binary Tree Traversal](EPI_prep/src/binary_trees/0_binary_tree_traversal/tree_traversals.py)
+  * [Is Binary Tree Height Balanced](EPI_prep/src/binary_trees/1_is_binary_tree_height_balanced/balanced_binary_tree.py)
+  * [Is Binary Tree Symmetric](EPI_prep/src/binary_trees/2_is_binary_tree_symmetric/is_symetric.py)
+  * [Lowest Common Ancestor](EPI_prep/src/binary_trees/3_lca/lca.py)
+  * [Lowest Common Ancestor With Parent Pointers](EPI_prep/src/binary_trees/4_lca_with_parent_pointers/lca.py)
+  * [Sum root to leaf](EPI_prep/src/binary_trees/5_sum_root_to_leaf/sum_root_to_leaf.py)
+  * [Root to leaf path with specified sum](EPI_prep/src/binary_trees/6_root_leaf_path_with_specified_sum/has_path_sum.py)
+      * [Root to leaf path sum (All Paths) ](EPI_prep/src/binary_trees/6.1_root_to_leaf_sum_all_paths/all_paths.py)
+  * [Inorder Traversal Without Recursion](EPI_prep/src/binary_trees/7_inorder_traversal_without_recursion/inorder_traversal.py)
+  * [Preorder Traversal Without Recursion](EPI_prep/src/binary_trees/8_preorder_traversal_without_recursion/preorder_traversal.py)
+  * [Kth Node in Inorder Traversal](EPI_prep/src/binary_trees/9_kth_node_in_inorder_traversal/kth_node.py)
+  * [Compute Successor](EPI_prep/src/binary_trees/10_compute_sucessor/compute_sucessor.py)
+  * [Inorder Traversal in Constant Space](EPI_prep/src/binary_trees/11_inorder_traversal_in_constant_space/inorder_traversal.py)
+      * [Preorder Traversal in Constant Space](EPI_prep/src/binary_trees/11.1_preorder_traversal_in_constant_space/preorder_traversal.py)
+      * [Postorder Traversal in Constant Space](EPI_prep/src/binary_trees/11.2_postorder_traversal_in_constant_space/postorder_traversal.py)
+  * [Reconstruct Binary Tree](EPI_prep/src/binary_trees/12_reconstruct_binary_tree/reconstruct_bt.py)
+  * [Reconstruct Binary Tree](EPI_prep/src/binary_trees/13_reconstruct_bt_from_preorder_traversal/reconstruct_bt_1.py)
+      * [Reconstruct Binary Tree 2](EPI_prep/src/binary_trees/13_reconstruct_bt_from_preorder_traversal/reconstruct_bt_2.py)
+  * [Form a LinkedList From Leaves Of Binary Tree](EPI_prep/src/binary_trees/14_form_a_linkedlist_from_leaves_of_bt/create_list_of_leaves.py)
+      * [Form a LinkedList From Leaves Of Binary Tree 2](EPI_prep/src/binary_trees/14_form_a_linkedlist_from_leaves_of_bt/create_2.py)
+  * [Compute Exterior of Binary Tree](EPI_prep/src/binary_trees/15_compute_exterior_of_binary_tree/exterior_bt.py)
+  * [Compute Right Sibling Tree](EPI_prep/src/binary_trees/16_compute_right_sibling_tree/compute_right_sibling_tree.py)
+
 * [Binary Search Trees](EPI_prep/src/binary_search_trees)
+  - [Search Binary Tree](EPI_prep/src/binary_search_trees/0_search_bst/search_bst.py)
+  - [Check If Binary Search Tree Satisfies BST Property](EPI_prep/src/binary_search_trees/1_check_if_bst_satisfies_bst_property/is_bst.py)
+    - [Check If Binary Search Tree Satisfies BST Property - Solution 2](EPI_prep/src/binary_search_trees/1_check_if_bst_satisfies_bst_property/is_bst_2.py)
+  - [Find the First Key Greater Than A Given Value In A BST](EPI_prep/src/binary_search_trees/2_find_first_key_greater_than_a_value_in_bst/find_first_greater_than_k.py)
+  - [Find The K Largest Elements In A BST](EPI_prep/src/binary_search_trees/3_k_largest_in_bst/k_largest_1.py)
+    - [Find The K Largest Elements In A BST - Solution 2](EPI_prep/src/binary_search_trees/3_k_largest_in_bst/k_largest_2.py)
+    - [Find The K Largest Elements In A BST - Solution 3](EPI_prep/src/binary_search_trees/3_k_largest_in_bst/k_largest_3.py)
+  - [Compute The LCA In A BST](EPI_prep/src/binary_search_trees/3_k_largest_in_bst/k_largest_1.py)
+  - [Reconstruct A BST From Preorder Traversal Data](EPI_prep/src/binary_search_trees/5_reconstruct_bst_from_preorder_traversal_data/reconstruct_bst.py)
+  - [Find The Closest Entries In Three Sorted Arrays](EPI_prep/src/binary_search_trees/6_closest_entries_in_3_sorted_arrays/close_entries.py)
+    - [Reconstruct A BST From Postorder Traversal Data](EPI_prep/src/binary_search_trees/5.1_reconstruct_bst_from_post_order_traversal_data/reconstruct_bst.py) 
+  - [Reconstruct A BST From Inorder Traversal Data](EPI_prep/src/binary_search_trees/5.2_reconstruct_bst_from_inorder_traversal_data/reconstruct_bst.py) 
+  - [Enumerate Numbers Of The Form a + b sqrt2](EPI_prep/src/binary_search_trees/7_enumerate_numbers_of_the_form_a+b_sqrt2/enumerate_numbers_1.py)
+    - [Enumerate Numbers Of The Form a + b sqrt2 - Solution 2](EPI_prep/src/binary_search_trees/7_enumerate_numbers_of_the_form_a+b_sqrt2/enumerate_numbers.py)
+  - [Build A Minimum Height BST From A Sorted Array](EPI_prep/src/binary_search_trees/8_build_minimum_height_bst/min_height_bst.py)
+    - [Build A Minimum Height BST From A Sorted Array - Solution 2l](EPI_prep/src/binary_search_trees/8_build_minimum_height_bst/min_height_bst_2.py)
+  - [Test If Three BST Nodes Are Totally Ordered](EPI_prep/src/binary_search_trees/9_ordered_bst_nodes/is_bst_ordered.py)
+  - [The Range Lookup Problem](EPI_prep/src/binary_search_trees/10_range_look_up_problem/range_lookup.py)
+  - [Add Credits](EPI_prep/src/binary_search_trees/11_add_credits/add_credits.py)
+
 * [Heaps](EPI_prep/src/heaps)
+  - [Merge Sorted Arrays](EPI_prep/src/heaps/1_merge_sorted_arrays/merge_sorted_arrays.py)
+  - [Sort An Increasing Decreasing Array](EPI_prep/src/heaps/2_sort_increasing_decreasing_array/sort_k_inc_dec_array.py)
+  - [Sort An Almost Sorted Array](EPI_prep/src/heaps/3_sort_almost_sorted_array/sort_approximately_sorted_array.py)
+  - [Compute the K closest Stars](EPI_prep/src/heaps/4_compute_k_closest_stars/k_closest_stars.py)
+  - [Compute Median From A Stream](EPI_prep/src/heaps/5_compute_median_from_a_stream/compute_median.py)
+  - [K Largest Elements In A Max Heap](EPI_prep/src/heaps/6_k_largest_elements_in_a_heap/k_largest_elements.py)
+      - [K Largest Elements In A Max Heap - Solution 2](EPI_prep/src/heaps/6_k_largest_elements_in_a_heap/k_largest_elements_1.py)
+
+
 * [Linkedlist](EPI_prep/src/linkedlist)
+  - [Merge Two Sorted Lists](EPI_prep/src/linkedlist/1_merge_two_sorted_lists/merge_two_list.py)
+  - [Merge Two Sorted Doubly LinkedList](EPI_prep/src/linkedlist/1.1_merge_two_sorted_doubly_linkedlist/merge_list.py)
+  - [Reverse A Sublist](EPI_prep/src/linkedlist/2_reverse_a_single_sublist/reverse_sublist_1.py)
+    - [Reverse A Sublist - Solution 2](EPI_prep/src/linkedlist/2_reverse_a_single_sublist/reverse_sublist_2.py)
+    - [Reverse A Singly LinkedList](EPI_prep/src/linkedlist/2.1_reverse_singly_linkedlist/reverse_singly_linkedlist.py)
+  - [Reverse Every K Sublist](EPI_prep/src/linkedlist/2.2_reverse_every_k_sublist/reverse_k_sublist.py) -->
+  - [Test For Cyclicity](EPI_prep/src/linkedlist/3_test_for_cyclicity/has_cycle.py)
+  - [Find The Start Of A Cycle In A LInkedList](EPI_prep/src/linkedlist/3.1_start_of_linkedlist_cycle/find_cycle_start_1.py)
+    - [Find The Start Of A Cycle In A LInkedList - Solution 2](EPI_prep/src/linkedlist/3.1_start_of_linkedlist_cycle/find_cycle_start_2.py)
+  - [Test For Overlapping List - Lists Are Cycle Free](EPI_prep/src/linkedlist/4_test_for_overlapping_lists/has_overlapping_list.py)
+  - [Test For Overlapping List - Lists May Have Cycles](EPI_prep/src/linkedlist/4_test_for_overlapping_lists/has_overlapping_list.py)
+  - [Delete Node From Singly Linkedlist](EPI_prep/src/linkedlist/6_delete_node_from_singly_linkedlist/delete_node.py)
+  - [Remove Kth Last Element From List](EPI_prep/src/linkedlist/7_remove_kth_last_element_from_list/remove_kth_last_element.py)
+  - [Remove Duplicates From Sorted Lists](EPI_prep/src/linkedlist/8_remove_duplicates_from_sorted_list/remove_duplicates.py)
+  - [Implement Cyclic Right Shift For Singly LinkedList](EPI_prep/src/linkedlist/9_cyclic_right_shift_of_singly_linkedlist/cyclic_right_shift_list.py)
+  - [Even Odd Merge](EPI_prep/src/linkedlist/10_even_odd_merge/even_odd_merge.py)
+  - [Test If Singly LinkedList Is Palindromic](EPI_prep/src/linkedlist/11_palindromic_linkedlist/is_palindrome.py)
+  - [Implement List Pivoting](EPI_prep/src/linkedlist/12_implement_list_pivoting/list_pivoting.py)
+  - [Add Two LinkedLists](EPI_prep/src/linkedlist/13_add_two_linkedlists/add_lists.py)
 
 
 
@@ -101,7 +182,6 @@ A list of popular algorithms asked during Interviews
 <br>
 
 ## Recursion Crash Course
-
 A simple crash course to get you up and started with recursion
 
 * [Recursion With Strings](recursion_crash_course/src/1_recursion_with_strings)
@@ -125,6 +205,15 @@ A simple crash course to get you up and started with recursion
 
 <br>
 <br>
+
+<!-- ## Leetcode Questions Categorized By Data Structure
+
+* [Recursion](leetcode/src/recursion)
+    -[]
+
+
+<br>
+<br> -->
 
 
 ## Useful Information
