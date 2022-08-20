@@ -12,8 +12,7 @@ def isPalindrome(L):
         slow, fast = slow.next, fast.next.next
     
     s1, s2 = reverse_linkedlist(slow), L
-
-    while s1.next and s2.next:
+    while s1 and s2:
         if s1.val != s2.val:
             return False
         s1, s2 = s1.next, s2.next
