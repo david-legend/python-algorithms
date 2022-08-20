@@ -148,7 +148,7 @@ Below are solutions & questions found under various topics in the book.
   - [Reverse A Sublist](EPI_prep/src/linkedlist/2_reverse_a_single_sublist/reverse_sublist_1.py)
     - [Reverse A Sublist - Solution 2](EPI_prep/src/linkedlist/2_reverse_a_single_sublist/reverse_sublist_2.py)
     - [Reverse A Singly LinkedList](EPI_prep/src/linkedlist/2.1_reverse_singly_linkedlist/reverse_singly_linkedlist.py)
-  - [Reverse Every K Sublist](EPI_prep/src/linkedlist/2.2_reverse_every_k_sublist/reverse_k_sublist.py) -->
+  - [Reverse Every K Sublist](EPI_prep/src/linkedlist/2.2_reverse_every_k_sublist/reverse_k_sublist.py)
   - [Test For Cyclicity](EPI_prep/src/linkedlist/3_test_for_cyclicity/has_cycle.py)
   - [Find The Start Of A Cycle In A LInkedList](EPI_prep/src/linkedlist/3.1_start_of_linkedlist_cycle/find_cycle_start_1.py)
     - [Find The Start Of A Cycle In A LInkedList - Solution 2](EPI_prep/src/linkedlist/3.1_start_of_linkedlist_cycle/find_cycle_start_2.py)
