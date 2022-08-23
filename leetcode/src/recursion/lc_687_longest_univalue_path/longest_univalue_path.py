@@ -21,7 +21,7 @@ def longest_univalue_path(root):
         
 
         right = longest_univalue_path_helper(node.right)
-        if node.right and node.val and node.right.val:
+        if node.right and node.val == node.right.val:
             right += 1
         else:
             right = 0
@@ -34,3 +34,23 @@ def longest_univalue_path(root):
         longest_univalue_path_helper(root)
     
     return max_length
+
+
+
+root = TreeNode(5)
+root.left = TreeNode(4)
+root.right = TreeNode(5)
+root.left.left = TreeNode(1)
+root.left.right = TreeNode(1)
+root.right.right = TreeNode(5)
+
+print(longest_univalue_path(root)) #2
+
+root = TreeNode(1)
+root.left = TreeNode(4)
+root.right = TreeNode(5)
+root.left.left = TreeNode(4)
+root.left.right = TreeNode(4)
+root.right.right = TreeNode(5)
+
+print(longest_univalue_path(root)) #2
