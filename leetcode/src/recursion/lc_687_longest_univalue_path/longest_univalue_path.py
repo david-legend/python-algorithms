@@ -4,6 +4,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
+# Time O(n) | Space O(n)
 def longest_univalue_path(root):
     max_length = 0
 
