@@ -1,25 +1,27 @@
-
 class Node:
     def __init__(self, val):
         self.val = val
         self.left = self.right = None
 
-def is_symmetric(tree):
-    if tree is None:
-        return True
 
-    def check_symmetric(subtree_0, subtree_1):
-        if subtree_0 is None and subtree_1 is None:
+def is_symmetric(root):
+    def is_symmtric_helper(subtree1, subtree2):
+        if subtree1 is None and subtree2 is None:
             return True
-        elif subtree_0 and subtree_1:
-            return (subtree_0.val == subtree_1.val \
-                    and check_symmetric(subtree_0.left, subtree_1.right) \
-                    and check_symmetric(subtree_0.right, subtree_1.left))
-
-        # if one subtree is empty and the other is not
+        elif subtree1 and subtree2:
+            return subtree1.val == subtree2.val and \
+                is_symmtric_helper(subtree1.left, subtree2.right) and \
+                is_symmtric_helper(subtree1.right, subtree2.left)
+        
         return False
 
-    return check_symmetric(tree.left, tree.right)
+    if root:
+        return is_symmtric_helper(root.left, root.right)
+    
+    return False
+
+
+
 
 
 
