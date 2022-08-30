@@ -17,10 +17,11 @@ def build_min_height_bst(sorted_array):
         
         mid = (start + end) // 2
 
-        left_subtree = build_bst(start, mid-1)
-        right_subtree = build_bst(mid+1, end)
+        if 0 <= mid < len(sorted_array):
+            left_subtree = build_bst(start, mid-1)
+            right_subtree = build_bst(mid+1, end)
 
-        return TreeNode(sorted_array[mid], left_subtree, right_subtree)
+            return TreeNode(sorted_array[mid], left_subtree, right_subtree)
 
     return build_bst(start, end)
 
