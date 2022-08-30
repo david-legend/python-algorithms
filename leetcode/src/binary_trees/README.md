@@ -12,5 +12,10 @@
 * `E` [LC 112. Path Sum](lc_112_path_sum/path_sum.py)
 * `E` [LC 144. Binary Tree Preorder Traversal](lc_144_preorder_traversal/preorder_traversal.py)
 * `E` [LC 145. Binary Tree Postorder Traversal](lc_145_postorder_traversal/postorder_traversal.py)
+* `E` [LC 226. Invert Binary Tree](lc_226_invert_binary_tree/invert_binary_tree.py)
+* `E` [LC 235. Lowest Common Ancestor of a Binary Search Tree](lc_235_lca_of_binary_search_tree/lca_bst.py)
+* `E` [LC 257. Binary Tree Paths](lc_257_binary_tree_paths/lca_binary_tree_pathsbst.py)
+* `E` [LC 404. Sum of Left Leaves](lc_404_sum_of_left_leaves/sum_of_left_leaves.py)
+* `E` [LC 501. Find Mode in Binary Search Tree](lc_501_find_mode_in_bst/find_mode_in_bst.py)
 
 
