@@ -192,16 +192,16 @@ Below are solutions & questions found under various topics in the book.
 <br>
 
 * [Binary Trees](leetcode/src/binary_trees)
-    * `E` [LC 94. Binary Tree Inorder Traversal](leetcode/src/binary_trees/lc_94_inorder_traversal/inorder_traversal.py)
-    * `E` [LC 100. Same Tree](leetcode/src/binary_trees/lc_100_same_tree/same_tree.py)
-    * `E` [LC 101. Symmetric Tree](leetcode/src/binary_trees/lc_101_symmetric_tree/symmetric_tree.py)
-    * `E` [LC 104. Maximum Depth of Binary Tree](leetcode/src/binary_trees/lc_104_max_depth_of_binary_tree/max_depth_of_binary_tree.py)
-    * `E` [LC 108. Convert Sorted Array to Binary Search Tree](leetcode/src/binary_trees/lc_108_converted_sorted_array_to_bst/converted_sorted_array_to_bst.py)
-    * `E` [LC 110. Balanced Binary Tree](leetcode/src/binary_trees/lc_110_balanced_binary_tree/balanced_binary_tree.py)
-    * `E` [LC 111. Minimum Depth of Binary Tree](leetcode/src/binary_trees/lc_111_min_depth_of_binary_tree/min_depth_of_binary_tree.py)
-    * `E` [LC 112. Path Sum](leetcode/src/binary_trees/lc_112_path_sum/path_sum.py)
-    * `E` [LC 144. Binary Tree Preorder Traversal](leetcode/src/binary_trees/lc_144_preorder_traversal/preorder_traversal.py)
-    * `E` [LC 145. Binary Tree Postorder Traversal](leetcode/src/binary_trees/lc_145_postorder_traversal/postorder_traversal.py)
+    * `E` [Binary Tree Inorder Traversal](leetcode/src/binary_trees/lc_94_inorder_traversal/inorder_traversal.py)
+    * `E` [Same Tree](leetcode/src/binary_trees/lc_100_same_tree/same_tree.py)
+    * `E` [Symmetric Tree](leetcode/src/binary_trees/lc_101_symmetric_tree/symmetric_tree.py)
+    * `E` [Maximum Depth of Binary Tree](leetcode/src/binary_trees/lc_104_max_depth_of_binary_tree/max_depth_of_binary_tree.py)
+    * `E` [Convert Sorted Array to Binary Search Tree](leetcode/src/binary_trees/lc_108_converted_sorted_array_to_bst/converted_sorted_array_to_bst.py)
+    * `E` [Balanced Binary Tree](leetcode/src/binary_trees/lc_110_balanced_binary_tree/balanced_binary_tree.py)
+    * `E` [Minimum Depth of Binary Tree](leetcode/src/binary_trees/lc_111_min_depth_of_binary_tree/min_depth_of_binary_tree.py)
+    * `E` [Path Sum](leetcode/src/binary_trees/lc_112_path_sum/path_sum.py)
+    * `E` [Binary Tree Preorder Traversal](leetcode/src/binary_trees/lc_144_preorder_traversal/preorder_traversal.py)
+    * `E` [Binary Tree Postorder Traversal](leetcode/src/binary_trees/lc_145_postorder_traversal/postorder_traversal.py)
 
 <br>
 <br>
