@@ -6,7 +6,7 @@ class Node:
 
 
 # Breadth First Search -> Level Order Traversal Solution
-
+# Time O(n) | Space O(n/2 + 1)
 def min_depth_bfs(root):
     if root is None:
         return 0
@@ -30,6 +30,8 @@ def min_depth_bfs(root):
             
             depth += 1
             
+
+# Time O(n) | Space O(h)
 def min_depth_of_tree(root):
 
     def min_depth_helper(node):
