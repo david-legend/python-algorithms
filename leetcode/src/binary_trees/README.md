@@ -20,5 +20,12 @@
 * `E` [Minimum Absolute Difference in BST](lc_530_minimum_absolute_diff_in_bst/min_absolute_diff_in_bst.py)
 * `E` [Diameter of Binary Tree](lc_543_diameter_of_a_tree/tree_diameter.py)
 * `E` [Binary Tree Tilt ](lc_563_binary_tree_tilt/binary_tree_tilt.py)
+* `E` [Subtree of Another Tree ](lc_572_subtree_of_another_tree/subtree_of_another_tree.py)
+* `E` [Construct String from Binary Tree ](lc_606_construct_string_from_tree/construct_string_from_tree.py)
+* `E` [Merge Two Binary Trees ](lc_617_merge_two_binary_trees/merge_two_binary_trees.py)
+* `E` [Average of Levels in Binary Tree ](lc_637_average_of_levels_in_binary_tree/average_of_levels_in_binary_tree.py)
+* `E` [Two Sum IV - Input is a BST ](lc_653_two_sum_IV/two_sum.py)
+* `E` [Second Minimum Node In a Binary Tree ](lc_671_second_minimum_node_in_binary_tree/second_minimum_node_in_binary_tree.py)
+* `E` [Minimum Distance Between BST Nodes](lc_783_min_distance_between_bst_nodes/min_distance_between_bst_nodes.py)
 
 
