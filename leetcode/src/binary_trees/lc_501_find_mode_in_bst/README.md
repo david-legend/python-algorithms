@@ -1,4 +1,4 @@
-# [LC 501. Find Mode in Binary Search Tree - Easy](https://leetcode.com/problems/sum-of-left-leaves/description/)
+# [LC 501. Find Mode in Binary Search Tree - Easy](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
 
 Given the root of a binary search tree (BST) with duplicates, return all the mode(s) (i.e., the most frequently occurred element) in it.  
 
@@ -12,7 +12,7 @@ Both the left and right subtrees must also be binary search trees.
 
 ### Example 1
 
-![Sum of Left Leaves Example 1](https://assets.leetcode.com/uploads/2021/03/11/mode-tree.jpg)  
+![Find Mode in Binary Search Tree Example 1](https://assets.leetcode.com/uploads/2021/03/11/mode-tree.jpg)  
 
 
 ```

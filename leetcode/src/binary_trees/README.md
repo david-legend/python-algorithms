@@ -17,5 +17,7 @@
 * `E` [Binary Tree Paths](lc_257_binary_tree_paths/lca_binary_tree_pathsbst.py)
 * `E` [Sum of Left Leaves](lc_404_sum_of_left_leaves/sum_of_left_leaves.py)
 * `E` [Find Mode in Binary Search Tree](lc_501_find_mode_in_bst/find_mode_in_bst.py)
+* `E` [Minimum Absolute Difference in BST](lc_530_minimum_absolute_diff_in_bst/min_absolute_diff_in_bst.py)
+* `E` [Diameter of Binary Tree](lc_543_diameter_of_a_tree/tree_diameter.py)
 
 
