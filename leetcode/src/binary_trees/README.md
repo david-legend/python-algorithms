@@ -19,5 +19,6 @@
 * `E` [Find Mode in Binary Search Tree](lc_501_find_mode_in_bst/find_mode_in_bst.py)
 * `E` [Minimum Absolute Difference in BST](lc_530_minimum_absolute_diff_in_bst/min_absolute_diff_in_bst.py)
 * `E` [Diameter of Binary Tree](lc_543_diameter_of_a_tree/tree_diameter.py)
+* `E` [Binary Tree Tilt ](lc_563_binary_tree_tilt/binary_tree_tilt.py)
 
 
