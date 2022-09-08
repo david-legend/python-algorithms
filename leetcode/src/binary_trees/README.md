@@ -28,4 +28,15 @@
 * `E` [Second Minimum Node In a Binary Tree ](lc_671_second_minimum_node_in_binary_tree/second_minimum_node_in_binary_tree.py)
 * `E` [Minimum Distance Between BST Nodes](lc_783_min_distance_between_bst_nodes/min_distance_between_bst_nodes.py)
 
+<br>
 
+* `M` [Unique Binary Search Trees II](lc_95_unique_binary_search_trees_II/unique_binary_search_trees.py)
+* `M` [Unique Binary Search Trees](lc_96_unique_binary_search_trees/unique_binary_search_trees.py)
+* `M` [Validate Binary Search Tree](lc_98_validate_binary_search_tree/validate_binary_search_tree.py)
+* `M` [Recover Binary Search Tree](lc_99_recover_binary_search_trees/recover_binary_search_trees.py)
+* `M` [Binary Tree Level Order Traversal](lc_102_binary_tree_level_order_traversal/binary_tree_level_order_traversal.py)
+* `M` [Binary Tree Zigzag Level Order Traversal](lc_103_binary_tree_zigzag_level_order_traversal/binary_tree_zigzag_level_order_traversal.py)
+* `M` [Construct Binary Tree from Preorder and Inorder Traversal ](lc_105_construct_binary_tree_from_preorder_inorder_traversal/construct_binary_tree_from_preorder_inorder_traversal.py)
+* `M` [Construct Binary Tree from Inorder and Postorder Traversal](lc_106_construct_binary_tree_from_inorder_postorder_traversal/construct_binary_tree_from_inorder_postorder_traversal.py)
+* `M` [Binary Tree Level Order Traversal II](lc_107_binary_tree_level_order_traversal_II/binary_tree_level_order_traversal.py)
+* `M` [Path Sum II](lc_113_path_sum_II/path_sum.py)
