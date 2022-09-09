@@ -2,7 +2,7 @@
 
 Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.  
 
-A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.  
+A subtree of a binary tree is a tree that consists of a node in tree and all of this node's descendants. The tree could also be considered as a subtree of itself.  
 ### Example 1
 
 ![Subtree of Another Tree Example 1](https://assets.leetcode.com/uploads/2021/04/28/subtree1-tree.jpg)  
