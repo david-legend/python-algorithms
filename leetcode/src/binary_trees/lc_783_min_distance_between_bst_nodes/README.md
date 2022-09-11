@@ -1,4 +1,4 @@
-# [LC 783. Minimum Distance Between BST Nodes - Easy](https://leetcode.com/problems/merge-two-binary-trees/description/)
+# [LC 783. Minimum Distance Between BST Nodes - Easy](https://leetcode.com/problems/minimum-distance-between-bst-nodes/description/)
 
 Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.    
 
