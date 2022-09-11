@@ -202,6 +202,21 @@ Below are solutions & questions found under various topics in the book.
     * `E` [Path Sum](leetcode/src/binary_trees/lc_112_path_sum/path_sum.py)
     * `E` [Binary Tree Preorder Traversal](leetcode/src/binary_trees/lc_144_preorder_traversal/preorder_traversal.py)
     * `E` [Binary Tree Postorder Traversal](leetcode/src/binary_trees/lc_145_postorder_traversal/postorder_traversal.py)
+    * `E` [Invert Binary Tree](leetcode/src/binary_trees/lc_226_invert_binary_tree/invert_binary_tree.py)
+    * `E` [Lowest Common Ancestor of a Binary Search Tree](leetcode/src/binary_trees/lc_235_lca_of_binary_search_tree/lca_bst.py)
+    * `E` [Binary Tree Paths](leetcode/src/binary_trees/lc_257_binary_tree_paths/lca_binary_tree_pathsbst.py)
+    * `E` [Sum of Left Leaves](leetcode/src/binary_trees/lc_404_sum_of_left_leaves/sum_of_left_leaves.py)
+    * `E` [Find Mode in Binary Search Tree](leetcode/src/binary_trees/lc_501_find_mode_in_bst/find_mode_in_bst.py)
+    * `E` [Minimum Absolute Difference in BST](leetcode/src/binary_trees/lc_530_minimum_absolute_diff_in_bst/min_absolute_diff_in_bst.py)
+    * `E` [Diameter of Binary Tree](leetcode/src/binary_trees/lc_543_diameter_of_a_tree/tree_diameter.py)
+    * `E` [Binary Tree Tilt ](leetcode/src/binary_trees/lc_563_binary_tree_tilt/binary_tree_tilt.py)
+    * `E` [Subtree of Another Tree ](leetcode/src/binary_trees/lc_572_subtree_of_another_tree/subtree_of_another_tree.py)
+    * `E` [Construct String from Binary Tree ](leetcode/src/binary_trees/lc_606_construct_string_from_tree/construct_string_from_tree.py)
+    * `E` [Merge Two Binary Trees ](leetcode/src/binary_trees/lc_617_merge_two_binary_trees/merge_two_binary_trees.py)
+    * `E` [Average of Levels in Binary Tree ](leetcode/src/binary_trees/lc_637_average_of_levels_in_binary_tree/average_of_levels_in_binary_tree.py)
+    * `E` [Two Sum IV - Input is a BST ](leetcode/src/binary_trees/lc_653_two_sum_IV/two_sum.py)
+    * `E` [Second Minimum Node In a Binary Tree ](leetcode/src/binary_trees/lc_671_second_minimum_node_in_binary_tree/second_minimum_node_in_binary_tree.py)
+    * `E` [Minimum Distance Between BST Nodes](leetcode/src/binary_trees/lc_783_min_distance_between_bst_nodes/min_distance_between_bst_nodes.py)
 
 <br>
 <br>
