@@ -52,7 +52,7 @@ In this section we will solve common binary tree questions that will help you un
 * [Inorder Traversal in Constant Space](11_inorder_traversal_in_constant_space/inorder_traversal.py)
     * [Preorder Traversal in Constant Space](11.1_preorder_traversal_in_constant_space/preorder_traversal.py)
     * [Postorder Traversal in Constant Space](11.2_postorder_traversal_in_constant_space/postorder_traversal.py)
-* [Reconstruct Binary Tree](12_reconstruct_binary_tree/reconstruct_bt.py)
+* [Reconstruct Binary Tree](12_reconstruct_binary_tree_from_preorder_inorder_traversal/reconstruct_bt.py)
 * [Reconstruct Binary Tree](13_reconstruct_bt_from_preorder_traversal/reconstruct_bt_1.py)
     * [Reconstruct Binary Tree 2](13_reconstruct_bt_from_preorder_traversal/reconstruct_bt_2.py)
 * [Form a LinkedList From Leaves Of Binary Tree](14_form_a_linkedlist_from_leaves_of_bt/create_list_of_leaves.py)
