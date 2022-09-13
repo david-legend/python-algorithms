@@ -2,7 +2,7 @@ from collections import deque
 
 def level_order_traversal(root):
     if not root:
-            return []
+        return []
         
     result = []
     queue = deque([root])

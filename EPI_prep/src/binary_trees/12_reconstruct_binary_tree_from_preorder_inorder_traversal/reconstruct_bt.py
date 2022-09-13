@@ -13,7 +13,6 @@ class TreeNode:
 
 def reconstruct(preorder, inorder):
     node_to_inorder_idx = {data: i for i, data in enumerate(inorder)}
-
     # Builds the subtree with preorder[preorder_start:preorder_end] and
     # inorder[inorder_start:inorder_end].
     def binary_tree_from_preorder_inorder_helper(preorder_start, preorder_end,
