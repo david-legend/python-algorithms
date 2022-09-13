@@ -32,3 +32,6 @@ Output: [-1]
 - Each value of postorder also appears in inorder.
 - inorder is guaranteed to be the inorder traversal of the tree.
 - postorder is guaranteed to be the postorder traversal of the tree.
+
+
+- [YouTube Explanation](https://www.youtube.com/watch?v=LgLRTaEMRVc&list=TLPQMTMwOTIwMjIXV_jOY_RA_Q&index=3)
