@@ -13,7 +13,7 @@ Output: 1
 
 ### Example 2
 
-![Minimum Absolute Difference in BST Example 1](https://assets.leetcode.com/uploads/2021/02/05/bst2.jpg)  
+![Minimum Absolute Difference in BST Example 2](https://assets.leetcode.com/uploads/2021/02/05/bst2.jpg)  
 
 ```
 Input: root = [1,0,48,null,null,12,49]
