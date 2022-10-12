@@ -32,6 +32,7 @@
 
 * `M` [Unique Binary Search Trees II](lc_95_unique_binary_search_trees_II/unique_binary_search_trees.py)
 * `M` [Unique Binary Search Trees](lc_96_unique_binary_search_trees/unique_binary_search_trees.py)
+
 * `M` [Validate Binary Search Tree](lc_98_validate_binary_search_tree/validate_binary_search_tree.py)
 * `M` [Recover Binary Search Tree](lc_99_recover_binary_search_trees/recover_binary_search_trees.py)
 * `M` [Binary Tree Level Order Traversal](lc_102_binary_tree_level_order_traversal/binary_tree_level_order_traversal.py)
@@ -57,3 +58,20 @@
 * `M` [Find Bottom Left Tree Value](lc_513_find_bottom_left_tree_value/find_bottom_left_tree_value.py)
 * `M` [Find Largest Value in Each Tree Row](lc_515_find_largest_value_in_each_tree_row/find_largest_value_in_each_tree_row.py)
 * `M` [Convert BST to Greater Tree](lc_538_convert_bst_to_greater_tree/convert_bst_to_greater_tree.py)
+* `M` [Add One Row to Tree](lc_623_add_one_row_to_tree/add_one_row_to_tree.py)
+* `M` [Find Duplicate Subtrees](lc_652_find_duplicate_subtrees/find_duplicate_subtrees.py)
+* `M` [Maximum Binary Tree](lc_654_maximum_binary_tree/maximum_binary_tree.py)
+* `M` [Print Binary Tree](lc_655_print_binary_tree/print_binary_tree.py)
+* `M` [Maximum Width of Binary Tree](lc_662_maximum_width_of_binary_tree/maximum_width_of_binary_tree.py)
+* `M` [Trim a Binary Search Tree](lc_669_trim_a_binary_search_tree/trim_a_binary_search_tree.py)
+* `M` [Longest Univalue Path](lc_687_longest_univalue_path/longest_univalue_path.py)
+* `M` [All Nodes Distance K in Binary Tree](lc_863_all_nodes_distance_k_binary_tree/all_nodes_distance_k_binary_tree.py)
+* `M` [Smallest String Starting From Leaf](lc_988_smallest_string_starting_from_leaf/smallest_string_starting_from_leaf.py)
+* `M` [Maximum Binary Tree II](lc_998_maximum_binary_tree_II/maximum_binary_tree.py)
+* `M` [Construct Binary Search Tree from Preorder Traversal](lc_1008_construct_binary_tree_from_preorder_traversal/construct_binary_tree_from_preorder_traversal.py)
+
+
+<br>
+
+* `H` [Binary Tree Maximum Path Sum](lc_124_binary_tree_maximum_path_sum/binary_tree_maximum_path_sum.py)
+* `H` [Serialize and Deserialize Binary Tree](lc_297_serialize_and_deserialize_binary_tree/serialize_and_deserialize_binary_tree.py)
