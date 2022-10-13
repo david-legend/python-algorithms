@@ -6,7 +6,6 @@ class ListNode:
 
 # Time complexity: O(m + n)
 # where m and n represents the length of the two list nodes
-
 # Space complexity: O(1)    
 def mergeTwoLists(list1, list2):
     sentinel = merge = ListNode(0)
