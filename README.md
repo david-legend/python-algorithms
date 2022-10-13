@@ -281,7 +281,7 @@ Below are solutions & questions found under various topics in the book.
 
 <br>
 
-* [LinkedLists](leetcode/src/linkedlist)
+* [LinkedLists](leetcode/src/linkedlist )
     * `E` [Merge Two Sorted Lists](leetcode/src/linkedlist/lc_21_merge_two_sorted_lists/merge_two_sorted_lists.py)
     * `E` [Remove Duplicates from Sorted List I](leetcode/src/linkedlist/lc_83_remove_duplicates_from_sorted_list/remove_duplicates_from_sorted_list.py)
     * `E` [Linked List Cycle](leetcode/src/linkedlist/lc_141_linkedlist_cycle/linkedlist_cycle.py)
