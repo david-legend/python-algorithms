@@ -8,7 +8,6 @@ class ListNode:
 def addTwoNumbers(l1, l2):
     sentinel = result = ListNode(0)
     remainder = 0
-
     while l1 or l2 or remainder:
         l1_val = l1.val if l1 else 0
         l2_val = l2.val if l2 else 0
