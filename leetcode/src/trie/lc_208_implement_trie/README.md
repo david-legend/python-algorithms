@@ -1,33 +1,35 @@
-# [LC 687. Longest Univalue Path - Medium](https://leetcode.com/problems/longest-univalue-path/description/)
+# [LC 208. Implement Trie (Prefix Tree) - Medium](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 
-Given the root of a binary tree, return the length of the longest path, where each node in the path has the same value. This path may or may not pass through the root.
+A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker.
 
-The length of the path between two nodes is represented by the number of edges between them.
+Implement the Trie class:
+
+- Trie() Initializes the trie object.
+- void insert(String word) Inserts the string word into the trie.
+- boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), and false otherwise.
+- boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, and false otherwise.
 
 ### Example 1
 
-![Longest Univalue Path Example 1](https://assets.leetcode.com/uploads/2020/10/13/ex1.jpg)  
-
-
 ```
-Input: root = [5,4,5,1,1,null,5]
-Output: 2
-Explanation: The shown image shows that the longest path of the same value (i.e. 5).
+Input
+["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
+[[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
+Output
+[null, null, true, false, true, null, true]
+
+Explanation
+Trie trie = new Trie();
+trie.insert("apple");
+trie.search("apple");   // return True
+trie.search("app");     // return False
+trie.startsWith("app"); // return True
+trie.insert("app");
+trie.search("app");     // return True
 ```
-
-### Example 2
-
-![Longest Univalue Path Example 2](https://assets.leetcode.com/uploads/2020/10/13/ex2.jpg)
-
-```
-Input: root = [1,4,5,4,4,null,5]
-Output: 2
-Explanation: The shown image shows that the longest path of the same value (i.e. 4).
-```
-
 
 ### Constraints:
 
-- The number of nodes in the tree is in the range [0, 104].
-- -1000 <= Node.val <= 1000
-- The depth of the tree will not exceed 1000.
+- 1 <= word.length, prefix.length <= 2000
+- word and prefix consist only of lowercase English letters.
+- At most 3 * 10^4 calls in total will be made to insert, search, and startsWith

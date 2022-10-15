@@ -1,33 +1,36 @@
-# [LC 687. Longest Univalue Path - Medium](https://leetcode.com/problems/longest-univalue-path/description/)
+# [LC 212. Word Search II - Hard](https://leetcode.com/problems/word-search-ii/description/)
 
-Given the root of a binary tree, return the length of the longest path, where each node in the path has the same value. This path may or may not pass through the root.
+Given an m x n board of characters and a list of strings words, return all words on the board.
 
-The length of the path between two nodes is represented by the number of edges between them.
+Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
 
 ### Example 1
 
-![Longest Univalue Path Example 1](https://assets.leetcode.com/uploads/2020/10/13/ex1.jpg)  
+![Word Search II Example 1](https://assets.leetcode.com/uploads/2020/11/07/search1.jpg)  
 
 
 ```
-Input: root = [5,4,5,1,1,null,5]
-Output: 2
-Explanation: The shown image shows that the longest path of the same value (i.e. 5).
+Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]
+Output: ["eat","oath"].
 ```
 
 ### Example 2
 
-![Longest Univalue Path Example 2](https://assets.leetcode.com/uploads/2020/10/13/ex2.jpg)
+![Word Search II Example 2](https://assets.leetcode.com/uploads/2020/11/07/search2.jpg)
 
 ```
-Input: root = [1,4,5,4,4,null,5]
-Output: 2
-Explanation: The shown image shows that the longest path of the same value (i.e. 4).
+Input: board = [["a","b"],["c","d"]], words = ["abcb"]
+Output: []
 ```
 
 
 ### Constraints:
 
-- The number of nodes in the tree is in the range [0, 104].
-- -1000 <= Node.val <= 1000
-- The depth of the tree will not exceed 1000.
+- m == board.length
+- n == board[i].length
+- 1 <= m, n <= 12
+- board[i][j] is a lowercase English letter.
+- 1 <= words.length <= 3 * 10^4
+- 1 <= words[i].length <= 10
+- words[i] consists of lowercase English letters.
+- All the strings of words are unique.
