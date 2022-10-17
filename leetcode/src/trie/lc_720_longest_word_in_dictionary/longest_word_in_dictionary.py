@@ -24,18 +24,17 @@ class Trie:
                 return False
         return curr.end_of_word
 
-class Solution:
-    def longestWord(self, words: List[str]) -> str:
-        trie = Trie()
-        longest_word = ""
-        for word in words:
-            trie.insert(word)
-        
-        for word in words:
-            if trie.search(word):
-                if len(word) > len(longest_word):
-                    longest_word = word
-                elif len(word) == len(longest_word):
-                    longest_word = word if word < longest_word else longest_word
-        
-        return longest_word
+def longestWord(words):
+    trie = Trie()
+    longest_word = ""
+    for word in words:
+        trie.insert(word)
+    
+    for word in words:
+        if trie.search(word):
+            if len(word) > len(longest_word):
+                longest_word = word
+            elif len(word) == len(longest_word):
+                longest_word = word if word < longest_word else longest_word
+    
+    return longest_word
