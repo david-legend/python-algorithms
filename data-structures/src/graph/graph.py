@@ -1,9 +1,7 @@
+from collections import deque
 class Graph(object):
     def __init__(self, graph=None):
-        if not graph:
-            self.adj_list = {}
-        else:
-            self.adj_list = graph
+        self.adj_list = {} if graph is None else graph
             
     
     def add(self, vertex, edge):
@@ -11,20 +9,20 @@ class Graph(object):
         
     def bfs(self, vertex):
         if vertex:
-            visited = [vertex]
-            queue = [vertex]
+            visited = set(vertex)
+            queue = deque([vertex])
             
             while queue:
-                curr_vertex = queue.pop(0)
+                curr_vertex = queue.popleft()
                 print(curr_vertex)
                 for adj_vertex in self.adj_list[curr_vertex]:
                     if adj_vertex not in visited:
-                        visited.append(adj_vertex)
+                        visited.add(adj_vertex)
                         queue.append(adj_vertex)
                         
     def dfs(self, vertex):
         if vertex:
-            visited = [vertex]  
+            visited = set()
             stack = [vertex] 
             
             while stack:
@@ -33,7 +31,7 @@ class Graph(object):
                 
                 for adj_vertex in self.adj_list[curr_vertex]:
                     if adj_vertex not in visited:
-                        visited.append(adj_vertex)
+                        visited.add(adj_vertex)
                         stack.append(adj_vertex)
                 
                 
