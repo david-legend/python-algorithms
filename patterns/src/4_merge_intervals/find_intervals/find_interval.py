@@ -3,8 +3,6 @@ def find_interval(intervals):
         return False
     
     intervals.sort(key=lambda x: x[0])
-    
-    start = intervals[0][0]
     end = intervals[0][1]
     
     for i in range(1, len(intervals)):
@@ -12,7 +10,6 @@ def find_interval(intervals):
         if interval[0] <= end:
             return True
         else:
-            start = interval[0]
             end = interval[1]
     
     return False

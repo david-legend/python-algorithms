@@ -32,12 +32,16 @@ The explanations of the data structures below are from <a href="https://github.c
 * `B` [Doubly Linked List](data-structures/src/doubly-linked-list)
 * `B` [Circular Doubly Linked List](data-structures/src/circular-doubly-linked-list/circular_doubly_linked_list.py)
 * `B` [Queue](data-structures/src/queue)
+* `B` [Priority Queue](data-structures/src/priority_queue)
 * `B` [Stack](data-structures/src/stack)
+* `B` [Hash Table](data-structures/src/hashtable)
 * `A` [Heap](data-structures/src/heap)
+* `A` [Trie](data-structures/src/trie)
 * `A` [Tree](data-structures/src/tree)
   * `A` [Binary Tree](data-structures/src/tree/binary-tree)
   * `A` [Binary Search Tree](data-structures/src/tree/binary-search-tree)
   * `A` [AVL Tree](data-structures/src/tree/avl-tree)
+* `A` [Graphs](data-structures/src/graph)
 
 
 <br>

@@ -6,7 +6,7 @@ def find_averages_of_subarrays(K, arr):
         window_sum += arr[window_end]
         
         if window_end >= (K - 1):
-            result.append(window_sum / 5)
+            result.append(window_sum / K)
             window_sum -= arr[window_start]
             window_start += 1
     

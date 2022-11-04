@@ -22,4 +22,4 @@ def interval_intersection(interval_a, interval_b):
     return result       
             
 print(interval_intersection([[1, 3], [5, 6], [7, 9]], [[2, 3], [5, 7]]))
-print(interval_intersection([[1, 3], [5, 7], [9, 12]], [[5, 10]]))
+# print(interval_intersection([[1, 3], [5, 7], [9, 12]], [[5, 10]]))
