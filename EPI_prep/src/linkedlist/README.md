@@ -100,7 +100,7 @@ Implementing a basic list APl-search, insert, delete-for singly linked lists is 
 
 ## Questions
 
-In this section we will solve common linkedlist questions that will help you understand the data structure very well. This will in turn give you the ability to solve other linkedlist questions
+In this section we will solve common linkedlist questions that will help us understand the data structure very well. This will in turn give us the ability to solve other linkedlist questions
 
 - [Merge Two Sorted Lists](1_merge_two_sorted_lists/merge_two_list.py)
 - [Merge Two Sorted Doubly LinkedList](1.1_merge_two_sorted_doubly_linkedlist/merge_list.py)

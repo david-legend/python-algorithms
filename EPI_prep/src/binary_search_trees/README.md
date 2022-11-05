@@ -22,7 +22,7 @@ With a BST you can iterate through elements in sorted order in time O(n) (regard
 
 ## Questions
 
-In this section we will solve common binary search tree questions that will help you understand the data structure very well. This will in turn give you the ability to solve other binary search questions
+In this section we will solve common binary search tree questions that will help us understand the data structure very well. This will in turn give us the ability to solve other binary search tree questions
 
 - [Search Binary Tree](0_search_bst/search_bst.py)
 - [Check If Binary Search Tree Satisfies BST Property](1_check_if_bst_satisfies_bst_property/is_bst.py)

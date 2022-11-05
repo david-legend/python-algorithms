@@ -9,7 +9,7 @@ and ensuring progress, that is the recursion converges to the solution.
 
 ## Questions
 
-In this section we will solve common recursion questions that will help you understand these alogrithms. This will in turn give you the ability to solve other binary questions
+In this section we will solve common recursion questions that will help us understand these alogrithms. This will in turn give us the ability to solve other binary questions
 
 * [Greatest Common Divisor](0_greatest_common_divisor/lca.py)
 * [Towers Of Hanoi](1_towers_of_hanoi/towers_of_hanoi.py)

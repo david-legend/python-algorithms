@@ -74,7 +74,7 @@ Heap functionality in Python is provided by the heapq module. The operations and
 
 ## Questions
 
-In this section we will solve common heap questions that will help you understand the data structure very well. This will in turn give you the ability to solve other heap questions.
+In this section we will solve common heap questions that will help us understand the data structure very well. This will in turn give us the ability to solve other heap questions.
 
 - [Merge Sorted Arrays](1_merge_sorted_arrays/merge_sorted_arrays.py)
 - [Sort An Increasing Decreasing Array](2_sort_increasing_decreasing_array/sort_k_inc_dec_array.py)

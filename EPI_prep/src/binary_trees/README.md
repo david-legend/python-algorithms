@@ -35,7 +35,7 @@ A complete binary tree is a binary tree in which every level, except possibly th
 
 ## Questions
 
-In this section we will solve common binary tree questions that will help you understand the data structure very well. This will in turn give you the ability to solve other binary questions
+In this section we will solve common binary tree questions that will help us understand the data structure very well. This will in turn give us the ability to solve other binary tree questions
 
 * [Binary Tree Traversal](0_binary_tree_traversal/tree_traversals.py)
 * [Is Binary Tree Height Balanced](1_is_binary_tree_height_balanced/balanced_binary_tree.py)
