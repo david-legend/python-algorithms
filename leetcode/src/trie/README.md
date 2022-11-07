@@ -11,6 +11,7 @@
 * `M` [Map Sum Pairs](lc_677_map_sum_pairs/map_sum_pairs.py)
 * `M` [Top K Frequent Words](lc_692_top_k_frequent_words/top_k_frequent_words.py)
 * `M` [Longest Word in Dictionary](lc_720_longest_word_in_dictionary/longest_word_in_dictionary.py)
+* `M` [Short Encoding of Words](lc_820_short_encoding_of_words/short_encoding_of_words.py)
 
 
 <br>
