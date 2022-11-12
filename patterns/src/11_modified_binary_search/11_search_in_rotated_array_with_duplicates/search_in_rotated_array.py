@@ -30,3 +30,4 @@ def search_rotated_array(arr, key):
     return -1
 
 print(search_rotated_array([3, 7, 3, 3, 3], 7))
+print(search_rotated_array([8, 8, 10 ,10, 12, 1, 2, 2, 3, 4, 5, 6, 8], 12))

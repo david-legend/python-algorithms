@@ -38,7 +38,8 @@ def search_pair(arr, target_sum, left, triplets):
             left += 1
         else:
             right -= 1
-            
-            
+
+         
 print(search_triplets([-3, 0, 1, 2, -1, 1, -2]))
 print(search_triplets([-5, 2, -1, -2, 3]))
+print(search_triplets([0,0,0]))

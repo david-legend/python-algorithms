@@ -33,9 +33,8 @@ def connect_all_siblings(root):
     if root is None:
         return
     
-    queue = deque()
-    queue.append(root)
-    prev_node, curr_node = None, None
+    queue = deque([root])
+    prev_node = None
     
     while queue:
         curr_node = queue.popleft()

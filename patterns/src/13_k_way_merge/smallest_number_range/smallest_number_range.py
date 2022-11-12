@@ -34,7 +34,6 @@ def find_smallest_range(lists):
             current_max = max(current_max, next_element)
             heappush(min_heap, (next_element, index))
 
-    print(current_max)
     return [range_start, range_end]
 
 

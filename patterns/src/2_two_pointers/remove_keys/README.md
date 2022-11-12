@@ -14,3 +14,4 @@ Input: [2, 11, 2, 2, 1], Key=2
 Output: 2
 Explanation: The first two elements after removing every 'Key' will be [11, 1].
 
+

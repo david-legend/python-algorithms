@@ -25,3 +25,4 @@ def dutch_flag_sort(arr):
 
 print(dutch_flag_sort([1, 0, 2, 1, 0]))  #Output: [0, 0, 1, 1, 2]
 print(dutch_flag_sort([2, 2, 0, 1, 2, 0])) #Output: [0, 0, 1, 2, 2, 2,]
+print(dutch_flag_sort([0, 0, 1, 1, 2])) 

@@ -18,9 +18,32 @@ def find_max_in_bitonic_array(arr):
             
     return arr[start]
 
-
+print("Concise Optimal Approach")
 print(find_max_in_bitonic_array([1, 3, 8, 12, 4, 2]))
 print(find_max_in_bitonic_array([3, 8, 3, 1]))
 print(find_max_in_bitonic_array([1, 3, 8, 12]))
 print(find_max_in_bitonic_array([10, 9, 8]))
 
+
+def find_max(nums):
+    n = len(nums)
+    start, end = 0, n - 1
+    while start <= end:
+        mid = start + (end - start) // 2
+        lower, upper = float('-inf'), nums[n-1]
+        if mid - 1 >= 0: lower = nums[mid - 1]
+        if mid + 1 < n: upper = nums[mid + 1]
+
+        if nums[mid] >= lower and nums[mid] >= upper:
+            return nums[mid]
+        elif lower > nums[mid]:
+            end = mid - 1
+        else:
+            start = mid + 1
+
+
+print("\n\nPersonal Intuitive Approach")
+print(find_max([1, 3, 8, 12, 4, 2]))
+print(find_max([3, 8, 3, 1]))
+print(find_max([1, 3, 8, 12]))
+print(find_max([10, 9, 8]))

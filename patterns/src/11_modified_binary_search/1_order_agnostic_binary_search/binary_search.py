@@ -28,7 +28,7 @@ def binary_search(arr, key):
                 start = middle + 1
     return -1
 
-print(binary_search([4, 6, 10], 10))
-print(binary_search([1, 2, 3, 4, 5, 6, 7], 5))
-print(binary_search([10, 6, 4], 10))
-print(binary_search([10, 6, 4], 4))
+print(binary_search([4, 6, 10], 10))    #2
+print(binary_search([1, 2, 3, 4, 5, 6, 7], 5))  #4
+print(binary_search([10, 6, 4], 10))    #0
+print(binary_search([10, 6, 4], 4)) #2
