@@ -31,7 +31,13 @@ def sorted_list_to_bst(head):
     return TreeNode(slow.val, left, right)
 
 
-
+head = ListNode(1)
+head.next = ListNode(2)
+head.next.next = ListNode(3)
+head.next.next.next = ListNode(4)
+head.next.next.next.next = ListNode(5)
+# head.next.next.next.next.next = ListNode(6)
+sorted_list_to_bst(head)
 
 # Solution 2
 def sorted_list_to_bst_2(head):

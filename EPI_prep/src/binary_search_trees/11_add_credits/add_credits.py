@@ -44,6 +44,7 @@ class ClientsCreditInfo:
         offset_credit = credit - self._offset
         self._client_to_credit[client_id] = offset_credit
         self._credit_to_clients.set_default(offset_credit, set()).add(client_id)
+        print(self._credit_to_clients[offset_credit])
 
     # Time O(logn) 
     # where n is the number of clients in the data structure

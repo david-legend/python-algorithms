@@ -12,7 +12,7 @@ Return an array of the k parts.
 
 ### Example 1
 
-![Add Two Numbers II Example 1](https://assets.leetcode.com/uploads/2021/06/13/split1-lc.jpg)  
+![Split Linked List in Parts Example 1](https://assets.leetcode.com/uploads/2021/06/13/split1-lc.jpg)  
 
 ```
 Input: head = [1,2,3], k = 5
@@ -24,7 +24,7 @@ The last element output[4] is null, but its string representation as a ListNode 
 
 ### Example 2
 
-![Add Two Numbers II Example 1](https://assets.leetcode.com/uploads/2021/06/13/split2-lc.jpg)  
+![Split Linked List in Parts Example 1](https://assets.leetcode.com/uploads/2021/06/13/split2-lc.jpg)  
 
 ```
 Input: head = [1,2,3,4,5,6,7,8,9,10], k = 3
