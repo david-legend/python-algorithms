@@ -22,3 +22,26 @@ def sum_of_left_leaves(root):
     sum_left_leaves_helper(root)
 
     return result[0]
+
+
+
+# Solution 2
+def sumOfLeftLeaves(root):
+    def sumOfLeftLeavesHelper(node):
+        nonlocal left_sum
+        if node is None:
+            return False
+        
+        if node.left:
+            if node.left.left is None and node.left.right is None:
+                left_sum += node.left.val
+            else:
+                sumOfLeftLeavesHelper(node.left)
+        
+            
+        sumOfLeftLeavesHelper(node.right)
+        
+    left_sum = 0
+    sumOfLeftLeavesHelper(root)
+        
+    return left_sum
