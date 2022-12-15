@@ -38,7 +38,6 @@ def sumOfLeftLeaves(root):
             else:
                 sumOfLeftLeavesHelper(node.left)
         
-            
         sumOfLeftLeavesHelper(node.right)
         
     left_sum = 0

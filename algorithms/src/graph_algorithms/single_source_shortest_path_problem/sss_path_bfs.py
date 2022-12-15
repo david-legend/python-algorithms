@@ -1,3 +1,5 @@
+from collections import deque
+
 #find single shortest path using BFS
 #This doesn't work for weighted graphs (see dijkstras_algorithm_sssp.py)
 
@@ -11,11 +13,11 @@ class Graph(object):
         self.graph[vertex].append(edge)
         
     def find_shortest_path(self, source, dest):
-        queue = []
+        queue = deque()
         queue.append([source])
         
         while queue:
-            path = queue.pop(0)
+            path = queue.popleft()
             node = path[-1]
             
             if node == dest:

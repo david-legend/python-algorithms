@@ -22,7 +22,7 @@ class Graph(object):
                         
     def dfs(self, vertex):
         if vertex:
-            visited = set()
+            visited = set(vertex)
             stack = [vertex] 
             
             while stack:

@@ -14,6 +14,7 @@ def topological_sort(vertices, edges):
     sorted_order = []
     if vertices <= 0:
         return []
+
     # initialize graph
     in_degrees = {i : 0 for i in range(vertices)}
     graph = {i: [] for i in range(vertices)}
@@ -23,7 +24,7 @@ def topological_sort(vertices, edges):
         parent, child = edge[0], edge[1]
         graph[parent].append(child)
         in_degrees[child] += 1
-        
+
     # Find all sources i.e., all vertices with 0 in-degrees
     sources = deque()
     for key in in_degrees:
