@@ -6,17 +6,23 @@ find the length of the longest substring having the same letters after replaceme
 
 
 #### Example 1
+```
 Input: String="aabccbb", k=2
 Output: 5
 Explanation: Replace the two 'c' with 'b' to have the longest repeating substring "bbbbb".
+```
 
 #### Example 2
+```
 Input: String="abbcb", k=1
 Output: 4
 Explanation: Replace the 'c' with 'b' to have the longest repeating substring "bbbb".
+```
 
 #### Example 3
+```
 Input: String="abccde", k=1
 Output: 3
 Explanation: Replace the 'b' or 'd' with 'c' to have the longest repeating substring "ccc".
+```
 
