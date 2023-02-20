@@ -19,3 +19,19 @@ def rightSideView(root):
                 queue.append(curr_node.right)
     
     return result
+
+
+def rightSideViewRecursive(root):
+    def rightSideViewHelper(node, level):
+        if not node: return
+
+        if len(result) == level:
+            result.append(node.val)
+        
+        rightSideViewHelper(node.right, level+1)
+        rightSideViewHelper(node.left, level+1)
+    
+    result = []
+    rightSideViewHelper(root, 0)
+
+    return result
