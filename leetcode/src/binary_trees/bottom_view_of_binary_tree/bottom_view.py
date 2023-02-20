@@ -4,6 +4,13 @@ class Node:
         self.val = val
         self.left = self.right = None
 
+# Time ( O(N) + O(WLog (W) *  KLog(k)) )
+# Where N is the number of nodes in the tree
+# W is the the width of the tree
+# K is the average length of nodes in the height of the tree
+
+# Space O(n) + O(n) -> O(N)
+# Where N is the number of nodes in the tree
 
 def bottomView(root):
     if not root: return
