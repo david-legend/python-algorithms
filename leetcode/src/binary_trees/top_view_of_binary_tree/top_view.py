@@ -7,40 +7,37 @@ class Node:
 
 
 
-# Time ( O(N) + O(WLog (W) *  KLog(k)) )
+# Time  O(N) + O(WLog W)
 # Where N is the number of nodes in the tree
 # W is the the width of the tree
-# K is the average length of nodes in the height of the tree
 
-# Space O(n) + O(n) -> O(N)
-# Where N is the number of nodes in the tree
+# Space O(N/2) + O(W)  --> O(N) + O(W)
+# Where N is the number of nodes on a particular level
+# Where W is the number of nodes spread across the with of the tree if we consider the results array
 
 
 def topView(root):
     if not root: return
 
     vertical_order = defaultdict(dict)
-    queue = deque([(root, 0, 0)])
+    queue = deque([(root, 0)])
 
     while queue:
         level_size = len(queue)
         for _ in range(level_size):
-            node, x, y = queue.popleft()
+            node, x = queue.popleft()
 
             if x not in vertical_order:
-                vertical_order[x] = defaultdict(list)
-            vertical_order[x][y].append(node.val)
+                vertical_order[x] = node.val
 
             if node.left:
-                queue.append((node.left, x-1, y+1))
+                queue.append((node.left, x-1))
             if node.right: 
-                queue.append((node.right, x+1, y+1))
+                queue.append((node.right, x+1))
 
     result = []
     for key in sorted(vertical_order.keys()):
-        val_keys = sorted(vertical_order[key].keys())
-        bottom_view_key = val_keys[0]
-        result.append(vertical_order[key][bottom_view_key].pop())
+        result.append(vertical_order[key])
     
     return result
 
