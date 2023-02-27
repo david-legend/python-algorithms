@@ -4,35 +4,39 @@ class Graph(object):
         self.adj_list = {} if graph is None else graph
             
     
-    def add(self, vertex, edge):
-        self.adj_list[vertex].append(edge)
+    def add(self, node, edge):
+        self.adj_list[node].append(edge)
         
-    def bfs(self, vertex):
-        if vertex:
-            visited = set(vertex)
-            queue = deque([vertex])
-            
-            while queue:
-                curr_vertex = queue.popleft()
-                print(curr_vertex)
-                for adj_vertex in self.adj_list[curr_vertex]:
-                    if adj_vertex not in visited:
-                        visited.add(adj_vertex)
-                        queue.append(adj_vertex)
-                        
-    def dfs(self, vertex):
-        if vertex:
-            visited = set(vertex)
-            stack = [vertex] 
-            
-            while stack:
-                curr_vertex = stack.pop()
-                print(curr_vertex)
-                
-                for adj_vertex in self.adj_list[curr_vertex]:
-                    if adj_vertex not in visited:
-                        visited.add(adj_vertex)
-                        stack.append(adj_vertex)
+    def bfs(self, node):
+        if not node: return []
+
+        visited = set(node)
+        queue, result = deque([node]), []
+        
+        while queue:
+            curr_node = queue.popleft()
+            result.append(curr_node)
+            for adj_node in self.adj_list[curr_node]:
+                if adj_node not in visited:
+                    visited.add(adj_node)
+                    queue.append(adj_node)
+        return result
+
+
+    def dfs(self, node):
+        if not node: return []
+        def dfs_helper(node, graph, visited, result):
+            visited.add(node)
+            result.append(node)
+
+            for neighbor in graph[node]:
+                if neighbor not in visited:
+                    dfs_helper(neighbor, graph, visited, result)
+
+        visited, result = set(), []
+        dfs_helper(node, self.adj_list, visited, result)
+        return result
+
                 
                 
              
@@ -49,9 +53,9 @@ sample = {
 
 graph = Graph(sample)
 
-graph.bfs("a")
+print(graph.bfs("a"))
 
 print("\n\n")
 
-graph.dfs("a")
+print(graph.dfs("a"))
 

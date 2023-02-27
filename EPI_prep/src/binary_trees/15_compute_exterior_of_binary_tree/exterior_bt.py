@@ -50,10 +50,10 @@ class TreeNode:
 # To compute a leaf we check if the node has no children
 
 # To check if a node is a boundary in the left subtree
-#   ---> we check if the current nodes parent has a left child, if it doesn't, then it is a boundary
+#   ---> we check if the current node is on left most side of the tree, then it is a boundary
 
 # To check if a node is a boundary in the right subtree
-#   ---> we check if the current nodes parent has a right child, if it doesn't, then it is a boundary
+#   ---> we check if the currentnode is on right most side of the tree, then it is a boundary
 
 def exterior_binary_tree(tree):
     if tree:
