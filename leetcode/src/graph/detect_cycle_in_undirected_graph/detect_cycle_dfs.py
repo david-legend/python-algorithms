@@ -7,11 +7,10 @@ from collections import deque, namedtuple
 # Space Complexity - O(2V) -> O(V) 
 # Where V is the number of vertices/nodes
 
-def is_cycle(v, neighbors):
-    graph = {i: neighbors[i-1] for i in range(1, v)}
+def is_cycle(v, graph):
     visited = set()
 
-    for i in range(1, v):
+    for i in range(v):
         if i not in visited:
             if detect_cycle(i, -1, graph, visited): return True
     
@@ -29,9 +28,9 @@ def detect_cycle(node, parent, graph, visited):
         
     return False
 
-neighbors_1 = [[2,3], [1,5], [1,4,6], [3], [2,7], [3,7], [5,6]]
-neighbors_2 = [[2,3], [1,5], [1,4,6], [3], [2], [3]]
+neighbors_1 = [[1,2], [0,4], [0,3,5], [2], [1,6], [2,6], [4,5]]
+neighbors_2 = [[1,2], [0,4], [0,3,5], [2], [1], [2]]
 
 
-print(is_cycle(8, neighbors_1)) #True
-print(is_cycle(7, neighbors_2)) #False
+print(is_cycle(7, neighbors_1)) #True
+print(is_cycle(6, neighbors_2)) #False

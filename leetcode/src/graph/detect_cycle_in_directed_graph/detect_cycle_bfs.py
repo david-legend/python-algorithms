@@ -3,15 +3,12 @@ from collections import deque
 
 # Find the topological ordering of the nodes, if the length of the ordering is equal to the number of nodes
 # Then there's no cycle, if the opposite is true then theres a cycle
-def is_cycle(v, adj):
-    graph, indegrees = {}, {}
-    for i in range(1, v+1):
-        graph[i], indegrees[i] = [], 0
+def is_cycle(v, graph):
+    indegrees = {i: 0 for i in range(v)}
 
-    for node in range(1, v+1):
-        neighbors = adj[node-1]
+    for node in range(v):
+        neighbors = graph[node]
         for neighbor in neighbors:
-            graph[node].append(neighbor)
             indegrees[neighbor] += 1
 
     sources = deque()
@@ -31,8 +28,8 @@ def is_cycle(v, adj):
 
     return False if len(ordering) == v else True
 
-neighbors = [[2], [3], [4,6], [5], [], [5], [2,8], [9], [7]]
-data = [[2], [3], [4,6], [5], [], [5], [2,8], [9], []]
+neighbors = [[1], [2], [3,5], [4], [], [4], [1,7], [8], [6]]
+data = [[1], [2], [3,5], [4], [], [4], [1,7], [8], []]
 
 print(is_cycle(9, neighbors)) #True
 print(is_cycle(9, data)) #False

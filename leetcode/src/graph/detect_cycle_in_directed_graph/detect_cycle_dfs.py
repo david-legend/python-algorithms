@@ -1,8 +1,7 @@
-def is_cycle(v, adj):
+def is_cycle(v, graph):
     visited, dfs_visited = [False] * (v+1), [False] * (v+1)
-    graph = {i: adj[i-1] for i in range(v+1)}
     
-    for i in range(1, v+1):
+    for i in range(v):
         if not visited[i]:
             if dfs(i, graph, visited, dfs_visited): return True
     
@@ -24,8 +23,8 @@ def dfs(node, graph, visited, dfs_visited):
 
 
 
-neighbors = [[2], [3], [4,6], [5], [], [5], [2,8], [9], [7]]
-data = [[2], [3], [4,6], [5], [], [5], [2,8], [9], []]
+neighbors = [[1], [2], [3,5], [4], [], [4], [1,7], [8], [6]]
+data = [[1], [2], [3,5], [4], [], [4], [1,7], [8], []]
 
 print(is_cycle(9, neighbors)) #True
 print(is_cycle(9, data)) #False
