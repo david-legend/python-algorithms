@@ -1,9 +1,6 @@
 from collections import deque
 
-
-# Find the topological ordering of the nodes, if the length of the ordering is equal to the number of nodes
-# Then there's no cycle, if the opposite is true then theres a cycle
-def is_cycle(v, graph):
+def top_sort(v, graph):
     indegrees = {i: 0 for i in range(v)}
 
     for node in range(v):
@@ -16,7 +13,6 @@ def is_cycle(v, graph):
         if indegrees[node] == 0:
             sources.append(node)
     
-    if len(sources) == 0: return True
     ordering = []
     while sources:
         curr_node = sources.popleft()
@@ -26,10 +22,7 @@ def is_cycle(v, graph):
             if indegrees[node] == 0:
                 sources.append(node)
 
-    return False if len(ordering) == v else True
+    return ordering if len(ordering) == v else []
 
-neighbors = [[1], [2], [3,5], [4], [], [4], [1,7], [8], [6]]
-data = [[1], [2], [3,5], [4], [], [4], [1,7], [8], []]
-
-print(is_cycle(9, neighbors)) #True
-print(is_cycle(9, data)) #False
+graph = [[], [], [3], [1], [0,1], [0,2]]
+print(top_sort(6, graph))
