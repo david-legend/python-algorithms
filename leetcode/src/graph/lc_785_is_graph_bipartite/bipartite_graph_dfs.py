@@ -1,13 +1,11 @@
 from collections import deque
 
-def isBipartite( graph) -> bool:
-    if len(graph) == 0: return True
+def isBipartite(graph) -> bool:
     color = [-1] * len(graph)
 
     for i in range(len(graph)):
         if color[i] == -1:
-            if not dfs(i, graph, color):
-                return False
+            if dfs(i, graph, color) == False: return False         
     return True
     
 def dfs(node, graph, color):
@@ -19,9 +17,9 @@ def dfs(node, graph, color):
             if color[neighbor] == color[node]: return False
         else:
             color[neighbor] = not color[node]
-            dfs(neighbor, graph, color)
+            if dfs(neighbor, graph, color) == False:
+                return False
             
-    
     return True
 
 print(isBipartite([[1,2,3],[0,2],[0,1,3],[0,2]])) # False
