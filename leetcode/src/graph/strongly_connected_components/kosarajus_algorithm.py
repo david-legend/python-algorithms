@@ -41,5 +41,11 @@ def get_components(node, graph, visited, data):
             get_components(neighbor, graph, visited, data)
 
 
-data = [[1], [2, 3], [0], [4], []]
-print(get_strongly_connected_components(data))
+data1 = [[1], [2, 3], [0], [4], []]
+data2= [[2], [0], [1, 4], [5], [3], [4]]
+data3= [[2, 3], [0], [1], [4], []]
+data4= [[1], [2], [0, 3], [4], [7, 5], [6], [4], []]
+print(get_strongly_connected_components(data1)) # [[0, 2, 1], [3], [4]]
+print(get_strongly_connected_components(data2)) # [[0, 1, 2], [4, 5, 3]]
+print(get_strongly_connected_components(data3)) # [[0, 1, 2], [3], [4]]
+print(get_strongly_connected_components(data4)) # [[0, 2, 1], [3], [4, 6, 5], [7]]
