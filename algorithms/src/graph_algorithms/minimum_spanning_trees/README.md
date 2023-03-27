@@ -3,6 +3,10 @@
 
 <br>
 
+[▶ Minimum Spanning Tree Explanation](https://www.youtube.com/watch?v=ZSPjZuZWCME&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=24)
+
+<br>
+
 ## What is a Spanning Tree?
 
 A spanning tree is a subset of a graph that includes all the graph's vertices and some of the edges of the original graph, intending to have no cycles. A spanning tree is not necessarily unique - it is possible for there to be multiple spanning trees for a given graph.  
@@ -18,10 +22,6 @@ A minimum spanning tree (MST) is a subset of the edges of a connected, edge-weig
 It is a way of finding the most economical way to connect a set of vertices. A minimum spanning tree is not necessarily unique. All the weights of the edges in the MST must be distinct. If all the weights of the edges in the graph are the same, then any spanning tree of the graph is an MST.  
 
 The edges of the minimum spanning tree can be found using the greedy algorithm or the more sophisticated Kruskal or Prim's algorithm.  
-
-<br>
-
-[▶ Minimum Spanning Tree Explanation](https://www.youtube.com/watch?v=ZSPjZuZWCME&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=24)
 
 <br>
 <br>
