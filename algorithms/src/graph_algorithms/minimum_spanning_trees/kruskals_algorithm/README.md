@@ -6,8 +6,6 @@ Kruskal’s algorithm is the concept that is introduced in the graph theory of d
 
 These trees can only link to each other if the edge connecting them has a low value and doesn’t generate a cycle in MST structure.
 
-<br>
-
 [▶ Kruskals Algorithm Explanation](https://www.youtube.com/watch?v=1KRmCzBl_mQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=25)
 
 <br>
