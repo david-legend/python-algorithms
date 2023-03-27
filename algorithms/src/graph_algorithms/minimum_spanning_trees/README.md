@@ -9,8 +9,6 @@ A spanning tree is a subset of a graph that includes all the graph's vertices an
 
  However, a given graph will always have at least one spanning tree. The edges in a spanning tree are called "branch edges," while the edges not in the spanning tree are called "cycle edges." And this type of graph helps find the minimum number of edges required to connect all vertices in a graph. It is also used to create minimally secured networks with redundant paths.  
 
-
-<br>
 <br>
 
 ## What is a Minimum Spanning Tree? 
@@ -21,6 +19,9 @@ It is a way of finding the most economical way to connect a set of vertices. A m
 
 The edges of the minimum spanning tree can be found using the greedy algorithm or the more sophisticated Kruskal or Prim's algorithm.  
 
+<br>
+
+[▶ Minimum Spanning Tree Explanation](https://www.youtube.com/watch?v=ZSPjZuZWCME&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=24)
 
 <br>
 <br>
