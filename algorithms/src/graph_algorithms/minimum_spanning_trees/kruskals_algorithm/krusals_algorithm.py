@@ -14,6 +14,20 @@ def union(u, v, parent, rank):
         rank[u] += 1
 
 
+# Time Complexity Analysis
+# O(M Log(M))  +  O(M * O(4α))
+# O(M log M)
+
+# Explanation
+# O(M Log(M)) -> Sorting edges array
+# O(M * O(4α)) -> iterating over edges array and computingg union and findparent
+# M represents number of edges
+
+# Space Complexity
+# O(M) + O(N) + O(N)
+# O(N)
+# Where N represent the number of nodes stored in both parent and rank arrays
+# Where M represent number of edges stored in mst array
 def kruskals_algo(edges, n):
     edges.sort(key=lambda x :x[2])
     parent, rank = [], []
