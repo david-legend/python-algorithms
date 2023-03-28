@@ -5,6 +5,11 @@ Dijkstra's algorithm (/ˈdaɪkstrəz/ DYKE-strəz) is an algorithm for finding t
 For a given source node in the graph, the algorithm finds the shortest path between that node and every other.  
 It can also be used for finding the shortest paths from a single node to a single destination node by stopping the algorithm once the shortest path to the destination node has been determined.
 
+[▶ Dijkstra's Algorithm - Using Priority Queue](https://www.youtube.com/watch?v=V6H1qAeB-l4&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=33)
+[▶ Dijkstra's Algorithm - Using Set](https://www.youtube.com/watch?v=PATgNiuTP20&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=34)
+[▶ Dijkstra's Algorithm - Why PQ and not Q, Intuition, Time Complexity Derivation](https://www.youtube.com/watch?v=3dINsjyfooY&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=35)
+[▶ Print Shortest Path - Dijkstra's Algorithm](https://www.youtube.com/watch?v=rp1SMw7HSO8&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=36)
+
 ### NOTE
 
 1. The time complexity is O(E logV). (See Proof In Implementation)
