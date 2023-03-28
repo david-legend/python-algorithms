@@ -2,7 +2,10 @@
 
 The Bellman–Ford algorithm is an algorithm that computes shortest paths from a single source vertex to all of the other vertices in a weighted digraph.   
 It is slower than Dijkstra's algorithm for the same problem, but more versatile, as it is capable of handling graphs in which some of the edge weights are negative numbers.
-Negative edge weights are found in various applications of graphs, hence the usefulness of this algorithm.  
+Negative edge weights are found in various applications of graphs, hence the usefulness of this algorithm. 
+
+[▶ Bellman–Ford Algorithm Explanation](https://www.youtube.com/watch?v=0vVofAhAYjc&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=42)
+
 <br> 
 Here are some examples:
 1. Can be used to explain a lot ofphenomena like cashflow, the heat released/absorbed in a chemical reaction, etc.
