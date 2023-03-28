@@ -9,7 +9,9 @@ A weighted graph is a graph in which each edge has a numerical value associated 
 
 This algorithm follows the dynamic programming approach to find the shortest paths.
 
-<br><br>
+[▶ Floyd Warshall Algorithm Explanation](https://www.youtube.com/watch?v=YbY8cVwWAvw&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=43)
+
+<br>
 
 ## How Floyd-Warshall Algorithm Works ?
 
@@ -98,7 +100,7 @@ for k = 1 to n
 return A
 ```
 
-<br><br>
+<br>
 
 ### Python Code
 
@@ -146,23 +148,19 @@ floyd_warshall(G)
 
 ## Floyd Warshall Algorithm Complexity
 
-<br>
-
 ### Time Complexity
 
 There are three loops. Each loop has constant complexities. So, the time complexity of the Floyd-Warshall algorithm is O(n3).
-
-<br>
 
 ### Space Complexity
 
 The space complexity of the Floyd-Warshall algorithm is O(n2).
 
-<br><br>
+<br>
 
 ## Floyd Warshall Algorithm Applications
 
-To find the shortest path is a directed graph
-To find the transitive closure of directed graphs
-To find the Inversion of real matrices
-For testing whether an undirected graph is bipartite
+- To find the shortest path is a directed graph
+- To find the transitive closure of directed graphs
+- To find the Inversion of real matrices
+- For testing whether an undirected graph is bipartite

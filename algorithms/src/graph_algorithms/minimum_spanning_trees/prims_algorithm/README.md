@@ -5,6 +5,9 @@ Prim's algorithm is a minimum spanning tree algorithm that takes a graph as inpu
 - form a tree that includes every vertex
 - has the minimum sum of weights among all the trees that can be formed from the graph
 
+
+[▶ Prim's Algorithm Explanation](https://www.youtube.com/watch?v=mJcZjjKzeqk&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=45)
+
 <br>
 
 ## How Prim's algorithm works
