@@ -21,7 +21,7 @@ The edges of the minimum spanning tree can be found using the greedy algorithm o
 
 <br>
 
-[▶ Minimum Spanning Tree Explanation](https://www.youtube.com/watch?v=1KRmCzBl_mQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=25)
+[▶ Minimum Spanning Tree Explanation](https://www.youtube.com/watch?v=ZSPjZuZWCME&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=24)
 
 <br>
 <br>
