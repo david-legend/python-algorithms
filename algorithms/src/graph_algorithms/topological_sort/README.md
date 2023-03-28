@@ -15,8 +15,10 @@ In order to have a topological sorting the graph must not contain any cycles. So
 
 
 [▶ Kahn's Algorithm | Topological Sort Algorithm | BFS Explanation](https://www.youtube.com/watch?v=73sneFXuTEg&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=23)
-[▶ Topological Sort Algorithm | DFS Explanation](https://www.youtube.com/watch?v=5lZ0iJMrUMk&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=23)
+<br>
 
+[▶ Topological Sort Algorithm | DFS Explanation](https://www.youtube.com/watch?v=5lZ0iJMrUMk&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=23)
+<br><br>
 
 ## How it Works
 
@@ -65,7 +67,7 @@ topological_sort(N, adj[N][N])
 
 <br>
 
-## Creating Minimum Spanning Tree Using Kruskal Algorithm
+## Algorithm Walk through
 
 Let's take a graph and see the algorithm in action. Consider the graph given below:
 <br>
