@@ -1,3 +1,5 @@
+# Time O(N)
+# Space O(N)
 def climb(n):
     if n <= 2: return n
     dp = [-1] * (n+1)

@@ -1,3 +1,5 @@
+# Time O(N)
+# Space O(N) + O(N) -> recursion stack + memoization space used
 def climb(n):
 
     def solve(val):
