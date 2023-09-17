@@ -10,6 +10,23 @@ class Node:
 #Space Complexity
 #The algorithm runs in constant space O(1).
 
+
+# Explanation:
+# why is guaranteed that if a pointer (slow pointer) is moving at one step and another pointer(fast pointer) is moving at
+# 2 steps, they are bound to colide
+# this is because if it takes the slow pointer n steps to get to the tail, it will take the fast pointer n/2 steps to get to the tail
+# hence the slow and fast pointers are bound to be meet when the fast pointer travels n steps. 
+#  
+#  Example::
+#
+#  -------------------
+#  0  1  2  3  4  5  6
+#  
+#  if we take the number line above and we plot the n steps for both the slow and fast pointer --> (where n steps is the steps it takes to reach the end of the line for the slow pointer)
+#  after plotting we see that they collide at a point. (in this example n = 6)
+#  Even though in this example we used the starting point as the begining of the cycle, this gives us an assurance that no matter where the cycle begins at some point the fast and slow pointer 
+#  will collide
+
 def has_cycle(head):
     slow, fast = head, head
     while fast is not None and fast.next is not None:

@@ -38,7 +38,7 @@ class LinkedList:
 
     def insertAfter(self, prevNode, value):
         newNode = Node(value)
-        if prevNode is None:
+        if prevNod e is None:
             print("The given previous node must be in LinkedList.")
             return
         newNode.next = prevNode.getNext()
