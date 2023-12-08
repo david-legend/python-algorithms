@@ -22,7 +22,7 @@ def is_palindromic_linked_list(head):
     head_second_half = reverse_list(slow)
     copy_head_second_half = head_second_half
     
-    
+     
     while head is not None and head_second_half is not None:
         if head.value != head_second_half.value:
             break

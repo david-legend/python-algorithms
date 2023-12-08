@@ -53,6 +53,36 @@ def reverse_alternate_k_elements(head, k):
     return head
 
 
+
+# solution 2
+def alternate(head, k):
+    if not head or not head.next: return None
+
+    prev_tail, curr, is_reverse = None, head, True
+    while curr:
+        it, new_tail = 0, curr
+        if is_reverse:
+            new_head = None
+            while curr and it != k:
+                it += 1
+                next_node = curr.next
+                curr.next = new_head
+                new_head, curr = curr, next_node
+            if prev_tail:
+                prev_tail.next = new_head
+            else:
+                head = new_head
+            new_tail.next = curr
+        else:
+            while curr and it != k:
+                it += 1
+                new_tail, curr = curr, curr.next
+        is_reverse = not is_reverse
+        prev_tail = new_tail
+    
+    return head
+
+
 head = Node(1)
 head.next = Node(2)
 head.next.next = Node(3)
@@ -68,3 +98,19 @@ result = reverse_alternate_k_elements(head, 2)
 print("Nodes of reversed LinkedList are: ", end='')
 result.print_list()
 
+
+print("\nSolution 2")
+head = Node(1)
+head.next = Node(2)
+head.next.next = Node(3)
+head.next.next.next = Node(4)
+head.next.next.next.next = Node(5)
+head.next.next.next.next.next = Node(6)
+head.next.next.next.next.next.next = Node(7)
+head.next.next.next.next.next.next.next = Node(8)
+
+print("Nodes of original LinkedList are: ", end='')
+head.print_list()
+result = alternate(head, 2)
+print("Nodes of reversed LinkedList are: ", end='')
+result.print_list()

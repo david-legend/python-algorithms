@@ -13,16 +13,14 @@ def cyclic_right_shift_list(L, k):
         list_length += 1
     
     # make list circular
-    k =  k % list_length
-    if k == 0:
-        return L
+    rotations =  k % list_length
+    if rotations == 0: return L
     
-    # makes list a cycle by connecting the tail to the head
-    tail.next = L
     new_tail = L
-    for _ in range(k - 1):
+    for _ in range(list_length - rotations - 1):
         new_tail = new_tail.next
     
+    tail.next = L
     new_head, new_tail.next= new_tail.next, None
     return new_head
     
@@ -47,9 +45,9 @@ def print_node(node):
 # Before Befor Shift
 print_node(l1_2)
 
-# Shift List By 2
+# Shift List By 3
 new_list = cyclic_right_shift_list(l1_2, 3)
-print_node(new_list) # [9, 11, 2, 5, 7]
+print_node(new_list) # [7, 9, 11, 2, 5]
 
 # Shift List By 1
-print_node(cyclic_right_shift_list(new_list, 1)) # [11, 2, 5, 7, 9]
+print_node(cyclic_right_shift_list(new_list, 1)) # [5, 7, 9, 11, 2]

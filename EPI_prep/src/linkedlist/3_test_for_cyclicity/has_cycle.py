@@ -11,8 +11,20 @@ def has_cycle(L):
         slow, fast = slow.next, fast.next.next
 
         if slow == fast:
-            return True
-    
+            pointer = L
+            while slow and pointer and slow.val != pointer.val:
+                slow, pointer = slow.next, pointer.next
+            return pointer
+
+def print_node(head):
+    node = head
+    if node:
+        print(node.val, end=" ")
+    else:
+        print(node)
+    print("\n")
+
+
 
 l1_2 = ListNode(2)
 l1_3 = ListNode(3)
@@ -23,8 +35,8 @@ l1_2.next, l1_3.next = l1_3, l1_5
 l1_5.next, l1_7.next = l1_7, l1_3
 
 
-print(has_cycle(l1_2)) # True
+print_node(has_cycle(l1_2)) # 3
 
 l1_7.next = l1_11
 
-print(has_cycle(l1_2)) # None
+print_node(has_cycle(l1_2)) # None

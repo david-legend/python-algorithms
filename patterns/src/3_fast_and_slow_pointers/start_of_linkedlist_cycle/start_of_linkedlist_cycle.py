@@ -14,8 +14,8 @@ class Node:
 
 # Explanation:
 # We know for a fact that if there is a cycle, the slow and fast pointers will meet at a point. (see linkedlist_cycle for explanation)
-# but how do we know for a fact that if we move the slow pointer at pointer at step of 1 at the point where they collided and another pointer
-# at the step of 1 from the head, they are bound to meet at the point where the cycle starts.
+# but how do we know for a fact that if we move the slow pointer in steps of 1 from the point where they collided and another pointer
+# in steps of 1 from the head, they are bound to meet at the point where the cycle starts.
 # this can be proven mathematically
 
 # 
